@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'edc_identifier.apps.AppConfig',
+    'edc_visit_schedule.apps.AppConfig',
+    'td_visit_schedule.apps.AppConfig'
 ]
 
 MIDDLEWARE = [
