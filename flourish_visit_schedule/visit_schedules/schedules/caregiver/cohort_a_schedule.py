@@ -6,9 +6,9 @@ from ...crfs import a_crf_1000, crf_2000, crf_3000
 cohort_a_schedule_1 = Schedule(
     name='cohort_a_schedule1',
     verbose_name='Cohort A Schedule V1',
-    onschedule_model='flourish_caregiver.onschedulematernallabourdel',
+    onschedule_model='flourish_caregiver.onschedulecohorta',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
-    consent_model='flourish_caregiver.subjectconsent',
+    consent_model='flourish_caregiver.enrollment',
     appointment_model='edc_appointment.appointment'
     )
 
@@ -26,7 +26,7 @@ visit1000 = Visit(
 visit2000 = Visit(
     code='2000M',
     title='Cohort A Quarterly Visit',
-    timepoint=0,
+    timepoint=1,
     rbase=relativedelta(months=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -37,7 +37,7 @@ visit2000 = Visit(
 visit3000 = Visit(
     code='3000M',
     title='Cohort A Follow Up Visit',
-    timepoint=0,
+    timepoint=2,
     rbase=relativedelta(years=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
