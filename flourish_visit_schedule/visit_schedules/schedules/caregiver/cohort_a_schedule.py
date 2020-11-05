@@ -8,7 +8,7 @@ cohort_a_schedule_1 = Schedule(
     verbose_name='Cohort A Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohorta',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
-    consent_model='flourish_caregiver.enrollment',
+    consent_model='flourish_caregiver.subjectconsent',
     appointment_model='edc_appointment.appointment'
     )
 

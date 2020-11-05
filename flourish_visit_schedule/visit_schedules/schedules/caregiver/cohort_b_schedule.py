@@ -26,7 +26,7 @@ visit1000 = Visit(
 visit2000 = Visit(
     code='2000M',
     title='Cohort B Quarterly Visit',
-    timepoint=10,
+    timepoint=1,
     rbase=relativedelta(months=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -37,7 +37,7 @@ visit2000 = Visit(
 visit3000 = Visit(
     code='3000M',
     title='Cohort B Follow Up Visit',
-    timepoint=20,
+    timepoint=2,
     rbase=relativedelta(years=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),

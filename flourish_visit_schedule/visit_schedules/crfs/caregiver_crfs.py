@@ -2,6 +2,9 @@ from edc_visit_schedule import FormsCollection, Crf
 
 crfs_prn = None
 
+crf_pre_consent = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
+    name='pre_flourish')
 
 a_crf_1000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
