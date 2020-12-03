@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+.pydevproject
+.project
+.settings/
+db.sqlite3
+.DS_Store
+*media
+
 # Distribution / packaging
 .Python
 build/
