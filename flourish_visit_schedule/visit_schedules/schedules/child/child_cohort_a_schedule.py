@@ -6,9 +6,9 @@ from ...crfs import child_a_crf_1000, child_crf_2000, child_crf_3000
 child_a_schedule_1 = Schedule(
     name='child_cohort_a_schedule1',
     verbose_name='Child Cohort A Schedule V1',
-    onschedule_model='flourish_caregiver.onschedulecohorta',
+    onschedule_model='flourish_child.onschedulechildcohorta',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
-    consent_model='flourish_caregiver.subjectconsent',
+    consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='edc_appointment.appointment'
     )
 
