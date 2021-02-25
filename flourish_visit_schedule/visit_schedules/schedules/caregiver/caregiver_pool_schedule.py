@@ -1,6 +1,7 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
+from ..schedule_helper import ScheduleHelper
 from ...crfs import crf_3000
 
 caregiver_pool_schedule_1 = Schedule(
@@ -14,7 +15,7 @@ caregiver_pool_schedule_1 = Schedule(
 
 visit3000 = Visit(
     code='3000M',
-    title='Caregiver Pool Quarterly Visit',
+    title='Caregiver Pool Quarterly Visit 1',
     timepoint=1,
     rbase=relativedelta(months=3),
     rlower=relativedelta(days=0),
@@ -22,5 +23,9 @@ visit3000 = Visit(
     requisitions=None,
     crfs=crf_3000,
     facility_name='5-day clinic')
+
+schedule_helper = ScheduleHelper(visit=visit3000, crfs=crf_3000,
+                                schedule=caregiver_pool_schedule_1, visit4000=None)
+schedule_helper.create_quarterly_visits()
 
 caregiver_pool_schedule_1.add_visit(visit=visit3000)

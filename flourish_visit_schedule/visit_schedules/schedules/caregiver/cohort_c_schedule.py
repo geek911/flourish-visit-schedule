@@ -1,6 +1,7 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
+from ..schedule_helper import ScheduleHelper
 from ...crfs import bc_crf_1000, crf_3000, crf_4000
 
 cohort_c_schedule_1 = Schedule(
@@ -37,13 +38,18 @@ visit3000 = Visit(
 visit4000 = Visit(
     code='4000M',
     title='Cohort C Follow Up Visit',
-    timepoint=2,
+    timepoint=12,
     rbase=relativedelta(years=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=None,
     crfs=crf_4000,
     facility_name='5-day clinic')
+
+
+schedule_helper = ScheduleHelper(visit=visit3000, crfs=crf_3000,
+                                 schedule=cohort_c_schedule_1, visit4000=visit4000)
+schedule_helper.create_quarterly_visits()
 
 cohort_c_schedule_1.add_visit(visit=visit1000)
 cohort_c_schedule_1.add_visit(visit=visit3000)
