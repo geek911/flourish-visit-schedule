@@ -6,7 +6,7 @@ from .schedules import cohort_c_schedule_1, caregiver_pool_schedule_1
 # Cohort A Visit Schedules
 
 cohort_a_visit_schedule_v1 = VisitSchedule(
-    name='cohort_a_schedule_v1',
+    name='cohort_a_schedule1',
     verbose_name='Cohort A Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
@@ -16,7 +16,7 @@ cohort_a_visit_schedule_v1 = VisitSchedule(
 cohort_a_visit_schedule_v1.add_schedule(cohort_a_schedule_1)
 
 cohort_b_visit_schedule_v1 = VisitSchedule(
-    name='cohort_b_schedule_v1',
+    name='cohort_b_schedule1',
     verbose_name='Cohort B Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
@@ -26,7 +26,7 @@ cohort_b_visit_schedule_v1 = VisitSchedule(
 cohort_b_visit_schedule_v1.add_schedule(cohort_b_schedule_1)
 
 cohort_c_visit_schedule_v1 = VisitSchedule(
-    name='cohort_c_schedule_v1',
+    name='cohort_c_schedule1',
     verbose_name='Cohort C Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
@@ -36,7 +36,7 @@ cohort_c_visit_schedule_v1 = VisitSchedule(
 cohort_c_visit_schedule_v1.add_schedule(cohort_c_schedule_1)
 
 caregiver_pool_visit_schedule_v1 = VisitSchedule(
-    name='caregiver_pool_schedule_v1',
+    name='caregiver_pool_schedule1',
     verbose_name='Caregiver Pool Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
