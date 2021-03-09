@@ -11,16 +11,22 @@ class ScheduleHelper:
             self.schedule = schedule
             self.visit4000 = visit4000 or None
 
-    def create_quarterly_visits(self,):
+    def create_quarterly_visits(self):
 
         count = 1
+        code_count = count
         while(count <= 18):
 
             timepoint = self.visit.timepoint + count
             rbase = self.visit.rbase + relativedelta(months=(count * 3))
 
-            if self.visit4000 and rbase != self.visit4000.rbase:
-                visit_code = str(int(self.visit_code[:4]) + (count * 10))
+            if rbase.years > 3 and rbase.months < 3:
+                self.visit_code = '4000'
+                code_count = 1
+            if self.visit4000 and rbase != self.visit4000.rbase or not self.visit4000:
+                visit_code = str(int(self.visit_code[:4]) + (code_count * 10))
+                if 'M' in self.visit.code:
+                    visit_code = visit_code + 'M'
                 visit_dict = {'code': visit_code,
                                 'title': self.visit_title[:-1] + str(count + 1),
                                 'timepoint': timepoint,
@@ -30,8 +36,5 @@ class ScheduleHelper:
                                 'crfs': self.crfs,
                                 'facility_name': '5-day clinic'}
                 self.schedule.add_visit(**visit_dict)
-            elif rbase.years > 3:
-                self.visit_code = '4000'
             count += 1
-
-
+            code_count += 1

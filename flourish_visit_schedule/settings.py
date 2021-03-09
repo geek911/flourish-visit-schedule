@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'edc_identifier.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
-    'td_visit_schedule.apps.AppConfig',
+    'flourish_visit_schedule.apps.AppConfig',
+    'flourish_visit_schedule.apps.EdcProtocolAppConfig',
     'flourish_child.apps.AppConfig',
     'flourish_caregiver.apps.AppConfig',
 ]
