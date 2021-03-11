@@ -1,5 +1,6 @@
 from dateutil.relativedelta import relativedelta
 
+
 class ScheduleHelper:
 
     def __init__(self, visit, crfs, schedule, visit4000, *args, **kwargs):
@@ -28,13 +29,13 @@ class ScheduleHelper:
                 if 'M' in self.visit.code:
                     visit_code = visit_code + 'M'
                 visit_dict = {'code': visit_code,
-                                'title': self.visit_title[:-1] + str(count + 1),
-                                'timepoint': timepoint,
-                                'rbase': self.visit.rbase + relativedelta(months=(count * 3)),
-                                'rlower': relativedelta(days=0),
-                                'rupper': relativedelta(days=0),
-                                'crfs': self.crfs,
-                                'facility_name': '5-day clinic'}
+                              'title': self.visit_title[:-1] + str(count + 1),
+                              'timepoint': timepoint,
+                              'rbase': self.visit.rbase + relativedelta(months=(count * 3)),
+                              'rlower': relativedelta(days=0),
+                              'rupper': relativedelta(days=0),
+                              'crfs': self.crfs,
+                              'facility_name': '5-day clinic'}
                 self.schedule.add_visit(**visit_dict)
             count += 1
             code_count += 1
