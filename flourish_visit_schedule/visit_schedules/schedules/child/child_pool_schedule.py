@@ -24,9 +24,8 @@ visit3000 = Visit(
     crfs=child_bc_crf_3000,
     facility_name='5-day clinic')
 
-
 schedule_helper = ScheduleHelper(visit=visit3000, crfs=child_bc_crf_3000,
-                                schedule=child_pool_schedule_1, visit4000=None)
+                                 schedule=child_pool_schedule_1, visit4000=None)
 schedule_helper.create_quarterly_visits()
 
 child_pool_schedule_1.add_visit(visit=visit3000)

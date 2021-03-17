@@ -5,9 +5,9 @@ from ..schedule_helper import ScheduleHelper
 from ...crfs import bc_crf_1000, crf_3000, crf_4000
 
 cohort_b_schedule_1 = Schedule(
-    name='cohort_b_schedule1',
+    name='cohort_b1_schedule1',
     verbose_name='Cohort B Schedule V1',
-    onschedule_model='flourish_caregiver.onschedulecohortb',
+    onschedule_model='flourish_caregiver.onschedulecohortb1',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
     appointment_model='edc_appointment.appointment'
@@ -53,3 +53,26 @@ schedule_helper.create_quarterly_visits()
 cohort_b_schedule_1.add_visit(visit=visit1000)
 cohort_b_schedule_1.add_visit(visit=visit3000)
 cohort_b_schedule_1.add_visit(visit=visit4000)
+
+cohort_b2_schedule_1 = Schedule(
+    name='cohort_b2_schedule1',
+    verbose_name='Cohort B Schedule2 V1',
+    onschedule_model='flourish_caregiver.onschedulecohortb2',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment')
+
+cohort_b3_schedule_1 = Schedule(
+    name='cohort_b3_schedule1',
+    verbose_name='Cohort B Schedule3 V1',
+    onschedule_model='flourish_caregiver.onschedulecohortb3',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment')
+
+visits = cohort_b_schedule_1.visits
+values = visits.values()
+
+for visit in values:
+    cohort_b2_schedule_1.add_visit(visit=visit)
+    cohort_b3_schedule_1.add_visit(visit=visit)

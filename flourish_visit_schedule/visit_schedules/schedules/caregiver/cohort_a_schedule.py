@@ -7,7 +7,7 @@ from ...crfs import a_crf_1000, crf_2000, crf_3000, crf_4000
 cohort_a_schedule_1 = Schedule(
     name='cohort_a_schedule1',
     verbose_name='Cohort A Schedule V1',
-    onschedule_model='flourish_caregiver.onschedulecohorta',
+    onschedule_model='flourish_caregiver.onschedulecohorta1',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
     appointment_model='edc_appointment.appointment'
@@ -65,3 +65,29 @@ cohort_a_schedule_1.add_visit(visit=visit1000)
 cohort_a_schedule_1.add_visit(visit=visit2000)
 cohort_a_schedule_1.add_visit(visit=visit3000)
 cohort_a_schedule_1.add_visit(visit=visit4000)
+
+""" Extra schedules for mothers with more that one child participation. """
+cohort_a2_schedule_1 = Schedule(
+    name='cohort_a2_schedule1',
+    verbose_name='Cohort A Schedule2 V1',
+    onschedule_model='flourish_caregiver.onschedulecohorta2',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+    )
+
+cohort_a3_schedule_1 = Schedule(
+    name='cohort_a3_schedule1',
+    verbose_name='Cohort A Schedule3 V1',
+    onschedule_model='flourish_caregiver.onschedulecohorta3',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+    )
+
+visits = cohort_a_schedule_1.visits
+values = visits.values()
+
+for visit in values:
+    cohort_a2_schedule_1.add_visit(visit=visit)
+    cohort_a3_schedule_1.add_visit(visit=visit)

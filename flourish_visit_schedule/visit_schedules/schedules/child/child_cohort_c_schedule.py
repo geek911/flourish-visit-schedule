@@ -47,7 +47,7 @@ visit4000 = Visit(
     facility_name='5-day clinic')
 
 schedule_helper = ScheduleHelper(visit=visit3000, crfs=child_bc_crf_3000,
-                                schedule=child_c_schedule_1, visit4000=visit4000)
+                                 schedule=child_c_schedule_1, visit4000=visit4000)
 schedule_helper.create_quarterly_visits()
 child_c_schedule_1.add_visit(visit=visit1000)
 child_c_schedule_1.add_visit(visit=visit3000)
