@@ -2,7 +2,7 @@ from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
 from ..schedule_helper import ScheduleHelper
-from ...crfs import child_bc_crf_1000, child_bc_crf_3000, child_c_crf_4000
+from ...crfs import child_c_crf_1000, child_c_crf_3000, child_c_crf_4000
 
 child_c_schedule_1 = Schedule(
     name='cohort_c_schedule1',
@@ -21,7 +21,7 @@ visit1000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=None,
-    crfs=child_bc_crf_1000,
+    crfs=child_c_crf_1000,
     facility_name='5-day clinic')
 
 visit3000 = Visit(
@@ -32,7 +32,7 @@ visit3000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=None,
-    crfs=child_bc_crf_3000,
+    crfs=child_c_crf_3000,
     facility_name='5-day clinic')
 
 visit4000 = Visit(
@@ -46,7 +46,7 @@ visit4000 = Visit(
     crfs=child_c_crf_4000,
     facility_name='5-day clinic')
 
-schedule_helper = ScheduleHelper(visit=visit3000, crfs=child_bc_crf_3000,
+schedule_helper = ScheduleHelper(visit=visit3000, crfs=child_c_crf_3000,
                                  schedule=child_c_schedule_1, visit4000=visit4000)
 schedule_helper.create_quarterly_visits()
 child_c_schedule_1.add_visit(visit=visit1000)
