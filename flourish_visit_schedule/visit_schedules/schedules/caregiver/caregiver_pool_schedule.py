@@ -32,7 +32,7 @@ caregiver_pool_schedule_1.add_visit(visit=visit3000)
 
 """ Extra schedules for mothers with more that one child participation. """
 cohort_pool2_schedule_1 = Schedule(
-    name='cohort_pool2_schedule1',
+    name='caregiver_pool2_schedule1',
     verbose_name='Pool Schedule2 V1',
     onschedule_model='flourish_caregiver.onschedulepool2',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -41,7 +41,7 @@ cohort_pool2_schedule_1 = Schedule(
     )
 
 cohort_pool3_schedule_1 = Schedule(
-    name='cohort_pool3_schedule1',
+    name='caregiver_pool3_schedule1',
     verbose_name='Pool Schedule3 V1',
     onschedule_model='flourish_caregiver.onschedulepool3',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
