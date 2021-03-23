@@ -10,7 +10,7 @@ cohort_a_visit_schedule_v1 = VisitSchedule(
     verbose_name='Cohort A Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
-    locator_model='flourish_caregiver.caregiverlocator',
+    locator_model='',
     previous_visit_schedule=None)
 
 cohort_a_visit_schedule_v1.add_schedule(cohort_a_schedule_1)
@@ -20,7 +20,7 @@ cohort_b_visit_schedule_v1 = VisitSchedule(
     verbose_name='Cohort B Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
-    locator_model='flourish_caregiver.caregiverlocator',
+    locator_model='',
     previous_visit_schedule=None)
 
 cohort_b_visit_schedule_v1.add_schedule(cohort_b_schedule_1)
@@ -30,7 +30,7 @@ cohort_c_visit_schedule_v1 = VisitSchedule(
     verbose_name='Cohort C Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
-    locator_model='flourish_caregiver.caregiverlocator',
+    locator_model='',
     previous_visit_schedule=None)
 
 cohort_c_visit_schedule_v1.add_schedule(cohort_c_schedule_1)
@@ -40,7 +40,7 @@ caregiver_pool_visit_schedule_v1 = VisitSchedule(
     verbose_name='Caregiver Pool Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
-    locator_model='flourish_caregiver.caregiverlocator',
+    locator_model='',
     previous_visit_schedule=None)
 
 caregiver_pool_visit_schedule_v1.add_schedule(caregiver_pool_schedule_1)
