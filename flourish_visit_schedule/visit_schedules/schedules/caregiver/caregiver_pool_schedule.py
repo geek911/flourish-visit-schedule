@@ -31,7 +31,7 @@ schedule_helper.create_quarterly_visits()
 caregiver_pool_schedule_1.add_visit(visit=visit3000)
 
 """ Extra schedules for mothers with more that one child participation. """
-cohort_pool2_schedule_1 = Schedule(
+caregiver_pool2_schedule_1 = Schedule(
     name='caregiver_pool2_schedule1',
     verbose_name='Pool Schedule2 V1',
     onschedule_model='flourish_caregiver.onschedulepool2',
@@ -40,7 +40,7 @@ cohort_pool2_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-cohort_pool3_schedule_1 = Schedule(
+caregiver_pool3_schedule_1 = Schedule(
     name='caregiver_pool3_schedule1',
     verbose_name='Pool Schedule3 V1',
     onschedule_model='flourish_caregiver.onschedulepool3',
@@ -53,5 +53,5 @@ visits = caregiver_pool_schedule_1.visits
 values = visits.values()
 
 for visit in values:
-    cohort_pool2_schedule_1.add_visit(visit=visit)
-    cohort_pool3_schedule_1.add_visit(visit=visit)
+    caregiver_pool2_schedule_1.add_visit(visit=visit)
+    caregiver_pool3_schedule_1.add_visit(visit=visit)

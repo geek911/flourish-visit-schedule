@@ -21,8 +21,6 @@ a_crf_1000 = FormsCollection(
     Crf(show_order=8, model='flourish_caregiver.foodfrequencyquestionnaire'),
     Crf(show_order=9, model='flourish_caregiver.caregiverphqdeprscreening',
         required=False),
-    Crf(show_order=10, model='flourish_caregiver.caregiverhamddeprscreening',
-        required=False),
     Crf(show_order=11, model='flourish_caregiver.caregiveredinburghdeprscreening',
         required=False),
     Crf(show_order=12, model='flourish_caregiver.caregivergadanxietyscreening'),
@@ -38,7 +36,6 @@ bc_crf_1000 = FormsCollection(
     Crf(show_order=4, model='flourish_caregiver.caregiverclinicalmeasurements'),
 #     Crf(show_order=5, model='flourish_caregiver.foodfrequencyquestionnaire'),
     Crf(show_order=6, model='flourish_caregiver.caregiverphqdeprscreening'),
-    Crf(show_order=7, model='flourish_caregiver.caregiverhamddeprscreening'),
     Crf(show_order=8, model='flourish_caregiver.caregivergadanxietyscreening'),
     name='cohort_bc_enrollment')
 

@@ -1,7 +1,10 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
-from .schedules import cohort_a_schedule_1, cohort_b_schedule_1
-from .schedules import cohort_c_schedule_1, caregiver_pool_schedule_1
+from .schedules import cohort_a_schedule_1, cohort_a2_schedule_1, cohort_a3_schedule_1
+from .schedules import cohort_b_schedule_1, cohort_b2_schedule_1, cohort_b3_schedule_1
+from .schedules import cohort_c_schedule_1, cohort_c2_schedule_1, cohort_c3_schedule_1
+from .schedules import caregiver_pool_schedule_1, caregiver_pool2_schedule_1
+from .schedules import caregiver_pool3_schedule_1
 
 # Cohort A Visit Schedules
 
@@ -14,6 +17,8 @@ cohort_a_visit_schedule_v1 = VisitSchedule(
     previous_visit_schedule=None)
 
 cohort_a_visit_schedule_v1.add_schedule(cohort_a_schedule_1)
+cohort_a_visit_schedule_v1.add_schedule(cohort_a2_schedule_1)
+cohort_a_visit_schedule_v1.add_schedule(cohort_a3_schedule_1)
 
 cohort_b_visit_schedule_v1 = VisitSchedule(
     name='cohort_b_schedule1',
@@ -24,6 +29,8 @@ cohort_b_visit_schedule_v1 = VisitSchedule(
     previous_visit_schedule=None)
 
 cohort_b_visit_schedule_v1.add_schedule(cohort_b_schedule_1)
+cohort_b_visit_schedule_v1.add_schedule(cohort_b2_schedule_1)
+cohort_b_visit_schedule_v1.add_schedule(cohort_b3_schedule_1)
 
 cohort_c_visit_schedule_v1 = VisitSchedule(
     name='cohort_c_schedule1',
@@ -34,6 +41,8 @@ cohort_c_visit_schedule_v1 = VisitSchedule(
     previous_visit_schedule=None)
 
 cohort_c_visit_schedule_v1.add_schedule(cohort_c_schedule_1)
+cohort_c_visit_schedule_v1.add_schedule(cohort_c2_schedule_1)
+cohort_c_visit_schedule_v1.add_schedule(cohort_c3_schedule_1)
 
 caregiver_pool_visit_schedule_v1 = VisitSchedule(
     name='caregiver_pool_schedule1',
@@ -44,6 +53,8 @@ caregiver_pool_visit_schedule_v1 = VisitSchedule(
     previous_visit_schedule=None)
 
 caregiver_pool_visit_schedule_v1.add_schedule(caregiver_pool_schedule_1)
+caregiver_pool_visit_schedule_v1.add_schedule(caregiver_pool2_schedule_1)
+caregiver_pool_visit_schedule_v1.add_schedule(caregiver_pool3_schedule_1)
 
 # Registering Visit Schedules
 site_visit_schedules.register(cohort_a_visit_schedule_v1)
