@@ -9,8 +9,8 @@ from .schedules import caregiver_pool3_schedule_1
 # Cohort A Visit Schedules
 
 cohort_a_visit_schedule_v1 = VisitSchedule(
-    name='cohort_a_schedule1',
-    verbose_name='Cohort A Schedule 1',
+    name='cohort_a_visit_schedule1',
+    verbose_name='Cohort A Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
     locator_model='',
@@ -21,8 +21,8 @@ cohort_a_visit_schedule_v1.add_schedule(cohort_a2_schedule_1)
 cohort_a_visit_schedule_v1.add_schedule(cohort_a3_schedule_1)
 
 cohort_b_visit_schedule_v1 = VisitSchedule(
-    name='cohort_b_schedule1',
-    verbose_name='Cohort B Schedule 1',
+    name='cohort_b_visit_schedule1',
+    verbose_name='Cohort B Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
     locator_model='',
@@ -33,8 +33,8 @@ cohort_b_visit_schedule_v1.add_schedule(cohort_b_schedule_1)
 # cohort_b_visit_schedule_v1.add_schedule(cohort_b3_schedule_1)
 
 cohort_c_visit_schedule_v1 = VisitSchedule(
-    name='cohort_c_schedule1',
-    verbose_name='Cohort C Schedule 1',
+    name='cohort_c_visit_schedule1',
+    verbose_name='Cohort C Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
     locator_model='',
@@ -45,8 +45,8 @@ cohort_c_visit_schedule_v1.add_schedule(cohort_c_schedule_1)
 # cohort_c_visit_schedule_v1.add_schedule(cohort_c3_schedule_1)
 
 caregiver_pool_visit_schedule_v1 = VisitSchedule(
-    name='caregiver_pool_schedule1',
-    verbose_name='Caregiver Pool Schedule 1',
+    name='caregiver_pool_visit_schedule1',
+    verbose_name='Caregiver Pool Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.deathreport',
     locator_model='',

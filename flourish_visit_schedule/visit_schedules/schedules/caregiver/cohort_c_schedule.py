@@ -5,7 +5,7 @@ from ..schedule_helper import ScheduleHelper
 from ...crfs import bc_crf_1000, crf_3000, crf_4000
 
 cohort_c_schedule_1 = Schedule(
-    name='cohort_c_schedule1',
+    name='cohort_c1_schedule1',
     verbose_name='Cohort C Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortc1',
     offschedule_model='flourish_caregiver.caregiveroffschedule',

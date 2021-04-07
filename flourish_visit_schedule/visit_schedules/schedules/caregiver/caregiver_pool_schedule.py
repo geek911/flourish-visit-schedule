@@ -5,7 +5,7 @@ from ..schedule_helper import ScheduleHelper
 from ...crfs import crf_3000
 
 caregiver_pool_schedule_1 = Schedule(
-    name='caregiver_pool_schedule1',
+    name='caregiver_pool1_schedule1',
     verbose_name='Pool Schedule V1',
     onschedule_model='flourish_caregiver.onschedulepool1',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
