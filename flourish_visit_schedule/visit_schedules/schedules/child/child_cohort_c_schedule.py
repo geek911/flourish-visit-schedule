@@ -10,7 +10,7 @@ child_c_schedule_1 = Schedule(
     onschedule_model='flourish_child.onschedulechildcohortc',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
-    appointment_model='edc_appointment.appointment'
+    appointment_model='flourish_child.appointment'
     )
 
 visit1000 = Visit(
