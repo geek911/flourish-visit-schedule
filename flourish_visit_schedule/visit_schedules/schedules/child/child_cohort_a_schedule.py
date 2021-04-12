@@ -2,20 +2,21 @@ from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
 from ..schedule_helper import ScheduleHelper
-from ...crfs import child_a_crf_1000, child_birth_crf_2000, child_a_crf_3000, child_a_crf_4000
+from ...crfs import child_a_crf_1000, child_birth_crf_1010, child_a_crf_2000, child_a_crf_3000
 
-child_a_schedule_1 = Schedule(
-    name='child_a_schedule1',
-    verbose_name='Child Cohort A Schedule V1',
-    onschedule_model='flourish_child.onschedulechildcohorta',
-    offschedule_model='flourish_caregiver.caregiveroffschedule',
+# Enrollment Schedule
+child_a_enrollment_schedule_1 = Schedule(
+    name='child_a_enrollment_schedule1',
+    verbose_name='Cohort A Child Enrollment Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortaenrollment',
+    offschedule_model='flourish_child.caregiveroffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )
 
 visit1000 = Visit(
-    code='1000',
-    title='Child Cohort A Enrollment Visit',
+    code='1000M',
+    title='Cohort A Child Enrollment Visit',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
@@ -24,44 +25,82 @@ visit1000 = Visit(
     crfs=child_a_crf_1000,
     facility_name='5-day clinic')
 
-visit2000 = Visit(
-    code='2000',
-    title='Child Cohort A Birth Visit',
-    timepoint=1,
-    rbase=relativedelta(months=5),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
-    requisitions=None,
-    crfs=child_birth_crf_2000,
-    facility_name='5-day clinic')
-
 visit3000 = Visit(
-    code='3000',
-    title='Child Cohort A Quarterly Visit 1',
-    timepoint=2,
-    rbase=relativedelta(months=3),
+    code='3000M',
+    title='Cohort A Child Follow Up Visit',
+    timepoint=13,
+    rbase=relativedelta(years=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=None,
     crfs=child_a_crf_3000,
     facility_name='5-day clinic')
 
-visit4000 = Visit(
-    code='4000',
-    title='Child Cohort A Follow Up Visit',
-    timepoint=13,
-    rbase=relativedelta(years=3),
+child_a_enrollment_schedule_1.add_visit(visit=visit1000)
+child_a_enrollment_schedule_1.add_visit(visit=visit3000)
+
+# Birth Schedule
+child_a_birth_schedule_1 = Schedule(
+    name='child_a_birth_schedule1',
+    verbose_name='Cohort A Child Birth Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortabirth',
+    offschedule_model='flourish_child.caregiveroffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
+visit1010 = Visit(
+    code='1010M',
+    title='Cohort A Child Birth Visit',
+    timepoint=1,
+    rbase=relativedelta(months=5),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=None,
-    crfs=child_a_crf_4000,
+    crfs=child_birth_crf_1010,
     facility_name='5-day clinic')
+child_a_birth_schedule_1.add_visit(visit=visit1010)
 
-schedule_helper = ScheduleHelper(visit=visit3000, crfs=child_a_crf_3000,
-                                 schedule=child_a_schedule_1, visit4000=visit4000)
+# Quarterly Schedule
+child_a_quarterly_schedule_1 = Schedule(
+    name='child_a_quarterly_schedule1',
+    verbose_name='Cohort A Child Quarterly Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortaquarterly',
+    offschedule_model='flourish_child.caregiveroffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
+visit2000 = Visit(
+    code='2000M',
+    title='Cohort A Child Quarterly Visit 1',
+    timepoint=2,
+    rbase=relativedelta(months=3),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=None,
+    crfs=child_a_crf_2000,
+    facility_name='5-day clinic')
+child_a_quarterly_schedule_1.add_visit(visit=visit2000)
+
+# Generate Quarterly Visits
+schedule_helper = ScheduleHelper(visit=visit2000, crfs=child_a_crf_2000,
+                                 schedule=child_a_quarterly_schedule_1, visit3000=visit3000)
 schedule_helper.create_quarterly_visits()
 
-child_a_schedule_1.add_visit(visit=visit1000)
-child_a_schedule_1.add_visit(visit=visit2000)
-child_a_schedule_1.add_visit(visit=visit3000)
-child_a_schedule_1.add_visit(visit=visit4000)
+# DYAD Schedule
+child_a_dyad_schedule_1 = Schedule(
+    name='child_a_dyad_schedule1',
+    verbose_name='Cohort A Child DYAD Schedule V1',
+    onschedule_model='flourish_child.onschedulechilddyada',
+    offschedule_model='flourish_child.caregiveroffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
+child_a_dyad_schedule_1.add_visit(visit=visit1000)
+visits = child_a_quarterly_schedule_1.visits
+values = visits.values()
+
+for visit in values:
+    child_a_dyad_schedule_1.add_visit(visit=visit)
