@@ -6,10 +6,10 @@ from ...crfs import child_c_crf_1000, child_c_crf_2000, child_c_crf_3000
 
 # Enrollment Schedule
 child_c_enrollment_schedule_1 = Schedule(
-    name='child_c_enrollment_schedule1',
+    name='child_c_enrol_schedule1',
     verbose_name='Cohort C Child Enrollment Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortcenrollment',
-    offschedule_model='flourish_child.caregiveroffschedule',
+    offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )
@@ -44,7 +44,7 @@ child_c_quarterly_schedule_1 = Schedule(
     name='child_c_quarterly_schedule1',
     verbose_name='Cohort C Child Quarterly Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortcquarterly',
-    offschedule_model='flourish_child.caregiveroffschedule',
+    offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )
@@ -71,7 +71,7 @@ child_c_dyad_schedule_1 = Schedule(
     name='child_c_dyad_schedule1',
     verbose_name='Cohort C Child DYAD Schedule V1',
     onschedule_model='flourish_child.onschedulechilddyadc',
-    offschedule_model='flourish_child.caregiveroffschedule',
+    offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )
@@ -83,7 +83,7 @@ child_pool_schedule_1 = Schedule(
     name='child_pool_schedule1',
     verbose_name='Child Pool Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortcpool',
-    offschedule_model='flourish_child.caregiveroffschedule',
+    offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )

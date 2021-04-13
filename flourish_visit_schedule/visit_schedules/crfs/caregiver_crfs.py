@@ -18,7 +18,7 @@ a_crf_1000 = FormsCollection(
     Crf(show_order=6, model='flourish_caregiver.substanceusepriorpregnancy',
         required=False),
     Crf(show_order=7, model='flourish_caregiver.caregiverclinicalmeasurements'),
-    Crf(show_order=8, model='flourish_caregiver.foodfrequencyquestionnaire'),
+    # Crf(show_order=8, model='flourish_caregiver.foodfrequencyquestionnaire'),
     Crf(show_order=9, model='flourish_caregiver.caregiverphqdeprscreening',
         required=False),
     Crf(show_order=10, model='flourish_caregiver.caregiverphqreferral',
