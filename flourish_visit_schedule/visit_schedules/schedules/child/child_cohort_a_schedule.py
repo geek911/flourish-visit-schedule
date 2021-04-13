@@ -63,7 +63,7 @@ child_a_birth_schedule_1.add_visit(visit=visit1010)
 
 # Quarterly Schedule
 child_a_quarterly_schedule_1 = Schedule(
-    name='child_a_quarterly_schedule1',
+    name='child_a_quart_schedule1',
     verbose_name='Cohort A Child Quarterly Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortaquarterly',
     offschedule_model='flourish_child.childoffschedule',

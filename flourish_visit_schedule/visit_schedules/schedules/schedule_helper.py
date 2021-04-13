@@ -22,7 +22,7 @@ class ScheduleHelper:
             rbase = self.visit.rbase + relativedelta(months=(count * 3))
 
             if rbase.years > 3 and rbase.months < 3:
-                self.visit_code = '4000'
+                self.visit_code = '3000'
                 code_count = 1
             # if (self.visit3000 and rbase != self.visit3000.rbase) or not self.visit3000:
             visit_code = str(int(self.visit_code[:4]) + (code_count * 10))

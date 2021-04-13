@@ -41,7 +41,7 @@ child_b_enrollment_schedule_1.add_visit(visit=visit3000)
 
 # Quarterly Schedule
 child_b_quarterly_schedule_1 = Schedule(
-    name='child_b_quarterly_schedule1',
+    name='child_b_quart_schedule1',
     verbose_name='Cohort B Child Quarterly Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortbquarterly',
     offschedule_model='flourish_child.childoffschedule',
