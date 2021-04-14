@@ -15,7 +15,7 @@ child_c_enrollment_schedule_1 = Schedule(
     )
 
 visit1000 = Visit(
-    code='1000M',
+    code='1000',
     title='Cohort C Child Enrollment Visit',
     timepoint=0,
     rbase=relativedelta(days=0),
@@ -26,7 +26,7 @@ visit1000 = Visit(
     facility_name='5-day clinic')
 
 visit3000 = Visit(
-    code='3000M',
+    code='3000',
     title='Cohort C Child Follow Up Visit',
     timepoint=13,
     rbase=relativedelta(years=3),
@@ -50,7 +50,7 @@ child_c_quarterly_schedule_1 = Schedule(
     )
 
 visit2000 = Visit(
-    code='2000M',
+    code='2000',
     title='Cohort C Child Quarterly Visit 1',
     timepoint=2,
     rbase=relativedelta(months=3),
