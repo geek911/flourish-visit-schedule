@@ -1,4 +1,4 @@
-from .dyad_schedules import c_dyad1_schedule_1, c_dyad2_schedule_1, c_dyad3_schedule_1
+from .secondary_aims_schedules import c_sec1_schedule_1, c_sec2_schedule_1, c_sec3_schedule_1
 from .enrollment_schedules import c_enrollment1_schedule_1, c_enrollment2_schedule_1
 from .enrollment_schedules import c_enrollment3_schedule_1
 from .pool_schedules import caregiver_pool1_schedule_1, caregiver_pool2_schedule_1

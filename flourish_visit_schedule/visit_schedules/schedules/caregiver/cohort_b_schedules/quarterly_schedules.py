@@ -6,7 +6,7 @@ from ...schedule_helper import ScheduleHelper
 # Quarterly Schedules
 b_quarterly1_schedule_1 = Schedule(
     name='b_quarterly1_schedule1',
-    verbose_name='Cohort B Quarterly Schedule V1',
+    verbose_name='Cohort B(First Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortbquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
@@ -15,7 +15,7 @@ b_quarterly1_schedule_1 = Schedule(
 
 b_quarterly2_schedule_1 = Schedule(
     name='b_quarterly2_schedule1',
-    verbose_name='Cohort B Quarterly Schedule V1',
+    verbose_name='Cohort B(Second Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortbquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
@@ -24,7 +24,7 @@ b_quarterly2_schedule_1 = Schedule(
 
 b_quarterly3_schedule_1 = Schedule(
     name='b_quarterly3_schedule1',
-    verbose_name='Cohort B Quarterly Schedule V1',
+    verbose_name='Cohort B(Third Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortbquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',

@@ -1,17 +1,17 @@
 from .cohort_a_schedules import a_birth1_schedule_1, a_birth2_schedule_1, a_birth3_schedule_1
-from .cohort_a_schedules import a_dyad1_schedule_1, a_dyad2_schedule_1, a_dyad3_schedule_1
+from .cohort_a_schedules import a_sec1_schedule_1, a_sec2_schedule_1, a_sec3_schedule_1
 from .cohort_a_schedules import a_enrollment1_schedule_1, a_enrollment2_schedule_1
 from .cohort_a_schedules import a_enrollment3_schedule_1
 from .cohort_a_schedules import a_quarterly1_schedule_1, a_quarterly2_schedule_1
 from .cohort_a_schedules import a_quarterly3_schedule_1
 
-from .cohort_b_schedules import b_dyad1_schedule_1, b_dyad2_schedule_1, b_dyad3_schedule_1
+from .cohort_b_schedules import b_sec1_schedule_1, b_sec2_schedule_1, b_sec3_schedule_1
 from .cohort_b_schedules import b_enrollment1_schedule_1, b_enrollment2_schedule_1
 from .cohort_b_schedules import b_enrollment3_schedule_1
 from .cohort_b_schedules import b_quarterly1_schedule_1, b_quarterly2_schedule_1
 from .cohort_b_schedules import b_quarterly3_schedule_1
 
-from .cohort_c_schedules import c_dyad1_schedule_1, c_dyad2_schedule_1, c_dyad3_schedule_1
+from .cohort_c_schedules import c_sec1_schedule_1, c_sec2_schedule_1, c_sec3_schedule_1
 from .cohort_c_schedules import c_enrollment1_schedule_1, c_enrollment2_schedule_1
 from .cohort_c_schedules import c_enrollment3_schedule_1
 from .cohort_c_schedules import caregiver_pool1_schedule_1, caregiver_pool2_schedule_1

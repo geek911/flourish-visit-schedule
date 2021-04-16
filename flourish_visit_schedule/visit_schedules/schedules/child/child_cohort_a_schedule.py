@@ -89,18 +89,18 @@ schedule_helper = ScheduleHelper(visit=visit2000, crfs=child_a_crf_2000,
 schedule_helper.create_quarterly_visits()
 
 # DYAD Schedule
-child_a_dyad_schedule_1 = Schedule(
-    name='child_a_dyad_schedule1',
-    verbose_name='Cohort A Child DYAD Schedule V1',
-    onschedule_model='flourish_child.onschedulechilddyada',
+child_a_sec_schedule_1 = Schedule(
+    name='child_a_sec_schedule1',
+    verbose_name='Cohort A Child Secondary Aims Schedule V1',
+    onschedule_model='flourish_child.onschedulechildseca',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )
 
-child_a_dyad_schedule_1.add_visit(visit=visit1000)
+child_a_sec_schedule_1.add_visit(visit=visit1000)
 visits = child_a_quarterly_schedule_1.visits
 values = visits.values()
 
 for visit in values:
-    child_a_dyad_schedule_1.add_visit(visit=visit)
+    child_a_sec_schedule_1.add_visit(visit=visit)

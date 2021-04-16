@@ -7,7 +7,7 @@ from ..caregiver_visits.cohort_b_visits import visit2000, visit3000
 # Quarterly Schedules
 c_quarterly1_schedule_1 = Schedule(
     name='c_quarterly1_schedule1',
-    verbose_name='Cohort C Quarterly Schedule V1',
+    verbose_name='Cohort C(First Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
@@ -23,7 +23,7 @@ schedule_helper.create_quarterly_visits()
 
 c_quarterly2_schedule_1 = Schedule(
     name='c_quarterly2_schedule1',
-    verbose_name='Cohort C Quarterly Schedule V1',
+    verbose_name='Cohort C(Second Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
@@ -39,7 +39,7 @@ schedule_helper.create_quarterly_visits()
 
 c_quarterly3_schedule_1 = Schedule(
     name='c_quarterly3_schedule1',
-    verbose_name='Cohort C Quarterly Schedule V1',
+    verbose_name='Cohort C(Third Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',

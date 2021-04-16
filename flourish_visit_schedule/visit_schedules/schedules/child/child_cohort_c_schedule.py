@@ -67,16 +67,16 @@ schedule_helper = ScheduleHelper(visit=visit2000, crfs=child_c_crf_2000,
 schedule_helper.create_quarterly_visits()
 
 # DYAD Schedule
-child_c_dyad_schedule_1 = Schedule(
+child_c_sec_schedule_1 = Schedule(
     name='child_c_dyad_schedule1',
-    verbose_name='Cohort C Child DYAD Schedule V1',
-    onschedule_model='flourish_child.onschedulechilddyadc',
+    verbose_name='Cohort C Secondary AimsSchedule V1',
+    onschedule_model='flourish_child.onschedulechildsecc',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
     )
 
-child_c_dyad_schedule_1.add_visit(visit=visit1000)
+child_c_sec_schedule_1.add_visit(visit=visit1000)
 
 # Pool Schedule
 child_pool_schedule_1 = Schedule(
@@ -93,4 +93,4 @@ values = visits.values()
 
 for visit in values:
     child_pool_schedule_1.add_visit(visit=visit)
-    child_c_dyad_schedule_1.add_visit(visit=visit)
+    child_c_sec_schedule_1.add_visit(visit=visit)
