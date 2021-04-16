@@ -23,10 +23,8 @@ child_b_crf_1000 = FormsCollection(
     Crf(show_order=6, model='flourish_child.childphysicalactivity'),
     Crf(show_order=7, model='flourish_child.childtannerstaging',
         required=False),
-    # Crf(show_order=7, model='flourish_child.foodsecurityquestionnaire',
-    # required=False),
-    Crf(show_order=8, model='flourish_child.academicperformance',
-        required=False),
+    Crf(show_order=8, model='flourish_child.foodsecurityquestionnaire'),
+    Crf(show_order=9, model='flourish_child.academicperformance'),
     name='child_cohort_b_enrollment')
 
 child_c_crf_1000 = FormsCollection(
@@ -40,14 +38,10 @@ child_c_crf_1000 = FormsCollection(
         required=False),
     Crf(show_order=8, model='flourish_child.childgadnxietyscreening',
         required=False),
-    Crf(show_order=9, model='flourish_child.academicperformance',
+    Crf(show_order=9, model='flourish_child.childtannerstaging',
         required=False),
-    Crf(show_order=10, model='flourish_child.childtannerstaging',
-        required=False),
-    # Crf(show_order=11, model='flourish_child.foodsecurityquestionnaire',
-    # required=False),
-    # Crf(show_order=12, model='flourish_child.schoolattendance',
-    # required=False),
+    Crf(show_order=10, model='flourish_child.academicperformance'),
+    Crf(show_order=11, model='flourish_child.foodsecurityquestionnaire'),
     # Crf(show_order=13, model='flourish_child.pregnancytesting',
     # required=False),
     # Crf(show_order=14, model='flourish_child.employment',
@@ -90,8 +84,7 @@ child_c_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=2, model='flourish_child.childsociodemographic'),
     Crf(show_order=3, model='flourish_child.childmedicalhistory'),
-    Crf(show_order=4, model='flourish_child.academicperformance',
-        required=False),
+    Crf(show_order=4, model='flourish_child.academicperformance'),
     # Crf(show_order=5, model='flourish_child.schoolattendance'),
     # Crf(show_order=6, model='flourish_child.vitalstatus'),
     # Crf(show_order=7, model='flourish_child.employment'),
@@ -105,14 +98,15 @@ child_a_crf_3000 = FormsCollection(
     Crf(show_order=5, model='flourish_child.childclinicalmeasurements'),
     # Crf(show_order=6, model='flourish_child.vitalstatus'),
     name='child_a_follow_up')
-
+#
 child_b_crf_3000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=2, model='flourish_child.childsociodemographic'),
     Crf(show_order=3, model='flourish_child.childclinicalmeasurements'),
     Crf(show_order=5, model='flourish_child.childmedicalhistory'),
     Crf(show_order=6, model='flourish_child.childphysicalactivity'),
-    Crf(show_order=7, model='flourish_child.academicperformance'),
+    Crf(show_order=7, model='flourish_child.foodsecurityquestionnaire'),
+    Crf(show_order=8, model='flourish_child.academicperformance'),
     # Crf(show_order=6, model='flourish_child.schoolattendance'),
     # Crf(show_order=7, model='flourish_child.vitalstatus'),
     name='child_b_follow_up')
