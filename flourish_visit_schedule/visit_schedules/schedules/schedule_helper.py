@@ -1,4 +1,8 @@
 from dateutil.relativedelta import relativedelta
+from django.apps import apps as django_apps
+from edc_base.utils import get_utcnow
+
+edc_protocol = django_apps.get_app_config('edc_protocol')
 
 
 class ScheduleHelper:
@@ -16,7 +20,11 @@ class ScheduleHelper:
 
         count = 1
         code_count = count
-        while(count <= 18):
+        rbase = self.visit.rbase
+        get_utcnow() - edc_protocol.study_close_datetime
+
+        while(get_utcnow() + (rbase + relativedelta(months=3))
+                <= edc_protocol.study_close_datetime):
 
             timepoint = self.visit.timepoint + count
             rbase = self.visit.rbase + relativedelta(months=(count * 3))
