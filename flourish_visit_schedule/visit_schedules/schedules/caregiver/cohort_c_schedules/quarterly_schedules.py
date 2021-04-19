@@ -2,7 +2,7 @@ from edc_visit_schedule import Schedule
 
 from ...schedule_helper import ScheduleHelper
 from ....crfs import crf_2000
-from ..caregiver_visits.cohort_b_visits import visit2000, visit3000
+from ..caregiver_visits.cohort_c_visits import visit2000, visit3000
 
 # Quarterly Schedules
 c_quarterly1_schedule_1 = Schedule(
