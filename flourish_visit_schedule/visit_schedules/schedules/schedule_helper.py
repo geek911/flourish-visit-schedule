@@ -21,10 +21,9 @@ class ScheduleHelper:
         count = 1
         code_count = count
         rbase = self.visit.rbase
-        get_utcnow() - edc_protocol.study_close_datetime
 
-        while(get_utcnow() + (rbase + relativedelta(months=3))
-                <= edc_protocol.study_close_datetime):
+        while(edc_protocol.study_open_datetime + (self.visit.rbase + relativedelta(
+                months=(count * 3))) <= edc_protocol.study_close_datetime):
 
             timepoint = self.visit.timepoint + count
             rbase = self.visit.rbase + relativedelta(months=(count * 3))
@@ -45,5 +44,6 @@ class ScheduleHelper:
                           'crfs': self.crfs,
                           'facility_name': '5-day clinic'}
             self.schedule.add_visit(**visit_dict)
+
             count += 1
             code_count += 1

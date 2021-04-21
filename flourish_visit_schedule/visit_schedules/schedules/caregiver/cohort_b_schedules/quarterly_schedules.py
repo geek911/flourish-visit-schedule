@@ -31,19 +31,16 @@ b_quarterly3_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-b_quarterly1_schedule_1.add_visit(visit=visit2000)
-b_quarterly2_schedule_1.add_visit(visit=visit2000)
-b_quarterly3_schedule_1.add_visit(visit=visit2000)
-
 # Generate Quarterly Visits
+b_quarterly1_schedule_1.add_visit(visit=visit2000)
+
 schedule_helper1 = ScheduleHelper(visit=visit2000, crfs=crf_2000,
                                   schedule=b_quarterly1_schedule_1, visit3000=visit3000)
 schedule_helper1.create_quarterly_visits()
 
-schedule_helper2 = ScheduleHelper(visit=visit2000, crfs=crf_2000,
-                                  schedule=b_quarterly2_schedule_1, visit3000=visit3000)
-schedule_helper2.create_quarterly_visits()
+visits = b_quarterly1_schedule_1.visits
+values = visits.values()
 
-schedule_helper3 = ScheduleHelper(visit=visit2000, crfs=crf_2000,
-                                  schedule=b_quarterly3_schedule_1, visit3000=visit3000)
-schedule_helper3.create_quarterly_visits()
+for visit in values:
+    b_quarterly2_schedule_1.add_visit(visit=visit)
+    b_quarterly3_schedule_1.add_visit(visit=visit)

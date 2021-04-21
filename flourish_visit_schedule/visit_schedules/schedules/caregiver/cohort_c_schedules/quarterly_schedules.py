@@ -30,13 +30,6 @@ c_quarterly2_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-c_quarterly2_schedule_1.add_visit(visit=visit2000)
-
-# Generate Quarterly Visits
-schedule_helper = ScheduleHelper(visit=visit2000, crfs=crf_2000,
-                                 schedule=c_quarterly2_schedule_1, visit3000=visit3000)
-schedule_helper.create_quarterly_visits()
-
 c_quarterly3_schedule_1 = Schedule(
     name='c_quarterly3_schedule1',
     verbose_name='Cohort C(Third Child(ren)) Quarterly Schedule V1',
@@ -46,9 +39,10 @@ c_quarterly3_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-c_quarterly3_schedule_1.add_visit(visit=visit2000)
-
 # Generate Quarterly Visits
-schedule_helper = ScheduleHelper(visit=visit2000, crfs=crf_2000,
-                                 schedule=c_quarterly3_schedule_1, visit3000=visit3000)
-schedule_helper.create_quarterly_visits()
+visits = c_quarterly1_schedule_1.visits
+values = visits.values()
+
+for visit in values:
+    c_quarterly2_schedule_1.add_visit(visit=visit)
+    c_quarterly3_schedule_1.add_visit(visit=visit)
