@@ -49,6 +49,8 @@ bc_crf_1000 = FormsCollection(
     Crf(show_order=9, model='flourish_caregiver.caregivergadanxietyscreening'),
     Crf(show_order=10, model='flourish_caregiver.caregivergadreferral',
         required=False),
+    Crf(show_order=11, model='flourish_caregiver.hivdisclosurestatus',
+        required=False),
     name='cohort_bc_enrollment')
 
 crf_1010 = FormsCollection(
@@ -58,13 +60,15 @@ crf_1010 = FormsCollection(
     Crf(show_order=3, model='flourish_caregiver.substanceuseduringpregnancy'),
     Crf(show_order=4, model='flourish_caregiver.maternalhivinterimhx'),
     Crf(show_order=5, model='flourish_caregiver.maternaldiagnoses'),
-#     Crf(show_order=3, model='flourish_caregiver.maternalinterimidccdata'),
+#     Crf(show_order=6, model='flourish_caregiver.maternalinterimidccdata'),
     name='birth')
 
 crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
     Crf(show_order=2, model='flourish_caregiver.medicalhistory'),
-#     Crf(show_order=3, model='flourish_caregiver.vitalstatus'),
+    Crf(show_order=3, model='flourish_caregiver.hivdisclosurestatus',
+        required=False),
+#     Crf(show_order=4, model='flourish_caregiver.vitalstatus'),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
@@ -77,5 +81,7 @@ crf_3000 = FormsCollection(
 #         required=False),
     Crf(show_order=6, model='flourish_caregiver.caregiveredinburghdeprscreening',
         required=False),
-#     Crf(show_order=3, model='flourish_caregiver.vitalstatus'),
+    Crf(show_order=7, model='flourish_caregiver.hivdisclosurestatus',
+        required=False),
+#     Crf(show_order=8, model='flourish_caregiver.vitalstatus'),
     name='follow_up')
