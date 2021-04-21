@@ -1,6 +1,6 @@
 from edc_visit_schedule import Schedule
 from ....crfs import crf_2000
-from ..caregiver_visits.cohort_b_visits import visit2000, visit3000
+from ..caregiver_visits.cohort_b_visits import visit2000
 from ...schedule_helper import ScheduleHelper
 
 # Quarterly Schedules
@@ -35,7 +35,7 @@ b_quarterly3_schedule_1 = Schedule(
 b_quarterly1_schedule_1.add_visit(visit=visit2000)
 
 schedule_helper1 = ScheduleHelper(visit=visit2000, crfs=crf_2000,
-                                  schedule=b_quarterly1_schedule_1, visit3000=visit3000)
+                                  schedule=b_quarterly1_schedule_1)
 schedule_helper1.create_quarterly_visits()
 
 visits = b_quarterly1_schedule_1.visits

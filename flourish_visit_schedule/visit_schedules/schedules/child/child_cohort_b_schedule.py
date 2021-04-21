@@ -63,7 +63,7 @@ child_b_quarterly_schedule_1.add_visit(visit=visit2000)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2000, crfs=child_b_crf_2000,
-                                 schedule=child_b_quarterly_schedule_1, visit3000=visit3000)
+                                 schedule=child_b_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # DYAD Schedule
