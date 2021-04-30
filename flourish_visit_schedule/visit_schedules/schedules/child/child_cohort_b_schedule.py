@@ -70,7 +70,7 @@ schedule_helper.create_quarterly_visits()
 child_b_sec_schedule_1 = Schedule(
     name='child_b_sec_schedule1',
     verbose_name='Cohort B Child Secondary Aims Schedule V1',
-    onschedule_model='flourish_child.onschedulechildsecb',
+    onschedule_model='flourish_child.onschedulechildcohortbsec',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
