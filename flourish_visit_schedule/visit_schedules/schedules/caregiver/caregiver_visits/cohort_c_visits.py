@@ -8,7 +8,7 @@ visit1000 = Visit(
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
+    rupper=relativedelta(days=30),
     requisitions=None,
     crfs=bc_crf_1000,
     facility_name='5-day clinic')
@@ -29,8 +29,8 @@ visit2000 = Visit(
     title='Cohort C Quarterly Visit 1',
     timepoint=1,
     rbase=relativedelta(months=3),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
+    rlower=relativedelta(days=45),
+    rupper=relativedelta(days=44),
     requisitions=None,
     crfs=crf_2000,
     facility_name='5-day clinic')

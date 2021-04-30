@@ -30,8 +30,8 @@ class ScheduleHelper:
                           'title': self.visit_title[:-1] + str(count + 1),
                           'timepoint': timepoint,
                           'rbase': rbase,
-                          'rlower': relativedelta(days=0),
-                          'rupper': relativedelta(days=0),
+                          'rlower': relativedelta(days=45),
+                          'rupper': relativedelta(days=44),
                           'crfs': self.crfs,
                           'facility_name': '5-day clinic'}
             self.schedule.add_visit(**visit_dict)
