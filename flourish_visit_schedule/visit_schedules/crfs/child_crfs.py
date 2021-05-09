@@ -3,8 +3,7 @@ from edc_visit_schedule import FormsCollection, Crf
 crfs_prn = None
 
 child_a_crf_1000 = FormsCollection(
-    Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling',
-        required=False),
+    Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
     Crf(show_order=2, model='flourish_child.childbirthscreening',
         required=False),
     Crf(show_order=3, model='flourish_child.birthfeedingvaccine'),
