@@ -81,7 +81,7 @@ schedule_helper = ScheduleHelper(visit=visit2000, crfs=child_c_crf_2000,
                                  schedule=child_c_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
-# DYAD Schedule
+# Secondary Aims Schedule
 child_c_sec_schedule_1 = Schedule(
     name='child_c_sec_schedule1',
     verbose_name='Cohort C Secondary Aims Schedule V1',
