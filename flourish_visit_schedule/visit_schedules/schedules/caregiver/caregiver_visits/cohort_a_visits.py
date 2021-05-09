@@ -1,6 +1,21 @@
 from dateutil.relativedelta import relativedelta
-from edc_visit_schedule import Visit
+from edc_visit_schedule import Visit as BaseVisit
 from ....crfs import a_crf_1000, crf_1010, crf_2000, crf_3000
+
+
+class Visit(BaseVisit):
+
+    def __init__(self, crfs_unscheduled=None, requisitions_unscheduled=None,
+                 crfs_prn=None, requisitions_prn=None,
+                 allow_unscheduled=None, **kwargs):
+        super().__init__(
+            allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
+            crfs_unscheduled=crfs_unscheduled,
+            requisitions_unscheduled=requisitions_unscheduled,
+            crfs_prn=crfs_prn,
+            requisitions_prn=requisitions_prn,
+            **kwargs)
+
 
 visit1000 = Visit(
     code='1000M',
