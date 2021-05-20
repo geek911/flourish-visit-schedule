@@ -64,6 +64,29 @@ visit2000D = Visit(
     facility_name='5-day clinic')
 child_a_birth_schedule_1.add_visit(visit=visit2000D)
 
+# Follow Up Schedule
+child_a_fu_schedule_1 = Schedule(
+    name='child_a_fu_schedule1',
+    verbose_name='Cohort A Child Follow Up Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortafu',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
+visit3000 = Visit(
+    code='3000',
+    title='Cohort A Child Follow Up Visit',
+    timepoint=13,
+    rbase=relativedelta(years=3),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=None,
+    crfs=child_a_crf_3000,
+    facility_name='5-day clinic')
+
+child_a_fu_schedule_1.add_visit(visit=visit3000)
+
 # Quarterly Schedule
 child_a_quarterly_schedule_1 = Schedule(
     name='child_a_quart_schedule1',
@@ -88,31 +111,9 @@ child_a_quarterly_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_a_crf_2001,
-                                 schedule=child_a_quarterly_schedule_1)
+                                 schedule=child_a_quarterly_schedule_1,
+                                 fu_visit=visit3000)
 schedule_helper.create_quarterly_visits()
-
-# Follow Up Schedule
-child_a_fu_schedule_1 = Schedule(
-    name='child_a_fu_schedule1',
-    verbose_name='Cohort A Child Follow Up Schedule V1',
-    onschedule_model='flourish_child.onschedulechildcohortafu',
-    offschedule_model='flourish_child.childoffschedule',
-    consent_model='flourish_child.childdummysubjectconsent',
-    appointment_model='flourish_child.appointment'
-    )
-
-visit3000 = Visit(
-    code='3000',
-    title='Cohort A Child Follow Up Visit',
-    timepoint=13,
-    rbase=relativedelta(years=3),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
-    requisitions=None,
-    crfs=child_a_crf_3000,
-    facility_name='5-day clinic')
-
-child_a_fu_schedule_1.add_visit(visit=visit3000)
 
 # Secondary Aims Schedule
 child_a_sec_schedule_1 = Schedule(
