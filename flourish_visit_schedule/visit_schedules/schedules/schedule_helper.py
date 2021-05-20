@@ -23,7 +23,7 @@ class ScheduleHelper:
 
             timepoint = self.visit.timepoint + count
 
-            visit_code = str(int(self.visit_code[:4]) + (count * 10))
+            visit_code = str(int(self.visit_code) + count)
             if 'M' in self.visit.code:
                 visit_code = visit_code + 'M'
             visit_dict = {'code': visit_code,

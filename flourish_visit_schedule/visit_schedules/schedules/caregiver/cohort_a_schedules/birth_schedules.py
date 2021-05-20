@@ -1,5 +1,5 @@
 from edc_visit_schedule import Schedule
-from ..caregiver_visits.cohort_a_visits import visit1010
+from ..caregiver_visits.cohort_a_visits import visit2000D
 
 # Birth Schedules
 a_birth1_schedule_1 = Schedule(
@@ -11,7 +11,7 @@ a_birth1_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_birth1_schedule_1.add_visit(visit=visit1010)
+a_birth1_schedule_1.add_visit(visit=visit2000D)
 
 a_birth2_schedule_1 = Schedule(
     name='a_birth2_schedule1',
@@ -22,7 +22,7 @@ a_birth2_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_birth2_schedule_1.add_visit(visit=visit1010)
+a_birth2_schedule_1.add_visit(visit=visit2000D)
 
 a_birth3_schedule_1 = Schedule(
     name='a_birth3_schedule1',
@@ -33,4 +33,4 @@ a_birth3_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_birth3_schedule_1.add_visit(visit=visit1010)
+a_birth3_schedule_1.add_visit(visit=visit2000D)

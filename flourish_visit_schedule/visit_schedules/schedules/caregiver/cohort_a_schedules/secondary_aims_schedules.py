@@ -1,5 +1,5 @@
 from edc_visit_schedule import Schedule
-from ..caregiver_visits.cohort_a_visits import visit1000
+from ..caregiver_visits.cohort_a_visits import visit2000
 from .quarterly_schedules import a_quarterly1_schedule_1
 
 # secondary Aims Schedules
@@ -30,9 +30,9 @@ a_sec3_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_sec1_schedule_1.add_visit(visit=visit1000)
-a_sec2_schedule_1.add_visit(visit=visit1000)
-a_sec3_schedule_1.add_visit(visit=visit1000)
+a_sec1_schedule_1.add_visit(visit=visit2000)
+a_sec2_schedule_1.add_visit(visit=visit2000)
+a_sec3_schedule_1.add_visit(visit=visit2000)
 
 visits = a_quarterly1_schedule_1.visits
 values = visits.values()

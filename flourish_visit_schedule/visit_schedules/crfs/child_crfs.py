@@ -2,7 +2,7 @@ from edc_visit_schedule import FormsCollection, Crf
 
 crfs_prn = None
 
-child_a_crf_1000 = FormsCollection(
+child_a_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
     Crf(show_order=2, model='flourish_child.childbirthscreening',
         required=False),
@@ -13,7 +13,7 @@ child_a_crf_1000 = FormsCollection(
     Crf(show_order=7, model='flourish_child.infantfeeding', required=False),
     name='child_cohort_a_enrollment')
 
-child_b_crf_1000 = FormsCollection(
+child_b_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
     Crf(show_order=2, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=3, model='flourish_child.childmedicalhistory'),
@@ -27,7 +27,7 @@ child_b_crf_1000 = FormsCollection(
         required=False),
     name='child_cohort_b_enrollment')
 
-child_c_crf_1000 = FormsCollection(
+child_c_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
     Crf(show_order=2, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=3, model='flourish_child.childmedicalhistory'),
@@ -56,7 +56,7 @@ child_c_crf_1000 = FormsCollection(
     # required=False),
     name='child_cohort_c_enrollment')
 
-child_birth_crf_1010 = FormsCollection(
+child_birth_crf_2000D = FormsCollection(
     Crf(show_order=1, model='flourish_child.birthdata',
         required=False),
     Crf(show_order=2, model='flourish_child.birthexam'),
@@ -68,7 +68,7 @@ child_birth_crf_1010 = FormsCollection(
     Crf(show_order=7, model='flourish_child.childimmunizationhistory'),
     name='birth')
 
-child_a_crf_2000 = FormsCollection(
+child_a_crf_2001 = FormsCollection(
     Crf(show_order=1, model='flourish_child.birthdata', required=False),
     Crf(show_order=2, model='flourish_child.infantfeeding'),
     Crf(show_order=3, model='flourish_child.childimmunizationhistory'),
@@ -76,7 +76,7 @@ child_a_crf_2000 = FormsCollection(
     Crf(show_order=5, model='flourish_child.childprevioushospitalization'),
     name='child_quarterly_calls')
 
-child_b_crf_2000 = FormsCollection(
+child_b_crf_2001 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=2, model='flourish_child.childsociodemographic'),
     Crf(show_order=3, model='flourish_child.childmedicalhistory'),
@@ -84,7 +84,7 @@ child_b_crf_2000 = FormsCollection(
     # Crf(show_order=5, model='flourish_child.schoolattendance'),
     name='child_quarterly_calls')
 
-child_c_crf_2000 = FormsCollection(
+child_c_crf_2001 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=2, model='flourish_child.childsociodemographic'),
     Crf(show_order=3, model='flourish_child.childmedicalhistory'),
