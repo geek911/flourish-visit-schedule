@@ -4,6 +4,7 @@ from .quarterly_schedules import c_quarterly1_schedule_1
 # Pool Schedule
 caregiver_pool1_schedule_1 = Schedule(
     name='pool1_schedule1',
+    sequence='4',
     verbose_name='Caregiver Pool(First Child(ren)) Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcpool',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -13,6 +14,7 @@ caregiver_pool1_schedule_1 = Schedule(
 
 caregiver_pool2_schedule_1 = Schedule(
     name='pool2_schedule1',
+    sequence='4',
     verbose_name='Caregiver Pool(Second Child(ren)) Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcpool',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -22,6 +24,7 @@ caregiver_pool2_schedule_1 = Schedule(
 
 caregiver_pool3_schedule_1 = Schedule(
     name='pool3_schedule1',
+    sequence='4',
     verbose_name='Caregiver Pool(Third Child(ren)) Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcpool',
     offschedule_model='flourish_caregiver.caregiveroffschedule',

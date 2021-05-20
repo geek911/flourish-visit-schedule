@@ -7,6 +7,7 @@ from ..caregiver_visits.cohort_c_visits import visit2001, visit3000
 # Quarterly Schedules
 c_quarterly1_schedule_1 = Schedule(
     name='c_quarterly1_schedule1',
+    sequence='2',
     verbose_name='Cohort C(First Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -24,6 +25,7 @@ schedule_helper.create_quarterly_visits()
 
 c_quarterly2_schedule_1 = Schedule(
     name='c_quarterly2_schedule1',
+    sequence='2',
     verbose_name='Cohort C(Second Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -33,6 +35,7 @@ c_quarterly2_schedule_1 = Schedule(
 
 c_quarterly3_schedule_1 = Schedule(
     name='c_quarterly3_schedule1',
+    sequence='2',
     verbose_name='Cohort C(Third Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortcquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',

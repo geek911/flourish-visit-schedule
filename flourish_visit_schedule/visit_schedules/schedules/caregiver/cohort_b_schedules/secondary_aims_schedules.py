@@ -5,6 +5,7 @@ from ..caregiver_visits.cohort_b_visits import visit2000
 # Secondary Aims Schedules
 b_sec1_schedule_1 = Schedule(
     name='b_sec1_schedule1',
+    sequence='1',
     verbose_name='Cohort B(First Child(ren)) Secondary Aims Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortbsec',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -14,6 +15,7 @@ b_sec1_schedule_1 = Schedule(
 
 b_sec2_schedule_1 = Schedule(
     name='b_sec2_schedule1',
+    sequence='1',
     verbose_name='Cohort B(Second Child(ren)) Secondary Aims Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortbsec',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -23,6 +25,7 @@ b_sec2_schedule_1 = Schedule(
 
 b_sec3_schedule_1 = Schedule(
     name='b_sec3_schedule1',
+    sequence='1',
     verbose_name='Cohort B(Third Child(ren)) Secondary Aims Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortbsec',
     offschedule_model='flourish_caregiver.caregiveroffschedule',

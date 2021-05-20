@@ -7,6 +7,7 @@ from ....crfs import crf_2001
 # Quarterly Schedules
 a_quarterly1_schedule_1 = Schedule(
     name='a_quarterly1_schedule1',
+    sequence='4',
     verbose_name='Cohort A(First Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortaquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -24,6 +25,7 @@ schedule_helper.create_quarterly_visits()
 
 a_quarterly2_schedule_1 = Schedule(
     name='a_quarterly2_schedule1',
+    sequence='4',
     verbose_name='Cohort A(Second Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortaquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -33,6 +35,7 @@ a_quarterly2_schedule_1 = Schedule(
 
 a_quarterly3_schedule_1 = Schedule(
     name='a_quarterly3_schedule1',
+    sequence='4',
     verbose_name='Cohort A(Third Child(ren)) Quarterly Schedule V1',
     onschedule_model='flourish_caregiver.onschedulecohortaquarterly',
     offschedule_model='flourish_caregiver.caregiveroffschedule',

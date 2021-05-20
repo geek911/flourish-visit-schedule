@@ -22,6 +22,7 @@ class Visit(BaseVisit):
 # Enrollment Schedule
 child_a_enrollment_schedule_1 = Schedule(
     name='child_a_enrol_schedule1',
+    sequence='1',
     verbose_name='Cohort A Child Enrollment Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortaenrollment',
     offschedule_model='flourish_child.childoffschedule',
@@ -45,6 +46,7 @@ child_a_enrollment_schedule_1.add_visit(visit=visit2000)
 # Birth Schedule
 child_a_birth_schedule_1 = Schedule(
     name='child_a_birth_schedule1',
+    sequence='2',
     verbose_name='Cohort A Child Birth Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortabirth',
     offschedule_model='flourish_child.childoffschedule',
@@ -67,6 +69,7 @@ child_a_birth_schedule_1.add_visit(visit=visit2000D)
 # Follow Up Schedule
 child_a_fu_schedule_1 = Schedule(
     name='child_a_fu_schedule1',
+    sequence='4',
     verbose_name='Cohort A Child Follow Up Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortafu',
     offschedule_model='flourish_child.childoffschedule',
@@ -90,6 +93,7 @@ child_a_fu_schedule_1.add_visit(visit=visit3000)
 # Quarterly Schedule
 child_a_quarterly_schedule_1 = Schedule(
     name='child_a_quart_schedule1',
+    sequence='3',
     verbose_name='Cohort A Child Quarterly Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortaquarterly',
     offschedule_model='flourish_child.childoffschedule',
@@ -118,6 +122,7 @@ schedule_helper.create_quarterly_visits()
 # Secondary Aims Schedule
 child_a_sec_schedule_1 = Schedule(
     name='child_a_sec_schedule1',
+    sequence='1',
     verbose_name='Cohort A Child Secondary Aims Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortasec',
     offschedule_model='flourish_child.childoffschedule',
