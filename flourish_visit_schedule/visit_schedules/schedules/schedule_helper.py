@@ -27,7 +27,8 @@ class ScheduleHelper:
 
             visit_code = str(int(self.visit_code) + count)
             if (self.fu_visit
-                    and (get_utcnow() + rbase) >= (get_utcnow() + self.fu_visit.rbase)
+                    and (get_utcnow() + rbase)
+                    >= (edc_protocol.study_open_datetime + self.fu_visit.rbase)
                     and visit_code[:1] != '3'):
                 visit_code = '3' + visit_code[1:]
             if 'M' in self.visit.code:

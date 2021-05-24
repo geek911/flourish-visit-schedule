@@ -1,7 +1,7 @@
 
 from edc_visit_schedule import Schedule
 
-from ..caregiver_visits.cohort_a_visits import visit3000
+from ..caregiver_visits.cohort_b_visits import visit3000
 
 # Enrollment Schedules
 b_fu1_schedule_1 = Schedule(

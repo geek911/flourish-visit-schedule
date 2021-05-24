@@ -53,7 +53,6 @@ visit3000 = Visit(
     facility_name='5-day clinic')
 
 child_b_enrollment_schedule_1.add_visit(visit=visit2000)
-child_b_enrollment_schedule_1.add_visit(visit=visit3000)
 
 # Follow Up Schedule
 child_b_fu_schedule_1 = Schedule(
