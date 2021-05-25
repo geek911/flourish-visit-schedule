@@ -6,7 +6,7 @@ crf_pre_consent = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
     name='pre_flourish')
 
-a_crf_1000 = FormsCollection(
+a_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
     Crf(show_order=2, model='flourish_caregiver.medicalhistory'),
     Crf(show_order=3, model='flourish_caregiver.hivviralloadandcd4',
@@ -34,7 +34,7 @@ a_crf_1000 = FormsCollection(
         required=False),
     name='cohort_a_enrollment')
 
-bc_crf_1000 = FormsCollection(
+bc_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
     Crf(show_order=2, model='flourish_caregiver.medicalhistory'),
     Crf(show_order=3, model='flourish_caregiver.hivviralloadandcd4',
@@ -53,7 +53,7 @@ bc_crf_1000 = FormsCollection(
         required=False),
     name='cohort_bc_enrollment')
 
-crf_1010 = FormsCollection(
+crf_2000d = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.maternalarvduringpreg',
         required=False),
     Crf(show_order=2, model='flourish_caregiver.caregiverclinicalmeasurements'),
@@ -63,7 +63,7 @@ crf_1010 = FormsCollection(
 #     Crf(show_order=6, model='flourish_caregiver.maternalinterimidccdata'),
     name='birth')
 
-crf_2000 = FormsCollection(
+crf_2001 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
     Crf(show_order=2, model='flourish_caregiver.medicalhistory'),
     Crf(show_order=3, model='flourish_caregiver.hivdisclosurestatus',
