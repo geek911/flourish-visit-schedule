@@ -41,17 +41,6 @@ visit2000 = Visit(
     crfs=child_b_crf_2000,
     facility_name='5-day clinic')
 
-visit3000 = Visit(
-    code='3000',
-    title='Cohort B Child Follow Up Visit',
-    timepoint=13,
-    rbase=relativedelta(years=3),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
-    requisitions=None,
-    crfs=child_b_crf_3000,
-    facility_name='5-day clinic')
-
 child_b_enrollment_schedule_1.add_visit(visit=visit2000)
 
 # Follow Up Schedule
@@ -104,6 +93,34 @@ child_b_quarterly_schedule_1.add_visit(visit=visit2001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_b_crf_2001,
                                  schedule=child_b_quarterly_schedule_1)
+schedule_helper.create_quarterly_visits()
+
+# Follow Up Quarterly Schedule
+child_b_fu_quarterly_schedule_1 = Schedule(
+    name='child_b_fu_quart_schedule1',
+    sequence='4',
+    verbose_name='Cohort B Child FU Quarterly Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortbfu',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
+visit3001 = Visit(
+    code='3001',
+    title='Cohort B Child FU Quarterly Visit 1',
+    timepoint=4,
+    rbase=relativedelta(months=3),
+    rlower=relativedelta(days=45),
+    rupper=relativedelta(days=44),
+    requisitions=None,
+    crfs=child_b_crf_2001,
+    facility_name='5-day clinic')
+child_b_fu_quarterly_schedule_1.add_visit(visit=visit3001)
+
+# Generate Quarterly Visits
+schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_b_crf_2001,
+                                 schedule=child_b_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule

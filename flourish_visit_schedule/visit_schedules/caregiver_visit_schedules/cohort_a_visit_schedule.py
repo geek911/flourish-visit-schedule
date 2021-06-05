@@ -6,6 +6,8 @@ from ..schedules import a_enrollment2_schedule_1, a_birth2_schedule_1, a_quarter
 from ..schedules import a_sec2_schedule_1, a_antenatal2_schedule_1, a_fu2_schedule_1
 from ..schedules import a_enrollment3_schedule_1, a_birth3_schedule_1, a_quarterly3_schedule_1
 from ..schedules import a_sec3_schedule_1, a_antenatal3_schedule_1, a_fu3_schedule_1
+from ..schedules import a_fu_quarterly1_schedule_1, a_fu_quarterly2_schedule_1
+from ..schedules import a_fu_quarterly3_schedule_1
 
 # Cohort A Visit Schedules
 cohort_a1_visit_schedule_v1 = VisitSchedule(
@@ -22,6 +24,7 @@ cohort_a1_visit_schedule_v1.add_schedule(a_birth1_schedule_1)
 cohort_a1_visit_schedule_v1.add_schedule(a_quarterly1_schedule_1)
 cohort_a1_visit_schedule_v1.add_schedule(a_sec1_schedule_1)
 cohort_a1_visit_schedule_v1.add_schedule(a_fu1_schedule_1)
+cohort_a1_visit_schedule_v1.add_schedule(a_fu_quarterly1_schedule_1)
 
 cohort_a2_visit_schedule_v1 = VisitSchedule(
     name='a2_visit_schedule1',
@@ -37,6 +40,7 @@ cohort_a2_visit_schedule_v1.add_schedule(a_birth2_schedule_1)
 cohort_a2_visit_schedule_v1.add_schedule(a_quarterly2_schedule_1)
 cohort_a2_visit_schedule_v1.add_schedule(a_sec2_schedule_1)
 cohort_a2_visit_schedule_v1.add_schedule(a_fu2_schedule_1)
+cohort_a2_visit_schedule_v1.add_schedule(a_fu_quarterly2_schedule_1)
 
 cohort_a3_visit_schedule_v1 = VisitSchedule(
     name='a3_visit_schedule1',
@@ -52,6 +56,7 @@ cohort_a3_visit_schedule_v1.add_schedule(a_birth3_schedule_1)
 cohort_a3_visit_schedule_v1.add_schedule(a_quarterly3_schedule_1)
 cohort_a3_visit_schedule_v1.add_schedule(a_sec3_schedule_1)
 cohort_a3_visit_schedule_v1.add_schedule(a_fu3_schedule_1)
+cohort_a3_visit_schedule_v1.add_schedule(a_fu_quarterly3_schedule_1)
 
 # Registering Visit Schedules
 site_visit_schedules.register(cohort_a1_visit_schedule_v1)

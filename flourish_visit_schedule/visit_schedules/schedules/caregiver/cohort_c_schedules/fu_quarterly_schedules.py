@@ -3,7 +3,7 @@ from ....crfs import crf_2001
 from ..caregiver_visits.cohort_c_visits import visit3001
 from ...schedule_helper import ScheduleHelper
 
-# Quarterly Schedules
+# Follow Up Quarterly Schedules
 c_fu_quarterly1_schedule_1 = Schedule(
     name='c_fu_quarterly1_schedule1',
     sequence='4',
@@ -34,7 +34,7 @@ c_fu_quarterly3_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-# Generate Quarterly Visits
+# Generate Follow Up Quarterly Visits
 c_fu_quarterly1_schedule_1.add_visit(visit=visit3001)
 
 schedule_helper1 = ScheduleHelper(visit=visit3001, crfs=crf_2001,
