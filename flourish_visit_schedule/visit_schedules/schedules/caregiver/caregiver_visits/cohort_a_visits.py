@@ -43,7 +43,7 @@ visit3000 = Visit(
     code='3000M',
     title='Cohort A Follow Up Visit',
     timepoint=14,
-    rbase=relativedelta(years=3),
+    rbase=relativedelta(years=2, days=1),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=None,
@@ -65,6 +65,17 @@ visit2001 = Visit(
     code='2001M',
     title='Cohort A Quarterly Visit 1',
     timepoint=3,
+    rbase=relativedelta(months=3),
+    rlower=relativedelta(days=45),
+    rupper=relativedelta(days=44),
+    requisitions=None,
+    crfs=crf_2001,
+    facility_name='5-day clinic')
+
+visit3001 = Visit(
+    code='3001M',
+    title='Cohort A Follow Up Quarterly Visit 1',
+    timepoint=4,
     rbase=relativedelta(months=3),
     rlower=relativedelta(days=45),
     rupper=relativedelta(days=44),

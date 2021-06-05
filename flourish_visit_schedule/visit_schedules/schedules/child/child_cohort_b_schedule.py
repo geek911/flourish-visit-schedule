@@ -103,8 +103,7 @@ child_b_quarterly_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_b_crf_2001,
-                                 schedule=child_b_quarterly_schedule_1,
-                                 fu_visit=visit3000)
+                                 schedule=child_b_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule

@@ -14,6 +14,6 @@ class EdcProtocolAppConfig(BaseEdcProtocolAppConfig):
     protocol_number = '142'
     protocol_title = ''
     study_open_datetime = datetime(
-        2020, 9, 16, 0, 0, 0, tzinfo=gettz('UTC'))
+        2020, 7, 1, 0, 0, 0, tzinfo=gettz('UTC'))
     study_close_datetime = datetime(
-        2023, 12, 31, 23, 59, 59, tzinfo=gettz('UTC'))
+        2025, 6, 30, 23, 59, 59, tzinfo=gettz('UTC'))
