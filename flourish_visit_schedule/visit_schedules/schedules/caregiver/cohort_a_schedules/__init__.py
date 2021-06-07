@@ -6,5 +6,7 @@ from .follow_up_schedules import a_fu1_schedule_1, a_fu2_schedule_1
 from .follow_up_schedules import a_fu3_schedule_1
 from .quarterly_schedules import a_quarterly1_schedule_1, a_quarterly2_schedule_1
 from .quarterly_schedules import a_quarterly3_schedule_1
+from .fu_quarterly_schedules import a_fu_quarterly1_schedule_1, a_fu_quarterly2_schedule_1
+from .fu_quarterly_schedules import a_fu_quarterly3_schedule_1
 from .antenatal_enrollment_schedule import a_antenatal1_schedule_1, a_antenatal2_schedule_1
 from .antenatal_enrollment_schedule import a_antenatal3_schedule_1

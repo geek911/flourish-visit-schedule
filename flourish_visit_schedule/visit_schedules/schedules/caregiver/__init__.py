@@ -8,6 +8,8 @@ from .cohort_a_schedules import a_fu1_schedule_1, a_fu2_schedule_1
 from .cohort_a_schedules import a_fu3_schedule_1
 from .cohort_a_schedules import a_quarterly1_schedule_1, a_quarterly2_schedule_1
 from .cohort_a_schedules import a_quarterly3_schedule_1
+from .cohort_a_schedules import a_fu_quarterly1_schedule_1, a_fu_quarterly2_schedule_1
+from .cohort_a_schedules import a_fu_quarterly3_schedule_1
 
 from .cohort_b_schedules import b_sec1_schedule_1, b_sec2_schedule_1, b_sec3_schedule_1
 from .cohort_b_schedules import b_enrollment1_schedule_1, b_enrollment2_schedule_1
@@ -15,7 +17,8 @@ from .cohort_b_schedules import b_enrollment3_schedule_1
 from .cohort_b_schedules import b_fu1_schedule_1, b_fu2_schedule_1
 from .cohort_b_schedules import b_fu3_schedule_1
 from .cohort_b_schedules import b_quarterly1_schedule_1, b_quarterly2_schedule_1
-from .cohort_b_schedules import b_quarterly3_schedule_1
+from .cohort_b_schedules import b_quarterly3_schedule_1, b_fu_quarterly1_schedule_1
+from .cohort_b_schedules import b_fu_quarterly2_schedule_1, b_fu_quarterly3_schedule_1
 
 from .cohort_c_schedules import c_sec1_schedule_1, c_sec2_schedule_1, c_sec3_schedule_1
 from .cohort_c_schedules import c_enrollment1_schedule_1, c_enrollment2_schedule_1
@@ -26,3 +29,5 @@ from .cohort_c_schedules import caregiver_pool1_schedule_1, caregiver_pool2_sche
 from .cohort_c_schedules import caregiver_pool3_schedule_1
 from .cohort_c_schedules import c_quarterly1_schedule_1, c_quarterly2_schedule_1
 from .cohort_c_schedules import c_quarterly3_schedule_1
+from .cohort_c_schedules import c_fu_quarterly1_schedule_1, c_fu_quarterly2_schedule_1
+from .cohort_c_schedules import c_fu_quarterly3_schedule_1

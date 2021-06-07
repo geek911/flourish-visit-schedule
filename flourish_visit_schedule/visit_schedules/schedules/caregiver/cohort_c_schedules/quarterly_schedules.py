@@ -19,8 +19,7 @@ c_quarterly1_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=crf_2001,
-                                 schedule=c_quarterly1_schedule_1,
-                                 fu_visit=visit3000)
+                                 schedule=c_quarterly1_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 c_quarterly2_schedule_1 = Schedule(

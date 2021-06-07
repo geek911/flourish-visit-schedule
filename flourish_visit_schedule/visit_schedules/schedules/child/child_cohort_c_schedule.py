@@ -92,8 +92,35 @@ child_c_quarterly_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_c_crf_2001,
-                                 schedule=child_c_quarterly_schedule_1,
-                                 fu_visit=visit3000)
+                                 schedule=child_c_quarterly_schedule_1)
+schedule_helper.create_quarterly_visits()
+
+# Follow Up Quarterly Schedule
+child_c_fu_quarterly_schedule_1 = Schedule(
+    name='child_c_fu_quart_schedule1',
+    sequence='4',
+    verbose_name='Cohort C Child FU Quarterly Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortcfu',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
+visit3001 = Visit(
+    code='3001',
+    title='Cohort C Child FU Quarterly Visit 1',
+    timepoint=4,
+    rbase=relativedelta(months=3),
+    rlower=relativedelta(days=45),
+    rupper=relativedelta(days=44),
+    requisitions=None,
+    crfs=child_c_crf_2001,
+    facility_name='5-day clinic')
+child_c_fu_quarterly_schedule_1.add_visit(visit=visit3001)
+
+# Generate Quarterly Visits
+schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_c_crf_2001,
+                                 schedule=child_c_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule

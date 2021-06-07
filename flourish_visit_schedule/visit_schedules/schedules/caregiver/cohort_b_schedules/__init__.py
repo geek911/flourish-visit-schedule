@@ -5,3 +5,5 @@ from .follow_up_schedules import b_fu1_schedule_1, b_fu2_schedule_1
 from .follow_up_schedules import b_fu3_schedule_1
 from .quarterly_schedules import b_quarterly1_schedule_1, b_quarterly2_schedule_1
 from .quarterly_schedules import b_quarterly3_schedule_1
+from .fu_quarterly_schedules import b_fu_quarterly1_schedule_1, b_fu_quarterly2_schedule_1
+from .fu_quarterly_schedules import b_fu_quarterly3_schedule_1
