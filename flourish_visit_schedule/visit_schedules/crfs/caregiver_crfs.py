@@ -1,6 +1,9 @@
 from edc_visit_schedule import FormsCollection, Crf
 
-crfs_prn = None
+crfs_prn = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.cliniciannotes',
+        required=False, additional=False),
+    name='caregiver_crf_prn')
 
 crf_pre_consent = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
@@ -32,6 +35,7 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=15, model='flourish_caregiver.ultrasound',
         required=False),
+    Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
@@ -51,6 +55,7 @@ bc_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=11, model='flourish_caregiver.hivdisclosurestatus',
         required=False),
+    Crf(show_order=12, model='flourish_caregiver.cliniciannotes'),
     name='cohort_bc_enrollment')
 
 crf_2000d = FormsCollection(
@@ -60,6 +65,7 @@ crf_2000d = FormsCollection(
     Crf(show_order=3, model='flourish_caregiver.substanceuseduringpregnancy'),
     Crf(show_order=4, model='flourish_caregiver.maternalhivinterimhx'),
     Crf(show_order=5, model='flourish_caregiver.maternaldiagnoses'),
+    Crf(show_order=6, model='flourish_caregiver.cliniciannotes'),
 #     Crf(show_order=6, model='flourish_caregiver.maternalinterimidccdata'),
     name='birth')
 
@@ -83,5 +89,6 @@ crf_3000 = FormsCollection(
         required=False),
     Crf(show_order=7, model='flourish_caregiver.hivdisclosurestatus',
         required=False),
+    Crf(show_order=8, model='flourish_caregiver.cliniciannotes'),
 #     Crf(show_order=8, model='flourish_caregiver.vitalstatus'),
     name='follow_up')
