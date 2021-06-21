@@ -41,7 +41,7 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=18, model='flourish_caregiver.ultrasound',
         required=False),
-    Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=19, model='flourish_caregiver.cliniciannotes'),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
