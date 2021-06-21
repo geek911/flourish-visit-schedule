@@ -3,6 +3,7 @@ from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ..schedule_helper import ScheduleHelper
 from ...crfs import child_c_crf_2000, child_c_crf_2001, child_c_crf_3000
+from ...crfs import child_crfs_prn
 
 
 class Visit(BaseVisit):
@@ -87,12 +88,13 @@ visit2001 = Visit(
     rupper=relativedelta(days=44),
     requisitions=None,
     crfs=child_c_crf_2001,
+    crfs_prn=child_crfs_prn,
     facility_name='5-day clinic')
 child_c_quarterly_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_c_crf_2001,
-                                 schedule=child_c_quarterly_schedule_1)
+                                 crfs_prn=child_crfs_prn, schedule=child_c_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Follow Up Quarterly Schedule
@@ -115,12 +117,13 @@ visit3001 = Visit(
     rupper=relativedelta(days=44),
     requisitions=None,
     crfs=child_c_crf_2001,
+    crfs_prn=child_crfs_prn,
     facility_name='5-day clinic')
 child_c_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_c_crf_2001,
-                                 schedule=child_c_fu_quarterly_schedule_1)
+                                 crfs_prn=child_crfs_prn, schedule=child_c_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule
