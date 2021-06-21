@@ -30,7 +30,13 @@ a_crf_2000 = FormsCollection(
     Crf(show_order=13, model='flourish_caregiver.caregivergadanxietyscreening'),
     Crf(show_order=14, model='flourish_caregiver.caregivergadreferral',
         required=False),
-    Crf(show_order=15, model='flourish_caregiver.ultrasound',
+    Crf(show_order=15, model='flourish_caregiver.tbhistorypreg',
+        required=False),
+    Crf(show_order=16, model='flourish_caregiver.tbscreenpreg',
+        required=False),
+    Crf(show_order=17, model='flourish_caregiver.tbpresencehouseholdmembers',
+        required=False),
+    Crf(show_order=18, model='flourish_caregiver.ultrasound',
         required=False),
     name='cohort_a_enrollment')
 
