@@ -18,17 +18,6 @@ class Visit(BaseVisit):
             **kwargs)
 
 
-visit2000 = Visit(
-    code='2000M',
-    title='Cohort A Enrollment Visit',
-    timepoint=0,
-    rbase=relativedelta(days=0),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
-    requisitions=None,
-    crfs=a_crf_2000,
-    facility_name='5-day clinic')
-
 visit1000 = Visit(
     code='1000M',
     title='Cohort A Antenatal Enrollment Visit',
@@ -38,17 +27,6 @@ visit1000 = Visit(
     rupper=relativedelta(days=0),
     requisitions=None,
     crfs=a_crf_2000,
-    facility_name='5-day clinic')
-
-visit3000 = Visit(
-    code='3000M',
-    title='Cohort A Follow Up Visit',
-    timepoint=14,
-    rbase=relativedelta(years=2, days=1),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
-    requisitions=None,
-    crfs=crf_3000,
     facility_name='5-day clinic')
 
 visit2000D = Visit(
@@ -62,6 +40,17 @@ visit2000D = Visit(
     crfs=crf_2000d,
     facility_name='5-day clinic')
 
+visit2000 = Visit(
+    code='2000M',
+    title='Cohort A Enrollment Visit',
+    timepoint=0,
+    rbase=relativedelta(days=0),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=None,
+    crfs=a_crf_2000,
+    facility_name='5-day clinic')
+
 visit2001 = Visit(
     code='2001M',
     title='Cohort A Quarterly Visit 1',
@@ -72,6 +61,17 @@ visit2001 = Visit(
     requisitions=None,
     crfs=crf_2001,
     crfs_prn=caregiver_crfs_prn,
+    facility_name='5-day clinic')
+
+visit3000 = Visit(
+    code='3000M',
+    title='Cohort A Follow Up Visit',
+    timepoint=14,
+    rbase=relativedelta(days=0),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=None,
+    crfs=crf_3000,
     facility_name='5-day clinic')
 
 visit3001 = Visit(
