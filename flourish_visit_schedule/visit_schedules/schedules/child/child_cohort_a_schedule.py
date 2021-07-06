@@ -82,9 +82,9 @@ visit3000 = Visit(
     code='3000',
     title='Cohort A Child Follow Up Visit',
     timepoint=13,
-    rbase=relativedelta(years=3),
+    rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
+    rupper=relativedelta(days=30),
     requisitions=None,
     crfs=child_a_crf_3000,
     facility_name='5-day clinic')
