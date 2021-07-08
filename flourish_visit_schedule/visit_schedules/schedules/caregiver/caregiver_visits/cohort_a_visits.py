@@ -22,9 +22,9 @@ visit1000 = Visit(
     code='1000M',
     title='Cohort A Antenatal Enrollment Visit',
     timepoint=1,
-    rbase=relativedelta(days=1),
+    rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
+    rupper=relativedelta(weeks=7),
     requisitions=None,
     crfs=a_crf_2000,
     facility_name='5-day clinic')
