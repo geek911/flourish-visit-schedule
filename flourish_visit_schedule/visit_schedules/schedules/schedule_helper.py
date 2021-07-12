@@ -41,4 +41,4 @@ class ScheduleHelper:
 
             count += 1
 
-            rbase = self.visit.rbase + relativedelta(months=(count * 3))
+            rbase = self.visit.rbase + relativedelta(days=(count * 90))
