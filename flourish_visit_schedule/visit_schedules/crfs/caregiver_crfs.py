@@ -40,9 +40,7 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=17, model='flourish_caregiver.tbhistorypreg',
         required=False),
-    Crf(show_order=18, model='flourish_caregiver.tbscreenpreg',
-        required=False),
-    Crf(show_order=19, model='flourish_caregiver.tbpresencehouseholdmembers',
+    Crf(show_order=18, model='flourish_caregiver.tbroutinehealthscreen',
         required=False),
     Crf(show_order=20, model='flourish_caregiver.ultrasound',
         required=False),
@@ -92,6 +90,7 @@ crf_2000d = FormsCollection(
         required=False),
     Crf(show_order=6, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=7, model='flourish_caregiver.maternalinterimidcc'),
+    Crf(show_order=18, model='flourish_caregiver.tbroutinehealthscreen'),
     name='birth')
 
 crf_2001 = FormsCollection(
