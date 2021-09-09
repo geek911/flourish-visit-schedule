@@ -73,8 +73,6 @@ bc_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=14, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
-    Crf(show_order=15, model='flourish_caregiver.hivdisclosurestatusd',
-        required=False),
     Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
     name='cohort_bc_enrollment')
 
@@ -104,8 +102,6 @@ crf_2001 = FormsCollection(
         required=False),
     Crf(show_order=6, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
-    Crf(show_order=7, model='flourish_caregiver.hivdisclosurestatusd',
-        required=False),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
@@ -123,8 +119,6 @@ crf_3000 = FormsCollection(
     Crf(show_order=8, model='flourish_caregiver.hivdisclosurestatusb',
         required=False),
     Crf(show_order=9, model='flourish_caregiver.hivdisclosurestatusc',
-        required=False),
-    Crf(show_order=10, model='flourish_caregiver.hivdisclosurestatusd',
         required=False),
     Crf(show_order=11, model='flourish_caregiver.cliniciannotes'),
     name='follow_up')
