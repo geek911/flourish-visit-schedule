@@ -9,13 +9,14 @@ child_a_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
     Crf(show_order=2, model='flourish_child.childbirthscreening',
         required=False),
-    Crf(show_order=3, model='flourish_child.birthfeedingvaccine'),
-    Crf(show_order=4, model='flourish_child.childimmunizationhistory'),
+    Crf(show_order=3, model='flourish_child.childimmunizationhistory'),
+    Crf(show_order=4, model='flourish_child.childmedicalhistory'),
     Crf(show_order=5, model='flourish_child.childsociodemographic'),
     Crf(show_order=6, model='flourish_child.childclinicalmeasurements'),
     Crf(show_order=7, model='flourish_child.infantfeeding', required=False),
-    Crf(show_order=8, model='flourish_child.childcliniciannotes'),
-    Crf(show_order=9, model='flourish_child.childcovid19'),
+    Crf(show_order=8, model='flourish_child.childfoodsecurityquestionnaire'),
+    Crf(show_order=9, model='flourish_child.childcliniciannotes'),
+    Crf(show_order=10, model='flourish_child.childcovid19'),
     name='child_cohort_a_enrollment')
 
 child_b_crf_2000 = FormsCollection(
