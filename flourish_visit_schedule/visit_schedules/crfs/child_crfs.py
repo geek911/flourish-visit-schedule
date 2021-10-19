@@ -84,7 +84,7 @@ child_birth_crf_2000D = FormsCollection(
 
 child_a_crf_2001 = FormsCollection(
     Crf(show_order=1, model='flourish_child.birthdata', required=False),
-    Crf(show_order=2, model='flourish_child.infantfeeding'),
+    Crf(show_order=2, model='flourish_child.infantfeeding', required=False),
     Crf(show_order=3, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=4, model='flourish_child.childsociodemographic'),
     Crf(show_order=5, model='flourish_child.childprevioushospitalization'),
