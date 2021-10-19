@@ -39,10 +39,10 @@ c_sec3_schedule_1 = Schedule(
 
 c_sec3_schedule_1.add_visit(visit=visit2000)
 
-visits = c_quarterly1_schedule_1.visits
-values = visits.values()
-
-for visit in values:
-    c_sec1_schedule_1.add_visit(visit=visit)
-    c_sec2_schedule_1.add_visit(visit=visit)
-    c_sec3_schedule_1.add_visit(visit=visit)
+# visits = c_quarterly1_schedule_1.visits
+# values = visits.values()
+#
+# for visit in values:
+    # c_sec1_schedule_1.add_visit(visit=visit)
+    # c_sec2_schedule_1.add_visit(visit=visit)
+    # c_sec3_schedule_1.add_visit(visit=visit)

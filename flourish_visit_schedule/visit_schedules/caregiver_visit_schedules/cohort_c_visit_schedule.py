@@ -1,14 +1,15 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
 from ..schedules import c_enrollment1_schedule_1, c_quarterly1_schedule_1
-from ..schedules import c_sec1_schedule_1, caregiver_pool1_schedule_1
 from ..schedules import c_enrollment2_schedule_1, c_quarterly2_schedule_1
-from ..schedules import c_sec2_schedule_1, caregiver_pool2_schedule_1
 from ..schedules import c_enrollment3_schedule_1, c_quarterly3_schedule_1
-from ..schedules import c_sec3_schedule_1, caregiver_pool3_schedule_1
 from ..schedules import c_fu1_schedule_1, c_fu2_schedule_1, c_fu3_schedule_1
 from ..schedules import c_fu_quarterly1_schedule_1, c_fu_quarterly2_schedule_1
-from ..schedules import c_fu_quarterly3_schedule_1
+from ..schedules import c_fu_quarterly3_schedule_1, c_sec_quart1_schedule_1
+from ..schedules import c_sec1_schedule_1, caregiver_pool1_schedule_1
+from ..schedules import c_sec2_schedule_1, caregiver_pool2_schedule_1
+from ..schedules import c_sec3_schedule_1, caregiver_pool3_schedule_1
+from ..schedules import c_sec_quart2_schedule_1, c_sec_quart3_schedule_1
 
 # Cohort C Visit Schedules
 cohort_c1_visit_schedule_v1 = VisitSchedule(
@@ -22,6 +23,7 @@ cohort_c1_visit_schedule_v1 = VisitSchedule(
 cohort_c1_visit_schedule_v1.add_schedule(c_enrollment1_schedule_1)
 cohort_c1_visit_schedule_v1.add_schedule(c_quarterly1_schedule_1)
 cohort_c1_visit_schedule_v1.add_schedule(c_sec1_schedule_1)
+cohort_c1_visit_schedule_v1.add_schedule(c_sec_quart1_schedule_1)
 cohort_c1_visit_schedule_v1.add_schedule(caregiver_pool1_schedule_1)
 cohort_c1_visit_schedule_v1.add_schedule(c_fu1_schedule_1)
 cohort_c1_visit_schedule_v1.add_schedule(c_fu_quarterly1_schedule_1)
@@ -37,6 +39,7 @@ cohort_c2_visit_schedule_v1 = VisitSchedule(
 cohort_c2_visit_schedule_v1.add_schedule(c_enrollment2_schedule_1)
 cohort_c2_visit_schedule_v1.add_schedule(c_quarterly2_schedule_1)
 cohort_c2_visit_schedule_v1.add_schedule(c_sec2_schedule_1)
+cohort_c2_visit_schedule_v1.add_schedule(c_sec_quart2_schedule_1)
 cohort_c2_visit_schedule_v1.add_schedule(caregiver_pool2_schedule_1)
 cohort_c2_visit_schedule_v1.add_schedule(c_fu2_schedule_1)
 cohort_c2_visit_schedule_v1.add_schedule(c_fu_quarterly2_schedule_1)
@@ -52,6 +55,7 @@ cohort_c3_visit_schedule_v1 = VisitSchedule(
 cohort_c3_visit_schedule_v1.add_schedule(c_enrollment3_schedule_1)
 cohort_c3_visit_schedule_v1.add_schedule(c_quarterly3_schedule_1)
 cohort_c3_visit_schedule_v1.add_schedule(c_sec3_schedule_1)
+cohort_c3_visit_schedule_v1.add_schedule(c_sec_quart3_schedule_1)
 cohort_c3_visit_schedule_v1.add_schedule(caregiver_pool3_schedule_1)
 cohort_c3_visit_schedule_v1.add_schedule(c_fu3_schedule_1)
 cohort_c3_visit_schedule_v1.add_schedule(c_fu_quarterly3_schedule_1)
