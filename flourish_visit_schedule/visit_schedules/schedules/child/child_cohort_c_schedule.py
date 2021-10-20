@@ -150,8 +150,8 @@ child_pool_schedule_1 = Schedule(
     )
 
 # Secondary Aims Quarterly Schedule
-child_c_sec_quart_schedule_1 = Schedule(
-    name='child_c_sec_quart_schedule1',
+child_c_sec_qt_schedule_1 = Schedule(
+    name='child_c_sec_qt_schedule1',
     sequence='2',
     verbose_name='Cohort C Secondary Aims Quarterly Schedule V1',
     onschedule_model='flourish_child.onschedulechildcohortcsecquart',
@@ -165,4 +165,4 @@ values = visits.values()
 
 for visit in values:
     # child_pool_schedule_1.add_visit(visit=visit)
-    child_c_sec_quart_schedule_1.add_visit(visit=visit)
+    child_c_sec_qt_schedule_1.add_visit(visit=visit)
