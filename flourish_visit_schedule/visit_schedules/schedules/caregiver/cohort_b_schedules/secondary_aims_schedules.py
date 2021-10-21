@@ -1,6 +1,7 @@
 from edc_visit_schedule import Schedule
-from .quarterly_schedules import b_quarterly1_schedule_1
+
 from ..caregiver_visits.cohort_b_visits import visit2000
+from .quarterly_schedules import b_quarterly1_schedule_1
 
 # Secondary Aims Schedules
 b_sec1_schedule_1 = Schedule(
@@ -37,10 +38,10 @@ b_sec1_schedule_1.add_visit(visit=visit2000)
 b_sec2_schedule_1.add_visit(visit=visit2000)
 b_sec3_schedule_1.add_visit(visit=visit2000)
 
-visits = b_quarterly1_schedule_1.visits
-values = visits.values()
-
-for visit in values:
-    b_sec1_schedule_1.add_visit(visit=visit)
-    b_sec2_schedule_1.add_visit(visit=visit)
-    b_sec3_schedule_1.add_visit(visit=visit)
+# visits = b_quarterly1_schedule_1.visits
+# values = visits.values()
+#
+# for visit in values:
+    # b_sec1_schedule_1.add_visit(visit=visit)
+    # b_sec2_schedule_1.add_visit(visit=visit)
+    # b_sec3_schedule_1.add_visit(visit=visit)
