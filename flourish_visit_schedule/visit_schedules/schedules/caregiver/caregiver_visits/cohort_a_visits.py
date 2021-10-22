@@ -1,7 +1,7 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Visit as BaseVisit
 from ....crfs import a_crf_2000, crf_2000d, crf_2001, crf_3000
-from ....crfs import caregiver_crfs_prn, preg_requisitions
+from ....crfs import caregiver_crfs_prn, preg_requisitions, requisitions_prn
 
 
 class Visit(BaseVisit):
@@ -26,6 +26,7 @@ visit1000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(weeks=7),
     requisitions=preg_requisitions,
+    requisitions_prn=requisitions_prn,
     crfs=a_crf_2000,
     facility_name='5-day clinic')
 
@@ -37,6 +38,7 @@ visit2000D = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=3),
     requisitions=preg_requisitions,
+    requisitions_prn=requisitions_prn,
     crfs=crf_2000d,
     facility_name='5-day clinic')
 
@@ -48,6 +50,7 @@ visit2000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(months=3),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=a_crf_2000,
     facility_name='5-day clinic')
 
@@ -59,6 +62,7 @@ visit2001 = Visit(
     rlower=relativedelta(days=45),
     rupper=relativedelta(days=44),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=crf_2001,
     crfs_prn=caregiver_crfs_prn,
     facility_name='5-day clinic')
@@ -71,6 +75,7 @@ visit3000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=30),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=crf_3000,
     facility_name='5-day clinic')
 
@@ -82,6 +87,7 @@ visit3001 = Visit(
     rlower=relativedelta(days=45),
     rupper=relativedelta(days=44),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=crf_2001,
     crfs_prn=caregiver_crfs_prn,
     facility_name='5-day clinic')

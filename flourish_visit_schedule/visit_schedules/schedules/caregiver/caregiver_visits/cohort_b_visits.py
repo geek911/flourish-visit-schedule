@@ -1,8 +1,7 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Visit as BaseVisit
-from flourish_visit_schedule.visit_schedules.crfs import bc_crf_2000, crf_2001, crf_3000
 
-from ....crfs import caregiver_crfs_prn
+from ....crfs import caregiver_crfs_prn, requisitions_prn, bc_crf_2000, crf_2001, crf_3000
 
 
 class Visit(BaseVisit):
@@ -27,6 +26,7 @@ visit2000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(months=3),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=bc_crf_2000,
     facility_name='5-day clinic')
 
@@ -38,6 +38,7 @@ visit2001 = Visit(
     rlower=relativedelta(days=45),
     rupper=relativedelta(days=44),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=crf_2001,
     crfs_prn=caregiver_crfs_prn,
     facility_name='5-day clinic')
@@ -50,6 +51,7 @@ visit3000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=30),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=crf_3000,
     facility_name='5-day clinic')
 
@@ -61,6 +63,7 @@ visit3001 = Visit(
     rlower=relativedelta(days=45),
     rupper=relativedelta(days=44),
     requisitions=None,
+    requisitions_prn=requisitions_prn,
     crfs=crf_2001,
     crfs_prn=caregiver_crfs_prn,
     facility_name='5-day clinic')
