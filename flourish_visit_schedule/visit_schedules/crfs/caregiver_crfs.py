@@ -45,7 +45,7 @@ a_crf_2000 = FormsCollection(
     Crf(show_order=20, model='flourish_caregiver.ultrasound',
         required=False),
     Crf(show_order=21, model='flourish_caregiver.cliniciannotes'),
-    # Crf(show_order=22, model='flourish_caregiver.covid19'),
+    Crf(show_order=22, model='flourish_caregiver.covid19'),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
@@ -75,7 +75,7 @@ bc_crf_2000 = FormsCollection(
     Crf(show_order=14, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
     Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
-    # Crf(show_order=17, model='flourish_caregiver.covid19'),
+    Crf(show_order=17, model='flourish_caregiver.covid19'),
     name='cohort_bc_enrollment')
 
 crf_2000d = FormsCollection(
@@ -91,7 +91,7 @@ crf_2000d = FormsCollection(
     Crf(show_order=6, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=7, model='flourish_caregiver.maternalinterimidcc'),
     Crf(show_order=18, model='flourish_caregiver.tbroutinehealthscreen'),
-    # Crf(show_order=19, model='flourish_caregiver.covid19'),
+    Crf(show_order=19, model='flourish_caregiver.covid19'),
     name='birth')
 
 crf_2001 = FormsCollection(
@@ -105,7 +105,7 @@ crf_2001 = FormsCollection(
         required=False),
     Crf(show_order=6, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
-    # Crf(show_order=7, model='flourish_caregiver.covid19'),
+    Crf(show_order=7, model='flourish_caregiver.covid19'),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
@@ -125,5 +125,5 @@ crf_3000 = FormsCollection(
     Crf(show_order=9, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
     Crf(show_order=11, model='flourish_caregiver.cliniciannotes'),
-    # Crf(show_order=12, model='flourish_caregiver.covid19'),
+    Crf(show_order=12, model='flourish_caregiver.covid19'),
     name='follow_up')
