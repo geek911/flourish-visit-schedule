@@ -87,8 +87,9 @@ child_a_crf_2001 = FormsCollection(
     Crf(show_order=2, model='flourish_child.infantfeeding', required=False),
     Crf(show_order=3, model='flourish_child.childimmunizationhistory'),
     Crf(show_order=4, model='flourish_child.childsociodemographic'),
-    Crf(show_order=5, model='flourish_child.childprevioushospitalization'),
-    Crf(show_order=6, model='flourish_child.childcovid19'),
+    Crf(show_order=5, model='flourish_child.childmedicalhistory'),
+    Crf(show_order=6, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=7, model='flourish_child.childcovid19'),
     name='child_quarterly_calls')
 
 child_b_crf_2001 = FormsCollection(
@@ -114,13 +115,16 @@ child_c_crf_2001 = FormsCollection(
     name='child_quarterly_calls')
 
 child_a_crf_3000 = FormsCollection(
-    Crf(show_order=1, model='flourish_child.infantfeeding'),
-    Crf(show_order=2, model='flourish_child.childimmunizationhistory'),
-    Crf(show_order=3, model='flourish_child.childsociodemographic'),
-    Crf(show_order=4, model='flourish_child.childprevioushospitalization'),
-    Crf(show_order=5, model='flourish_child.childclinicalmeasurements'),
-    Crf(show_order=6, model='flourish_child.childcliniciannotes'),
-    Crf(show_order=7, model='flourish_child.childcovid19'),
+    Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
+    Crf(show_order=2, model='flourish_child.infantfeeding'),
+    Crf(show_order=3, model='flourish_child.childimmunizationhistory'),
+    Crf(show_order=4, model='flourish_child.childmedicalhistory'),
+    Crf(show_order=5, model='flourish_child.childsociodemographic'),
+    Crf(show_order=6, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=7, model='flourish_child.childclinicalmeasurements'),
+    Crf(show_order=8, model='flourish_child.childfoodsecurityquestionnaire'),
+    Crf(show_order=9, model='flourish_child.childcliniciannotes'),
+    Crf(show_order=10, model='flourish_child.childcovid19'),
     name='child_a_follow_up')
 #
 child_b_crf_3000 = FormsCollection(
