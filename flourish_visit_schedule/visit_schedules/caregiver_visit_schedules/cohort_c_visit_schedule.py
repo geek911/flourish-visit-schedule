@@ -15,7 +15,7 @@ cohort_c1_visit_schedule_v1 = VisitSchedule(
     name='c1_visit_schedule1',
     verbose_name='Cohort C Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
-    death_report_model='flourish_prn.deathreport',
+    death_report_model='flourish_prn.caregiverdeathreport',
     locator_model='',
     previous_visit_schedule=None)
 
@@ -30,7 +30,7 @@ cohort_c2_visit_schedule_v1 = VisitSchedule(
     name='c2_visit_schedule1',
     verbose_name='Cohort C2 Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
-    death_report_model='flourish_prn.deathreport',
+    death_report_model='flourish_prn.caregiverdeathreport',
     locator_model='',
     previous_visit_schedule=None)
 
@@ -45,7 +45,7 @@ cohort_c3_visit_schedule_v1 = VisitSchedule(
     name='c3_visit_schedule1',
     verbose_name='Cohort C3 Visit Schedule 1',
     offstudy_model='flourish_prn.caregiveroffstudy',
-    death_report_model='flourish_prn.deathreport',
+    death_report_model='flourish_prn.caregiverdeathreport',
     locator_model='',
     previous_visit_schedule=None)
 

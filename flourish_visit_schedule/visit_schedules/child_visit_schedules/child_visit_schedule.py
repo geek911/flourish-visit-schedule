@@ -15,7 +15,7 @@ child_a_visit_schedule_v1 = VisitSchedule(
     name='child_a_visit_schedule_v1',
     verbose_name='Child Cohort A Visit Schedule 1',
     offstudy_model='flourish_prn.childoffstudy',
-    death_report_model='flourish_prn.deathreport',
+    death_report_model='flourish_prn.childdeathreport',
     locator_model='',
     previous_visit_schedule=None)
 
@@ -30,7 +30,7 @@ child_b_visit_schedule_v1 = VisitSchedule(
     name='child_b_visit_schedule_v1',
     verbose_name='Child Cohort B Visit Schedule 1',
     offstudy_model='flourish_prn.childoffstudy',
-    death_report_model='flourish_prn.deathreport',
+    death_report_model='flourish_prn.childdeathreport',
     locator_model='',
     previous_visit_schedule=None)
 
@@ -44,7 +44,7 @@ child_c_visit_schedule_v1 = VisitSchedule(
     name='child_c_visit_schedule_v1',
     verbose_name='Child Cohort C Visit Schedule 1',
     offstudy_model='flourish_prn.childoffstudy',
-    death_report_model='flourish_prn.deathreport',
+    death_report_model='flourish_prn.childdeathreport',
     locator_model='',
     previous_visit_schedule=None)
 
