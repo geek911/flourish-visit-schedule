@@ -1,9 +1,9 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
-from ..schedule_helper import ScheduleHelper
 from ...crfs import child_c_crf_2000, child_c_crf_2001, child_c_crf_3000
 from ...crfs import child_crfs_prn
+from ..schedule_helper import ScheduleHelper
 
 
 class Visit(BaseVisit):
@@ -149,9 +149,20 @@ child_pool_schedule_1 = Schedule(
     appointment_model='flourish_child.appointment'
     )
 
+# Secondary Aims Quarterly Schedule
+child_c_sec_qt_schedule_1 = Schedule(
+    name='child_c_sec_qt_schedule1',
+    sequence='2',
+    verbose_name='Cohort C Secondary Aims Quarterly Schedule V1',
+    onschedule_model='flourish_child.onschedulechildcohortcsecquart',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+    )
+
 visits = child_c_quarterly_schedule_1.visits
 values = visits.values()
 
 for visit in values:
-    child_pool_schedule_1.add_visit(visit=visit)
-    child_c_sec_schedule_1.add_visit(visit=visit)
+    # child_pool_schedule_1.add_visit(visit=visit)
+    child_c_sec_qt_schedule_1.add_visit(visit=visit)
