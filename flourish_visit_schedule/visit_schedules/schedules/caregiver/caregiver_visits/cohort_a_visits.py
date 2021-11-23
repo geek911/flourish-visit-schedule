@@ -34,7 +34,7 @@ visit2000D = Visit(
     code='2000D',
     title='Cohort A Birth Visit',
     timepoint=2,
-    rbase=relativedelta(months=5),
+    rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=3),
     requisitions=preg_requisitions,
