@@ -1,8 +1,8 @@
 from edc_visit_schedule import Schedule
 
-from ...schedule_helper import ScheduleHelper
-from ..caregiver_visits.cohort_a_visits import visit2001, visit3000
 from ....crfs import crf_2001, caregiver_crfs_prn
+from ...schedule_helper import ScheduleHelper
+from ..caregiver_visits.cohort_a_visits import visit2001
 
 # Quarterly Schedules
 a_quarterly1_schedule_1 = Schedule(
