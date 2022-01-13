@@ -17,7 +17,8 @@ child_a_crf_2000 = FormsCollection(
     Crf(show_order=8, model='flourish_child.childfoodsecurityquestionnaire'),
     Crf(show_order=9, model='flourish_child.childcliniciannotes'),
     Crf(show_order=10, model='flourish_child.childcovid19'),
-    Crf(show_order=11, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=11, model='flourish_child.childhospitalization'),
+    Crf(show_order=12, model='flourish_child.childprevioushospitalization'),
     name='child_cohort_a_enrollment')
 
 child_b_crf_2000 = FormsCollection(
@@ -35,6 +36,8 @@ child_b_crf_2000 = FormsCollection(
     Crf(show_order=10, model='flourish_child.childcliniciannotes'),
     Crf(show_order=11, model='flourish_child.childcovid19'),
     Crf(show_order=12, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=13, model='flourish_child.childhospitalization'),
+
     name='child_cohort_b_enrollment')
 
 child_c_crf_2000 = FormsCollection(
@@ -66,6 +69,8 @@ child_c_crf_2000 = FormsCollection(
     # required=False),
     
     Crf(show_order=17, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=18, model='flourish_child.childhospitalization'),
+
     name='child_cohort_c_enrollment')
 
 child_birth_crf_2000D = FormsCollection(
@@ -91,7 +96,8 @@ child_a_crf_2001 = FormsCollection(
     Crf(show_order=5, model='flourish_child.childmedicalhistory'),
     Crf(show_order=6, model='flourish_child.childprevioushospitalization'),
     Crf(show_order=7, model='flourish_child.childcovid19'),
-    Crf(show_order=8, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=8, model='flourish_child.childhospitalization'),
+    Crf(show_order=9, model='flourish_child.childprevioushospitalization'),
     name='child_quarterly_calls')
 
 child_b_crf_2001 = FormsCollection(
@@ -101,6 +107,7 @@ child_b_crf_2001 = FormsCollection(
     Crf(show_order=4, model='flourish_child.academicperformance'),
     Crf(show_order=5, model='flourish_child.childcovid19'),
     Crf(show_order=6, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=7, model='flourish_child.childhospitalization'),
     name='child_quarterly_calls')
 
 child_c_crf_2001 = FormsCollection(
@@ -113,6 +120,7 @@ child_c_crf_2001 = FormsCollection(
         required=False),
     Crf(show_order=8, model='flourish_child.childcovid19'),
     Crf(show_order=9, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=10, model='flourish_child.childhospitalization'),
     name='child_quarterly_calls')
 
 child_a_crf_3000 = FormsCollection(
@@ -126,6 +134,7 @@ child_a_crf_3000 = FormsCollection(
     Crf(show_order=8, model='flourish_child.childfoodsecurityquestionnaire'),
     Crf(show_order=9, model='flourish_child.childcliniciannotes'),
     Crf(show_order=10, model='flourish_child.childcovid19'),
+    Crf(show_order=11, model='flourish_child.childhospitalization'),
     name='child_a_follow_up')
 #
 child_b_crf_3000 = FormsCollection(
@@ -139,6 +148,8 @@ child_b_crf_3000 = FormsCollection(
     Crf(show_order=9, model='flourish_child.childcliniciannotes'),
     Crf(show_order=10, model='flourish_child.childcovid19'),
     Crf(show_order=11, model='flourish_child.childprevioushospitalization'),
+    Crf(show_order=12, model='flourish_child.childhospitalization'),
+
     name='child_b_follow_up')
 
 child_c_crf_3000 = FormsCollection(
