@@ -5,6 +5,10 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     name='child_crf_prn')
 
+crfs_unscheduled = FormsCollection(
+    Crf(show_order=1, model='flourish_child.childcliniciannotes'),
+    name='unscheduled')
+
 child_a_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_child.childhivrapidtestcounseling'),
     Crf(show_order=2, model='flourish_child.childbirthscreening',

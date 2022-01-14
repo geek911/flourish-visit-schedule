@@ -9,6 +9,10 @@ crf_pre_consent = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
     name='pre_flourish')
 
+crfs_unscheduled = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.cliniciannotes'),
+    name='unscheduled')
+
 a_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.hivrapidtestcounseling',
         required=False),
