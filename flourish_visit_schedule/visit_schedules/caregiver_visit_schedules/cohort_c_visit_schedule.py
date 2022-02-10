@@ -14,7 +14,7 @@ from ..schedules import c_sec_quart2_schedule_1, c_sec_quart3_schedule_1
 # Cohort C Visit Schedules
 cohort_c1_visit_schedule_v1 = VisitSchedule(
     name='c1_visit_schedule1',
-    verbose_name='Cohort C Visit Schedule 1',
+    verbose_name='Cohort C Visit Schedule',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.caregiverdeathreport',
     locator_model='',
@@ -30,7 +30,7 @@ cohort_c1_visit_schedule_v1.add_schedule(c_fu_quarterly1_schedule_1)
 
 cohort_c2_visit_schedule_v1 = VisitSchedule(
     name='c2_visit_schedule1',
-    verbose_name='Cohort C2 Visit Schedule 1',
+    verbose_name='Cohort C2 Visit Schedule',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.caregiverdeathreport',
     locator_model='',
@@ -46,7 +46,7 @@ cohort_c2_visit_schedule_v1.add_schedule(c_fu_quarterly2_schedule_1)
 
 cohort_c3_visit_schedule_v1 = VisitSchedule(
     name='c3_visit_schedule1',
-    verbose_name='Cohort C3 Visit Schedule 1',
+    verbose_name='Cohort C3 Visit Schedule',
     offstudy_model='flourish_prn.caregiveroffstudy',
     death_report_model='flourish_prn.caregiverdeathreport',
     locator_model='',
