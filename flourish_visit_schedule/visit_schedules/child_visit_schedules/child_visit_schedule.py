@@ -14,7 +14,7 @@ from ..schedules import child_pool_schedule_1, child_a_fu_schedule_1, child_b_fu
 # Cohort Visit Schedules
 child_a_visit_schedule_v1 = VisitSchedule(
     name='child_a_visit_schedule_v1',
-    verbose_name='Child Cohort A Visit Schedule 1',
+    verbose_name='Child Cohort A Visit Schedule',
     offstudy_model='flourish_prn.childoffstudy',
     death_report_model='flourish_prn.childdeathreport',
     locator_model='',
@@ -30,7 +30,7 @@ child_a_visit_schedule_v1.add_schedule(child_a_fu_quarterly_schedule_1)
 
 child_b_visit_schedule_v1 = VisitSchedule(
     name='child_b_visit_schedule_v1',
-    verbose_name='Child Cohort B Visit Schedule 1',
+    verbose_name='Child Cohort B Visit Schedule',
     offstudy_model='flourish_prn.childoffstudy',
     death_report_model='flourish_prn.childdeathreport',
     locator_model='',
@@ -45,7 +45,7 @@ child_b_visit_schedule_v1.add_schedule(child_b_fu_quarterly_schedule_1)
 
 child_c_visit_schedule_v1 = VisitSchedule(
     name='child_c_visit_schedule_v1',
-    verbose_name='Child Cohort C Visit Schedule 1',
+    verbose_name='Child Cohort C Visit Schedule',
     offstudy_model='flourish_prn.childoffstudy',
     death_report_model='flourish_prn.childdeathreport',
     locator_model='',
