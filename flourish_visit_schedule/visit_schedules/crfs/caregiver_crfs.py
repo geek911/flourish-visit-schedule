@@ -52,8 +52,8 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=20, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=21, model='flourish_caregiver.covid19'),
-    # MaternalDiagnoses
-    Crf(show_order=22, model='flourish_caregiver.maternaldiagnoses'),
+    Crf(show_order=22, model='flourish_caregiver.maternaldiagnoses',
+        required=False),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
