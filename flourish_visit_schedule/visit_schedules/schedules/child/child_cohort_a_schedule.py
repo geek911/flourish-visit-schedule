@@ -4,6 +4,7 @@ from edc_visit_schedule import Schedule, Visit as BaseVisit
 from ...crfs import child_a_crf_2000, child_birth_crf_2000D, child_a_crf_2001, child_a_crf_3000
 from ...crfs import child_crfs_prn, child_crfs_unscheduled
 from ..schedule_helper import ScheduleHelper
+from ...crfs import child_requisitions
 
 
 class Visit(BaseVisit):
@@ -64,6 +65,7 @@ visit2000D = Visit(
     rupper=relativedelta(days=3),
     requisitions=None,
     crfs=child_birth_crf_2000D,
+    requisitions_prn=child_requisitions,
     facility_name='5-day clinic')
 child_a_birth_schedule_1.add_visit(visit=visit2000D)
 
