@@ -52,8 +52,6 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=20, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=21, model='flourish_caregiver.covid19'),
-    Crf(show_order=22, model='flourish_caregiver.maternaldiagnoses',
-        required=False),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
@@ -92,14 +90,12 @@ crf_2000d = FormsCollection(
     Crf(show_order=3, model='flourish_caregiver.caregiverclinicalmeasurements',
         required=False),
     Crf(show_order=4, model='flourish_caregiver.substanceuseduringpregnancy'),
-    Crf(show_order=5, model='flourish_caregiver.maternaldiagnoses',
+    Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=6, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=6, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=7, model='flourish_caregiver.maternalinterimidcc',
-        required=False),
-    Crf(show_order=18, model='flourish_caregiver.tbroutinehealthscreen'),
-    Crf(show_order=19, model='flourish_caregiver.covid19'),
-    Crf(show_order=20, model='flourish_caregiver.maternaldiagnoses'),
+    Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreen'),
+    Crf(show_order=8, model='flourish_caregiver.covid19'),
+    Crf(show_order=9, model='flourish_caregiver.medicalhistory'),
     name='birth')
 
 crf_2001 = FormsCollection(
@@ -116,7 +112,6 @@ crf_2001 = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.covid19'),
     Crf(show_order=8, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=9, model='flourish_caregiver.maternaldiagnoses'),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
@@ -139,5 +134,4 @@ crf_3000 = FormsCollection(
     Crf(show_order=12, model='flourish_caregiver.covid19'),
     Crf(show_order=13, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=14, model='flourish_caregiver.maternaldiagnoses'),
     name='follow_up')
