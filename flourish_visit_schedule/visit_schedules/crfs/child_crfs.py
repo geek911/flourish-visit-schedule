@@ -92,9 +92,10 @@ child_a_crf_2001 = FormsCollection(
     Crf(show_order=12, model='flourish_child.infantdevscreening12months'),
     Crf(show_order=13, model='flourish_child.infantdevscreening18months'),
     Crf(show_order=14, model='flourish_child.infantdevscreening36months'),
-    Crf(show_order=15, model='flourish_child.infantdevscreening60to72months'),
-    Crf(show_order=16, model='flourish_child.infantdevscreening6months'),
-    Crf(show_order=17, model='flourish_child.infantdevscreening3months'),
+    Crf(show_order=15, model='flourish_child.infantdevscreening60months'),
+    Crf(show_order=16, model='flourish_child.infantdevscreening72months'),
+    Crf(show_order=17, model='flourish_child.infantdevscreening6months'),
+    Crf(show_order=18, model='flourish_child.infantdevscreening3months'),
     name='child_quarterly_calls')
 
 child_b_crf_2001 = FormsCollection(
