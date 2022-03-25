@@ -28,6 +28,7 @@ class ScheduleHelper:
 
             if 'M' in self.visit.code:
                 visit_code = visit_code + 'M'
+
             visit_dict = {'code': visit_code,
                           'title': self.visit_title[:-1] + str(count + 1),
                           'timepoint': timepoint,
@@ -36,6 +37,7 @@ class ScheduleHelper:
                           'rupper': relativedelta(days=44),
                           'crfs': self.crfs,
                           'crfs_prn': self.crfs_prn,
+                          'allow_unscheduled': True,
                           'facility_name': '5-day clinic'}
             self.schedule.add_visit(**visit_dict)
 
