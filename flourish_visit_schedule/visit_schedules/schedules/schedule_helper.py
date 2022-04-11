@@ -7,7 +7,6 @@ edc_protocol = django_apps.get_app_config('edc_protocol')
 class ScheduleHelper:
 
     def __init__(self, visit, crfs, crfs_prn, schedule, crfs_unscheduled=None, *args, **kwargs):
-        # super().__init__(*args, **kwargs)
         self.visit_title = visit.title
         self.visit_code = visit.code[:4]
         self.visit = visit
