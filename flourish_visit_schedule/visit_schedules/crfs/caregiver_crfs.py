@@ -1,5 +1,6 @@
 from edc_visit_schedule import FormsCollection, Crf
 
+
 crfs_prn = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.cliniciannotes',
         required=False, additional=False),
@@ -135,3 +136,9 @@ crf_3000 = FormsCollection(
     Crf(show_order=13, model='flourish_caregiver.maternalinterimidcc',
         required=False),
     name='follow_up')
+
+tb_2_months = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.tbpresencehouseholdmembers'),
+    Crf(show_order=2, model='flourish_caregiver.tbroutinehealthscreen'),
+    name='tb_2_months'
+    )
