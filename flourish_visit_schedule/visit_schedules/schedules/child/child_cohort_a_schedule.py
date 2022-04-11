@@ -30,7 +30,7 @@ child_a_enrollment_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 visit2000 = Visit(
     code='2000',
@@ -54,7 +54,7 @@ child_a_birth_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 visit2000D = Visit(
     code='2000D',
@@ -78,7 +78,7 @@ child_a_fu_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 visit3000 = Visit(
     code='3000',
@@ -102,7 +102,7 @@ child_a_quarterly_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 visit2001 = Visit(
     code='2001',
@@ -113,12 +113,14 @@ visit2001 = Visit(
     rupper=relativedelta(days=44),
     requisitions=None,
     crfs=child_a_crf_2001,
+    crfs_unscheduled=child_crfs_unscheduled,
     crfs_prn=child_crfs_prn,
     facility_name='5-day clinic')
 child_a_quarterly_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_a_crf_2001,
+                                 crfs_unscheduled=child_crfs_unscheduled,
                                  crfs_prn=child_crfs_prn, schedule=child_a_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
@@ -131,7 +133,7 @@ child_a_fu_quarterly_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 visit3001 = Visit(
     code='3001',
@@ -148,6 +150,7 @@ child_a_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_a_crf_2001,
+                                 crfs_unscheduled=child_crfs_unscheduled,
                                  crfs_prn=child_crfs_prn, schedule=child_a_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
@@ -160,7 +163,7 @@ child_a_sec_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 child_a_sec_schedule_1.add_visit(visit=visit2000)
 
@@ -173,7 +176,7 @@ child_a_sec_qt_schedule_1 = Schedule(
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
-    )
+)
 
 visits = child_a_quarterly_schedule_1.visits
 values = visits.values()
