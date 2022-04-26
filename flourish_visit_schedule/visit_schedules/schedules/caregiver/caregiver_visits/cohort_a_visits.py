@@ -96,10 +96,10 @@ visit3001 = Visit(
 visit2100 = Visit(
     code='2100',
     title='TB 2 Months Visit',
-    timepoint=1,
+    timepoint=5,
     rbase=relativedelta(days=0),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(weeks=7),
+    rlower=relativedelta(days=31),
+    rupper=relativedelta(days=31),
     requisitions=None,
     requisitions_prn=None,
     crfs=tb_2_months,
