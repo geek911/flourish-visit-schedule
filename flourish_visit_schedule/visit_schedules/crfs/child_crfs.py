@@ -72,13 +72,12 @@ child_birth_crf_2000D = FormsCollection(
     Crf(show_order=1, model='flourish_child.birthdata',
         required=False),
     Crf(show_order=2, model='flourish_child.birthexam'),
-    Crf(show_order=3, model='flourish_child.infantfeeding'),
-    Crf(show_order=4, model='flourish_child.birthfeedingvaccine'),
-    Crf(show_order=5, model='flourish_child.infantcongenitalanomalies'),
-    Crf(show_order=6, model='flourish_child.infantarvexposure',
+    Crf(show_order=3, model='flourish_child.birthfeedingvaccine'),
+    Crf(show_order=4, model='flourish_child.infantcongenitalanomalies'),
+    Crf(show_order=5, model='flourish_child.infantarvexposure',
         required=False),
-    Crf(show_order=7, model='flourish_child.childcliniciannotes'),
-    Crf(show_order=8, model='flourish_child.childcovid19'),
+    Crf(show_order=6, model='flourish_child.childcliniciannotes'),
+    Crf(show_order=7, model='flourish_child.childcovid19'),
     name='birth')
 
 child_a_crf_2001 = FormsCollection(
