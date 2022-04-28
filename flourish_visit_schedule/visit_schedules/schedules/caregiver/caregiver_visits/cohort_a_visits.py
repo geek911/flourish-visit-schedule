@@ -94,12 +94,12 @@ visit3001 = Visit(
     facility_name='5-day clinic')
 
 visit2100 = Visit(
-    code='2100',
+    code='2100T',
     title='TB 2 Months Visit',
     timepoint=5,
-    rbase=relativedelta(days=0),
-    rlower=relativedelta(days=31),
-    rupper=relativedelta(days=31),
+    rbase=relativedelta(months=2),
+    rlower=relativedelta(days=30),
+    rupper=relativedelta(days=30),
     requisitions=None,
     requisitions_prn=None,
     crfs=tb_2_months,
