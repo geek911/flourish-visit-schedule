@@ -138,7 +138,7 @@ crf_3000 = FormsCollection(
 
 tb_2_months = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.covid19'),
-    Crf(show_order=2, model='flourish_caregiver.tbscreenpreg'),
+    Crf(show_order=2, model='flourish_caregiver.tbvisitscreeningwomen'),
     Crf(show_order=3, model='flourish_caregiver.tbroutinehealthscreen'),
     Crf(show_order=4, model='flourish_caregiver.tbpresencehouseholdmembers'),
     Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
