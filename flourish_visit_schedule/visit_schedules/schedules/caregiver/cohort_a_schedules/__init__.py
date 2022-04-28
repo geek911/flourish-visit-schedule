@@ -14,4 +14,3 @@ from .sec_aims_quart_schedules import a_sec_quart1_schedule_1, a_sec_quart2_sche
 from .sec_aims_quart_schedules import a_sec_quart3_schedule_1
 from .secondary_aims_schedules import a_sec1_schedule_1, a_sec2_schedule_1, \
     a_sec3_schedule_1
-# from .tb_schedule import tb_2_months_schedule
