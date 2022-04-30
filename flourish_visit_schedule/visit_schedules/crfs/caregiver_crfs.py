@@ -142,5 +142,6 @@ tb_2_months = FormsCollection(
     Crf(show_order=3, model='flourish_caregiver.tbroutinehealthscreen'),
     Crf(show_order=4, model='flourish_caregiver.tbpresencehouseholdmembers'),
     Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=6, model='flourish_caregiver.tboffstudy'),
     name='tb_2_months'
     )
