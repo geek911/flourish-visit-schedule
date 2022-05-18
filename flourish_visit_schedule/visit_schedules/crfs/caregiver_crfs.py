@@ -141,11 +141,10 @@ crf_3000 = FormsCollection(
     name='follow_up')
 
 tb_2_months = FormsCollection(
-    Crf(show_order=1, model='flourish_caregiver.covid19'),
-    Crf(show_order=2, model='flourish_caregiver.tbvisitscreeningwomen'),
-    Crf(show_order=3, model='flourish_caregiver.tbroutinehealthscreen'),
-    Crf(show_order=4, model='flourish_caregiver.tbpresencehouseholdmembers'),
-    Crf(show_order=5, model='flourish_caregiver.caregiverclinicalmeasurements'),
-    Crf(show_order=6, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=7, model='flourish_caregiver.tboffstudy', required=False),
+    Crf(show_order=1, model='flourish_caregiver.tbvisitscreeningwomen'),
+    Crf(show_order=2, model='flourish_caregiver.tbroutinehealthscreen'),
+    Crf(show_order=3, model='flourish_caregiver.tbpresencehouseholdmembers'),
+    Crf(show_order=4, model='flourish_caregiver.caregiverclinicalmeasurements'),
+    Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=6, model='flourish_caregiver.tboffstudy', required=False),
     name='tb_2_months')
