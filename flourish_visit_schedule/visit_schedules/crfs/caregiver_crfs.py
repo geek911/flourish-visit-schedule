@@ -3,6 +3,8 @@ from edc_visit_schedule import FormsCollection, Crf
 crfs_prn = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.cliniciannotes',
         required=False, additional=False),
+    Crf(show_order=2, model='flourish_caregiver.caregiversocialworkreferral',
+        required=False, additional=False),
     name='caregiver_crf_prn')
 
 crf_pre_consent = FormsCollection(

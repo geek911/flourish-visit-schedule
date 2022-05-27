@@ -29,6 +29,7 @@ visit2000 = Visit(
     requisitions=None,
     requisitions_prn=requisitions_prn,
     crfs=bc_crf_2000,
+    crfs_prn=caregiver_crfs_prn,
     facility_name='5-day clinic')
 
 visit2001 = Visit(
@@ -54,6 +55,7 @@ visit3000 = Visit(
     requisitions=None,
     requisitions_prn=requisitions_prn,
     crfs=crf_3000,
+    crfs_prn=caregiver_crfs_prn,
     facility_name='5-day clinic')
 
 visit3001 = Visit(
