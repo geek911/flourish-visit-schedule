@@ -21,7 +21,7 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=4, model='flourish_caregiver.ultrasound',
         required=False),
-    Crf(show_order=5, model='flourish_caregiver.screentotbstudy', required=False),
+    Crf(show_order=5, model='flourish_caregiver.tbstudyscreening', required=False),
     Crf(show_order=6, model='flourish_caregiver.maternalhivinterimhx',
         required=False),
     Crf(show_order=7, model='flourish_caregiver.hivviralloadandcd4',
