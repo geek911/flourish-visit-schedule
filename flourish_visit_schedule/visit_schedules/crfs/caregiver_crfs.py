@@ -21,7 +21,7 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=4, model='flourish_caregiver.ultrasound',
         required=False),
-    Crf(show_order=5, model='flourish_caregiver.tbstudyscreening', required=False),
+    Crf(show_order=5, model='flourish_caregiver.screentotbstudy', required=False),
     Crf(show_order=6, model='flourish_caregiver.maternalhivinterimhx',
         required=False),
     Crf(show_order=7, model='flourish_caregiver.hivviralloadandcd4',
@@ -81,7 +81,6 @@ bc_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=14, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=15, model='flourish_caregiver.covid19'),
-    Crf(show_order=16, model='flourish_caregiver.tbstudyscreening', required=False),
     name='cohort_bc_enrollment')
 
 crf_2000d = FormsCollection(
@@ -98,7 +97,6 @@ crf_2000d = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreen'),
     Crf(show_order=8, model='flourish_caregiver.covid19'),
     Crf(show_order=9, model='flourish_caregiver.medicalhistory'),
-    Crf(show_order=10, model='flourish_caregiver.tbstudyscreening', required=False),
     name='birth')
 
 crf_2001 = FormsCollection(
@@ -115,7 +113,6 @@ crf_2001 = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.covid19'),
     Crf(show_order=8, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=9, model='flourish_caregiver.tbstudyscreening', required=False),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
