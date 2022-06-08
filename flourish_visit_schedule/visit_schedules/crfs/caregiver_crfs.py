@@ -119,6 +119,8 @@ crf_2001 = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.covid19'),
     Crf(show_order=8, model='flourish_caregiver.maternalinterimidcc',
         required=False),
+    Crf(show_order=9, model='flourish_caregiver.breastfeedingquestionnaire',
+        required=False),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
