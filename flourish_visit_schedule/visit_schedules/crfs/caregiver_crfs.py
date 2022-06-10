@@ -97,6 +97,7 @@ crf_2000d = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreen'),
     Crf(show_order=8, model='flourish_caregiver.covid19'),
     Crf(show_order=9, model='flourish_caregiver.medicalhistory'),
+    Crf(show_order=10, model='flourish_caregiver.tbstudyeligibility', required=False),
     name='birth')
 
 crf_2001 = FormsCollection(
@@ -113,6 +114,7 @@ crf_2001 = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.covid19'),
     Crf(show_order=8, model='flourish_caregiver.maternalinterimidcc',
         required=False),
+    Crf(show_order=9, model='flourish_caregiver.tbstudyeligibility', required=False),
     name='quarterly_calls')
 
 crf_3000 = FormsCollection(
@@ -143,5 +145,5 @@ tb_2_months = FormsCollection(
     Crf(show_order=3, model='flourish_caregiver.tbpresencehouseholdmembers'),
     Crf(show_order=4, model='flourish_caregiver.caregiverclinicalmeasurements'),
     Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=6, model='flourish_caregiver.tboffstudy', required=False),
+    Crf(show_order=6, model='flourish_caregiver.tbreferral', required=False),
     name='tb_2_months')
