@@ -11,6 +11,7 @@ from .cohort_a_schedules import a_quarterly3_schedule_1, a_sec2_schedule_1
 from .cohort_a_schedules import a_sec3_schedule_1, a_enrollment1_schedule_1
 from .cohort_a_schedules import a_sec_quart1_schedule_1, a_sec_quart2_schedule_1
 from .cohort_a_schedules import a_sec_quart3_schedule_1
+from .cohort_a_schedules import tb_2_months_schedule
 from .cohort_b_schedules import b_enrollment1_schedule_1, b_enrollment2_schedule_1
 from .cohort_b_schedules import b_enrollment3_schedule_1
 from .cohort_b_schedules import b_fu1_schedule_1, b_fu2_schedule_1
