@@ -93,7 +93,7 @@ bc_crf_2000 = FormsCollection(
 crf_2000d = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.hivrapidtestcounseling',
         required=False),
-    Crf(show_order=2, model='flourish_caregiver.maternalarvduringpreg',
+    Crf(show_order=2, model='flourish_caregiver.maternalarvatdelivery',
         required=False),
     Crf(show_order=3, model='flourish_caregiver.caregiverclinicalmeasurements',
         required=False),
