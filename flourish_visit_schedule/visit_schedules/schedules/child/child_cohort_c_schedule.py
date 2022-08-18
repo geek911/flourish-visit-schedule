@@ -1,8 +1,10 @@
-from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
+
+from dateutil.relativedelta import relativedelta
 
 from ...crfs import child_c_crf_2000, child_c_crf_2001, child_c_crf_3000
 from ...crfs import child_crfs_prn, child_crfs_unscheduled
+from ...crfs import child_requisitions
 from ..schedule_helper import ScheduleHelper
 
 
@@ -16,7 +18,7 @@ class Visit(BaseVisit):
             crfs_unscheduled=crfs_unscheduled or child_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
             crfs_prn=crfs_prn,
-            requisitions_prn=requisitions_prn,
+            requisitions_prn=child_requisitions,
             **kwargs)
 
 
@@ -96,8 +98,10 @@ child_c_quarterly_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_c_crf_2001,
-                                 unschedule_crfs=child_crfs_unscheduled,
-                                 crfs_prn=child_crfs_prn, schedule=child_c_quarterly_schedule_1)
+                                 crfs_unscheduled=child_crfs_unscheduled,
+                                 requisitions_prn=child_requisitions,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_c_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Follow Up Quarterly Schedule
@@ -126,7 +130,10 @@ child_c_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_c_crf_2001,
-                                 crfs_prn=child_crfs_prn, schedule=child_c_fu_quarterly_schedule_1)
+                                 crfs_unscheduled=child_crfs_unscheduled,
+                                 requisitions_prn=child_requisitions,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_c_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule

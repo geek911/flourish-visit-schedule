@@ -6,7 +6,9 @@ edc_protocol = django_apps.get_app_config('edc_protocol')
 
 class ScheduleHelper:
 
-    def __init__(self, visit, crfs, crfs_prn, schedule, crfs_unscheduled=None, *args, **kwargs):
+    def __init__(self, visit, crfs, crfs_prn, schedule, crfs_unscheduled=None,
+                 requisitions_prn=None, requisitions_unscheduled=None,
+                 *args, **kwargs):
         self.visit_title = visit.title
         self.visit_code = visit.code[:4]
         self.visit = visit
@@ -14,6 +16,8 @@ class ScheduleHelper:
         self.crfs_prn = crfs_prn
         self.schedule = schedule
         self.crfs_unscheduled = crfs_unscheduled
+        self.requisitions_prn = requisitions_prn
+        self.requisitions_unscheduled = requisitions_unscheduled
 
     def create_quarterly_visits(self):
 
@@ -38,6 +42,7 @@ class ScheduleHelper:
                           'crfs': self.crfs,
                           'crfs_prn': self.crfs_prn,
                           'crfs_unscheduled': self.crfs_unscheduled,
+                          'requisitions_prn': self.requisitions_prn,
                           'allow_unscheduled': True,
                           'facility_name': '5-day clinic'}
             self.schedule.add_visit(**visit_dict)
