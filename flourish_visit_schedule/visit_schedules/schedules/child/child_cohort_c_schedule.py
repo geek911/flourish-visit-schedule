@@ -106,10 +106,10 @@ schedule_helper.create_quarterly_visits()
 
 # Follow Up Quarterly Schedule
 child_c_fu_quarterly_schedule_1 = Schedule(
-    name='child_c_fu_quart_schedule1',
+    name='child_c_fu_qt_schedule1',
     sequence='4',
     verbose_name='Cohort C Child FU Quarterly Schedule',
-    onschedule_model='flourish_child.onschedulechildcohortcfu',
+    onschedule_model='flourish_child.onschedulechildcohortcfuquart',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'

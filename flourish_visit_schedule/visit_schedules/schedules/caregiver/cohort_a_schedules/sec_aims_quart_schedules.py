@@ -4,7 +4,7 @@ from .quarterly_schedules import a_quarterly1_schedule_1
 # secondary Aims Schedules
 a_sec_quart1_schedule_1 = Schedule(
     name='a_sec_quart1_schedule1',
-    sequence='1',
+    sequence='2',
     verbose_name='Cohort A(First Child(ren)) Sec Quarterly Aims Schedule',
     onschedule_model='flourish_caregiver.onschedulecohortasecquart',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -14,7 +14,7 @@ a_sec_quart1_schedule_1 = Schedule(
 
 a_sec_quart2_schedule_1 = Schedule(
     name='a_sec_quart2_schedule1',
-    sequence='1',
+    sequence='2',
     verbose_name='Cohort A(Second Child(ren)) Sec Quarterly Aims Schedule',
     onschedule_model='flourish_caregiver.onschedulecohortasecquart',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
@@ -24,7 +24,7 @@ a_sec_quart2_schedule_1 = Schedule(
 
 a_sec_quart3_schedule_1 = Schedule(
     name='a_sec_quart3_schedule1',
-    sequence='1',
+    sequence='2',
     verbose_name='Cohort A(Third Child(ren)) Sec Quarterly Aims Schedule',
     onschedule_model='flourish_caregiver.onschedulecohortasecquart',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
