@@ -126,27 +126,54 @@ crf_2001 = FormsCollection(
         required=False),
     name='quarterly_calls')
 
-crf_3000 = FormsCollection(
+a_crf_3000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.hivrapidtestcounseling',
         required=False),
     Crf(show_order=2, model='flourish_caregiver.sociodemographicdata'),
-    Crf(show_order=3, model='flourish_caregiver.medicalhistory'),
-    Crf(show_order=4, model='flourish_caregiver.hivviralloadandcd4',
+    Crf(show_order=3, model='flourish_caregiver.medicalhistory',
         required=False),
-    Crf(show_order=5, model='flourish_caregiver.caregiverclinicalmeasurements'),
-    Crf(show_order=6, model='flourish_caregiver.caregiveredinburghdeprscreening',
+    Crf(show_order=5, model='flourish_caregiver.hivviralloadandcd4',
         required=False),
-    Crf(show_order=7, model='flourish_caregiver.hivdisclosurestatusa',
+    Crf(show_order=6, model='flourish_caregiver.caregiverclinicalmeasurements'),
+    Crf(show_order=7, model='flourish_caregiver.caregiveredinburghdeprscreening',
         required=False),
-    Crf(show_order=8, model='flourish_caregiver.hivdisclosurestatusb',
+    Crf(show_order=8, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=9, model='flourish_caregiver.covid19'),
+    Crf(show_order=10, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=9, model='flourish_caregiver.hivdisclosurestatusc',
+    name='a_follow_up')
+
+b_crf_3000 = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
+    Crf(show_order=2, model='flourish_caregiver.medicalhistory',
         required=False),
-    Crf(show_order=11, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=12, model='flourish_caregiver.covid19'),
-    Crf(show_order=13, model='flourish_caregiver.maternalinterimidcc',
+    Crf(show_order=3, model='flourish_caregiver.caregiverclinicalmeasurements'),
+    Crf(show_order=4, model='flourish_caregiver.hivdisclosurestatusa',
         required=False),
-    name='follow_up')
+    Crf(show_order=5, model='flourish_caregiver.hivdisclosurestatusb',
+        required=False),
+    Crf(show_order=6, model='flourish_caregiver.hivdisclosurestatusc',
+        required=False),
+    Crf(show_order=7, model='flourish_caregiver.caregiverphqdeprscreening'),
+    Crf(show_order=8, model='flourish_caregiver.caregivergadanxietyscreening'),
+    Crf(show_order=9, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=10, model='flourish_caregiver.covid19'),
+    name='b_follow_up')
+
+c_crf_3000 = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.sociodemographicdata'),
+    Crf(show_order=2, model='flourish_caregiver.medicalhistory',
+        required=False),
+    Crf(show_order=3, model='flourish_caregiver.caregiverclinicalmeasurements'),
+    Crf(show_order=4, model='flourish_caregiver.hivdisclosurestatusa',
+        required=False),
+    Crf(show_order=5, model='flourish_caregiver.hivdisclosurestatusb',
+        required=False),
+    Crf(show_order=6, model='flourish_caregiver.hivdisclosurestatusc',
+        required=False),
+    Crf(show_order=7, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=8, model='flourish_caregiver.covid19'),
+    name='c_follow_up')
 
 tb_2_months = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.tbvisitscreeningwomen'),
