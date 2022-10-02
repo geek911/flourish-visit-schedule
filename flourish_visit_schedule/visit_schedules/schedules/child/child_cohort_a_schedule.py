@@ -18,7 +18,7 @@ class Visit(BaseVisit):
             crfs_unscheduled=crfs_unscheduled or child_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
             crfs_prn=crfs_prn,
-            requisitions_prn=requisitions_prn or child_requisitions,
+            requisitions_prn=requisitions_prn,
             **kwargs)
 
 
@@ -122,7 +122,7 @@ child_a_quarterly_schedule_1.add_visit(visit=visit2001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 requisitions_prn=child_requisitions,
+                                 requisitions_prn=None,
                                  crfs_prn=child_crfs_prn,
                                  schedule=child_a_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
@@ -154,7 +154,7 @@ child_a_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 requisitions_prn=child_requisitions,
+                                 requisitions_prn=None,
                                  crfs_prn=child_crfs_prn,
                                  schedule=child_a_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
