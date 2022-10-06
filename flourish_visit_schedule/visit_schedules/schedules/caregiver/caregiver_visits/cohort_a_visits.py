@@ -1,6 +1,8 @@
-from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Visit as BaseVisit
-from ....crfs import a_crf_2000, crf_2000d, crf_2001, a_crf_3000, tb_2_months
+
+from dateutil.relativedelta import relativedelta
+
+from ....crfs import a_crf_2000, crf_2000d, crf_2001, a_crf_3000, tb_2_months, tb_6_months
 from ....crfs import caregiver_crfs_prn, preg_requisitions, requisitions_prn
 from ....crfs import caregiver_crfs_unscheduled, caregiver_ref_crf_prn
 
@@ -107,4 +109,16 @@ visit2100 = Visit(
     requisitions=None,
     requisitions_prn=None,
     crfs=tb_2_months,
+    facility_name='5-day clinic')
+
+visit2200 = Visit(
+    code='2200T',
+    title='TB 6 Months Visit',
+    timepoint=6,
+    rbase=relativedelta(months=6),
+    rlower=relativedelta(days=30),
+    rupper=relativedelta(days=30),
+    requisitions=None,
+    requisitions_prn=None,
+    crfs=tb_6_months,
     facility_name='5-day clinic')
