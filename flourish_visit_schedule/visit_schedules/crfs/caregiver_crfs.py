@@ -191,8 +191,7 @@ tb_6_months = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.tbengagement'),
     Crf(show_order=2, model='flourish_caregiver.tbknowledge'),
     Crf(show_order=3, model='flourish_caregiver.tbreferraloutcomes'),
-    Crf(show_order=4, model='flourish_caregiver.caregiverclinicalmeasurements'),
-    Crf(show_order=5, model='flourish_caregiver.tbinterview'),
-    # Crf(show_order=6, model='flourish_caregiver.tbinttranslation', required=False),
-    # Crf(show_order=7, model='flourish_caregiver.tbinttranscription', required=False),
+    Crf(show_order=4, model='flourish_caregiver.tbinterview'),
+    Crf(show_order=5, model='flourish_caregiver.tbinttranslation', required=False),
+    Crf(show_order=6, model='flourish_caregiver.tbinttranscription', required=False),
     name='tb_6_months')
