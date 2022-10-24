@@ -4,7 +4,7 @@ from dateutil.relativedelta import relativedelta
 
 from ....crfs import a_crf_2000, crf_2000d, crf_2001, a_crf_3000, tb_2_months, tb_6_months
 from ....crfs import caregiver_crfs_prn, preg_requisitions, requisitions_prn
-from ....crfs import caregiver_crfs_unscheduled, caregiver_ref_crf_prn
+from ....crfs import caregiver_crfs_unscheduled, caregiver_ref_crf_prn, crfs_tb6month
 
 
 class Visit(BaseVisit):
@@ -121,4 +121,5 @@ visit2200 = Visit(
     requisitions=None,
     requisitions_prn=None,
     crfs=tb_6_months,
+    crfs_prn=crfs_tb6month,
     facility_name='5-day clinic')
