@@ -20,6 +20,11 @@ crfs_unscheduled = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.cliniciannotes'),
     name='unscheduled')
 
+crfs_tb6month = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.tbinterviewtranscription'),
+    Crf(show_order=2, model='flourish_caregiver.tbinterviewtranslation'),
+    name='tb_6month')
+
 a_crf_2000 = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.hivrapidtestcounseling',
         required=False),
@@ -192,4 +197,6 @@ tb_6_months = FormsCollection(
     Crf(show_order=2, model='flourish_caregiver.tbknowledge'),
     Crf(show_order=3, model='flourish_caregiver.tbreferraloutcomes'),
     Crf(show_order=4, model='flourish_caregiver.tbinterview', required=False),
+    Crf(show_order=5, model='flourish_caregiver.tbinterviewtranscription', required=False),
+    Crf(show_order=6, model='flourish_caregiver.tbinterviewtranslation', required=False),
     name='tb_6_months')
