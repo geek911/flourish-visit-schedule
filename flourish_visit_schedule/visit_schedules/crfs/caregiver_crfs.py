@@ -196,4 +196,5 @@ tb_6_months = FormsCollection(
     Crf(show_order=4, model='flourish_caregiver.tbinterview', required=False),
     Crf(show_order=5, model='flourish_caregiver.tbinterviewtranscription', required=False),
     Crf(show_order=6, model='flourish_caregiver.tbinterviewtranslation', required=False),
+    Crf(show_order=7, model='flourish_caregiver.cliniciannotes'),
     name='tb_6_months')
