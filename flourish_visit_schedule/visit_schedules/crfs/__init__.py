@@ -11,5 +11,5 @@ from .child_crfs import child_c_crf_2001, child_a_crf_3000, child_b_crf_3000, \
     child_c_crf_3000
 from .child_crfs import crfs_prn as child_crfs_prn
 from .child_crfs import crfs_unscheduled as child_crfs_unscheduled
+from .child_requisitions import ab_fu_requisitions, c_fu_requisitions
 from .child_requisitions import child_requisitions, child_requisitions_bc
-from .child_requisitions import fu_requisitions
