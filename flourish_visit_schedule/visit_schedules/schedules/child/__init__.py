@@ -11,3 +11,4 @@ from .child_cohort_c_schedule import child_c_fu_quarterly_schedule_1
 from .child_cohort_c_schedule import child_c_fu_schedule_1, child_c_quarterly_schedule_1
 from .child_cohort_c_schedule import child_c_sec_qt_schedule_1
 from .child_cohort_c_schedule import child_c_sec_schedule_1, child_pool_schedule_1
+from .tb_adol_schedule import tb_adol_schedule
