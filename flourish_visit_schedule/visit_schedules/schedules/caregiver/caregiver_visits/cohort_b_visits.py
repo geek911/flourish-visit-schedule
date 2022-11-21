@@ -1,5 +1,6 @@
-from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Visit as BaseVisit
+
+from dateutil.relativedelta import relativedelta
 
 from ....crfs import caregiver_crfs_prn, requisitions_prn, bc_crf_2000, crf_2001, b_crf_3000
 from ....crfs import caregiver_crfs_unscheduled, caregiver_ref_crf_prn
