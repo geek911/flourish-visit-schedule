@@ -1,6 +1,7 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
+from ...crfs import c_fu_requisitions
 from ...crfs import child_c_crf_2000, child_c_crf_2001, child_c_crf_3000
 from ...crfs import child_crfs_prn, child_crfs_unscheduled
 from ..schedule_helper import ScheduleHelper
@@ -62,7 +63,7 @@ visit3000 = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=30),
-    requisitions=None,
+    requisitions=c_fu_requisitions,
     crfs=child_c_crf_3000,
     facility_name='5-day clinic')
 
