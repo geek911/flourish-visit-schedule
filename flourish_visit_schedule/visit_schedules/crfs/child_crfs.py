@@ -1,4 +1,4 @@
-from edc_visit_schedule import FormsCollection, Crf
+from edc_visit_schedule import FormsCollection, Crf, Requisition
 
 crfs_prn = FormsCollection(
     Crf(show_order=1, model='flourish_child.childcliniciannotes',
@@ -200,6 +200,7 @@ tb_adol_enrollment = FormsCollection(
     Crf(show_order=6, model='flourish_child.covid19adol', required=False),
     Crf(show_order=7, model='flourish_child.tbpresencehouseholdmembersadol'),
     Crf(show_order=8, model='flourish_child.tbvisitscreeningadolescent'),
+    Crf(show_order=9, model='flourish_child.hivtestingadol', required=False),
     name='tb_adol_enrollement'
 )
 
