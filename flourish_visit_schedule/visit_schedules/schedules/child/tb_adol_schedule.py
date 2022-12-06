@@ -9,7 +9,7 @@ from ...crfs.child_requisitions import tb_adol_requisitions
 
 visit2100A = Visit(
     code='2100A',
-    title='TB Adolecent Enrollment Cohort',
+    title='TB Adolescent Enrollment Cohort',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
@@ -21,7 +21,7 @@ visit2100A = Visit(
 
 tb_adol_schedule= Schedule(
     name='tb_adol_schedule',
-    verbose_name='TB Adolecent Schedule',
+    verbose_name='TB Adolescent Schedule',
     onschedule_model='flourish_child.onschedulechildtbadolschedule',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
