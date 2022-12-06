@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+APP_NAME = 'flourish-visit-schedule'
 
 # Application definition
 
