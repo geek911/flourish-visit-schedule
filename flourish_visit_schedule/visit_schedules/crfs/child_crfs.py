@@ -201,6 +201,18 @@ tb_adol_enrollment = FormsCollection(
     Crf(show_order=7, model='flourish_child.tbpresencehouseholdmembersadol'),
     Crf(show_order=8, model='flourish_child.tbvisitscreeningadolescent'),
     Crf(show_order=9, model='flourish_child.hivtestingadol'),
+    Crf(show_order=10, model='flourish_child.tblabresultsadol'),
     name='tb_adol_enrollement'
 )
 
+
+unscheduled_tb_adol_enrollment  = FormsCollection(
+    Crf(show_order=1, model='flourish_child.tblabresultsadol'),
+    name='unscheduled_tb_adol_enrollment'
+)
+
+
+tb_adol_referral = FormsCollection(
+    Crf(show_order=1, model='flourish_child.tbreferaladol',
+        required=False, additional=False),
+    name='tb_adol_ref_crf')
