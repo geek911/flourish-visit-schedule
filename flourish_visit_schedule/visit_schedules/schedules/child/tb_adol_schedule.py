@@ -1,10 +1,9 @@
 
 from edc_visit_schedule import Schedule, Visit
-from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
 
 from dateutil.relativedelta import relativedelta
-from ...crfs.child_crfs import tb_adol_enrollment, unscheduled_tb_adol_enrollment, tb_adol_referral
+from ...crfs.child_crfs import tb_adol_enrollment
 from ...crfs.child_requisitions import tb_adol_requisitions
 
 visit2100A = Visit(
@@ -16,8 +15,6 @@ visit2100A = Visit(
     rupper=relativedelta(months=3),
     requisitions=tb_adol_requisitions,
     crfs=tb_adol_enrollment,
-    crfs_unscheduled = unscheduled_tb_adol_enrollment,
-    crfs_prn=tb_adol_referral,
     facility_name='5-day clinic')
 
 

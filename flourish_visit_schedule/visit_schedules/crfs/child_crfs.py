@@ -204,15 +204,3 @@ tb_adol_enrollment = FormsCollection(
     Crf(show_order=10, model='flourish_child.tblabresultsadol'),
     name='tb_adol_enrollement'
 )
-
-
-unscheduled_tb_adol_enrollment  = FormsCollection(
-    Crf(show_order=1, model='flourish_child.tblabresultsadol'),
-    name='unscheduled_tb_adol_enrollment'
-)
-
-
-tb_adol_referral = FormsCollection(
-    Crf(show_order=1, model='flourish_child.tbreferaladol',
-        required=False, additional=True),
-    name='tb_adol_ref_crf')
