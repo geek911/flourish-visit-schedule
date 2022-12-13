@@ -214,5 +214,5 @@ unscheduled_tb_adol_enrollment  = FormsCollection(
 
 tb_adol_referral = FormsCollection(
     Crf(show_order=1, model='flourish_child.tbreferaladol',
-        required=False, additional=False),
+        required=False, additional=True),
     name='tb_adol_ref_crf')
