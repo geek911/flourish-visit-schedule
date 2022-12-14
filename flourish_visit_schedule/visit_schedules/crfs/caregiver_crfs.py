@@ -64,8 +64,8 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=21, model='flourish_caregiver.tbhistorypreg',
         required=False),
-    Crf(show_order=22, model='flourish_caregiver.tbroutinehealthscreenv2',
-        required=False),
+    Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreen', required=False),
+    Crf(show_order=8, model='flourish_caregiver.tbroutinehealthscreenv2'),
     Crf(show_order=23, model='flourish_caregiver.obstericalhistory',
         required=False),
     Crf(show_order=24, model='flourish_caregiver.cliniciannotes'),
@@ -117,11 +117,12 @@ crf_2000d = FormsCollection(
     Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=6, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreenv2'),
-    Crf(show_order=8, model='flourish_caregiver.covid19'),
-    Crf(show_order=9, model='flourish_caregiver.medicalhistory'),
-    Crf(show_order=10, model='flourish_caregiver.tbstudyeligibility', required=False),
-    Crf(show_order=11, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreen', required=False),
+    Crf(show_order=8, model='flourish_caregiver.tbroutinehealthscreenv2'),
+    Crf(show_order=9, model='flourish_caregiver.covid19'),
+    Crf(show_order=10, model='flourish_caregiver.medicalhistory'),
+    Crf(show_order=11, model='flourish_caregiver.tbstudyeligibility', required=False),
+    Crf(show_order=12, model='flourish_caregiver.maternalarvpostadherence'),
     name='birth')
 
 crf_2001 = FormsCollection(
@@ -252,11 +253,12 @@ c_crf_3000 = FormsCollection(
 
 tb_2_months = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.tbvisitscreeningwomen'),
-    Crf(show_order=2, model='flourish_caregiver.tbroutinehealthscreenv2'),
-    Crf(show_order=3, model='flourish_caregiver.tbpresencehouseholdmembers'),
-    Crf(show_order=4, model='flourish_caregiver.caregiverclinicalmeasurements'),
-    Crf(show_order=5, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=6, model='flourish_caregiver.tbreferral', required=False),
+    Crf(show_order=2, model='flourish_caregiver.tbroutinehealthscreen', required=False),
+    Crf(show_order=3, model='flourish_caregiver.tbroutinehealthscreenv2'),
+    Crf(show_order=4, model='flourish_caregiver.tbpresencehouseholdmembers'),
+    Crf(show_order=5, model='flourish_caregiver.caregiverclinicalmeasurements'),
+    Crf(show_order=6, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=7, model='flourish_caregiver.tbreferral', required=False),
     name='tb_2_months')
 
 tb_6_months = FormsCollection(
