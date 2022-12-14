@@ -64,13 +64,13 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=21, model='flourish_caregiver.tbhistorypreg',
         required=False),
-    Crf(show_order=7, model='flourish_caregiver.tbroutinehealthscreen', required=False),
-    Crf(show_order=8, model='flourish_caregiver.tbroutinehealthscreenv2'),
-    Crf(show_order=23, model='flourish_caregiver.obstericalhistory',
+    Crf(show_order=22, model='flourish_caregiver.tbroutinehealthscreen', required=False),
+    Crf(show_order=23, model='flourish_caregiver.tbroutinehealthscreenv2'),
+    Crf(show_order=24, model='flourish_caregiver.obstericalhistory',
         required=False),
-    Crf(show_order=24, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=25, model='flourish_caregiver.covid19'),
-    Crf(show_order=26, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=25, model='flourish_caregiver.cliniciannotes'),
+    Crf(show_order=26, model='flourish_caregiver.covid19'),
+    Crf(show_order=27, model='flourish_caregiver.relationshipfatherinvolvement'),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
