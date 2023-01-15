@@ -24,7 +24,9 @@ tb_adol_schedule= Schedule(
     onschedule_model='flourish_child.onschedulechildtbadolschedule',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
-    appointment_model='flourish_child.appointment'
+    appointment_model='flourish_child.appointment',
+    sequence='6',
+
 )
 
 
