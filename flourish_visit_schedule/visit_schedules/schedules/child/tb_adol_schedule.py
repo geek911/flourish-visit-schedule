@@ -5,6 +5,7 @@ from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
 from dateutil.relativedelta import relativedelta
 from ...crfs.child_crfs import tb_adol_enrollment
+from ...crfs.child_requisitions import tb_adol_requisitions
 
 visit2100A = Visit(
     code='2100A',
@@ -13,7 +14,7 @@ visit2100A = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(months=3),
-    requisitions=None,
+    requisitions=tb_adol_requisitions,
     crfs=tb_adol_enrollment,
     facility_name='5-day clinic')
 
