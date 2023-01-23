@@ -198,7 +198,11 @@ tb_adol_enrollment = FormsCollection(
     Crf(show_order=3, model='flourish_child.tbknowledgeadol'),
     Crf(show_order=4, model='flourish_child.tbhistoryadol'),
     Crf(show_order=5, model='flourish_child.tbroutinescreenadol'),
-    Crf(show_order=6, model='flourish_child.covid19adol'),
-    Crf(show_order=7, model='flourish_child.tbpresencehouseholdmembersadol'),
+    Crf(show_order=6, model='flourish_child.tbvisitscreeningadolescent'),
+    Crf(show_order=7, model='flourish_child.covid19adol'),
+    Crf(show_order=8, model='flourish_child.tbpresencehouseholdmembersadol'),
+    Crf(show_order=9, model='flourish_child.hivtestingadol'),
+    Crf(show_order=10, model='flourish_child.tblabresultsadol'),
+    Crf(show_order=11, model='flourish_child.childcliniciannotes'),
     name='tb_adol_enrollement'
 )
