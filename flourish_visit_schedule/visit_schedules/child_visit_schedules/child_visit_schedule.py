@@ -74,7 +74,7 @@ tb_adol_visit_schedule_v1 = VisitSchedule(
 tb_adol_visit_schedule_v1.add_schedule(tb_adol_schedule)
 
 # Registering Visit Schedules
-site_visit_schedules.register(tb_adol_visit_schedule_v1)
 site_visit_schedules.register(child_a_visit_schedule_v1)
 site_visit_schedules.register(child_b_visit_schedule_v1)
 site_visit_schedules.register(child_c_visit_schedule_v1)
+site_visit_schedules.register(tb_adol_visit_schedule_v1)
