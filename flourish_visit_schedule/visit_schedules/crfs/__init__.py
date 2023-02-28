@@ -15,3 +15,4 @@ from .child_crfs import tb_adol_enrollment
 from .child_requisitions import ab_fu_requisitions, c_fu_requisitions
 from .child_requisitions import child_requisitions, child_requisitions_bc
 from .child_requisitions import tb_adol_requisitions
+from .child_requisitions import requisitions_prn as infant_requisitions_prn

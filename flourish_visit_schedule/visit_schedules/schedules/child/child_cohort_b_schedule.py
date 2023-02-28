@@ -1,7 +1,7 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
-from ...crfs import ab_fu_requisitions
+from ...crfs import ab_fu_requisitions, infant_requisitions_prn
 from ...crfs import child_b_crf_2000, child_b_crf_2001, child_b_crf_3000
 from ...crfs import child_crfs_prn, child_crfs_unscheduled
 from ..schedule_helper import ScheduleHelper
@@ -17,7 +17,7 @@ class Visit(BaseVisit):
             crfs_unscheduled=crfs_unscheduled or child_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
             crfs_prn=crfs_prn,
-            requisitions_prn=requisitions_prn,
+            requisitions_prn=requisitions_prn or infant_requisitions_prn,
             **kwargs)
 
 
