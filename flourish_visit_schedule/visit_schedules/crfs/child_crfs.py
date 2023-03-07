@@ -214,3 +214,7 @@ tb_adol_enrollment = FormsCollection(
     Crf(show_order=11, model='flourish_child.childcliniciannotes'),
     name='tb_adol_enrollement'
 )
+
+tb_adol_enrollment_unscheduled = FormsCollection(
+    Crf(show_order=1, model='flourish_child.tblabresultsadol'),
+)
