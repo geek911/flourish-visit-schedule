@@ -163,7 +163,10 @@ child_b_crf_3000 = FormsCollection(
     Crf(show_order=15, model='flourish_child.childpenncnb'),
     Crf(show_order=16, model='flourish_child.brief2selfreported'),
     Crf(show_order=17, model='flourish_child.brief2parent'),
-    Crf(show_order=18, model='flourish_child.childcbcl'),
+    Crf(show_order=18, model='flourish_child.childcbclsection1'),
+    Crf(show_order=19, model='flourish_child.childcbclsection2'),
+    Crf(show_order=20, model='flourish_child.childcbclsection3'),
+    Crf(show_order=21, model='flourish_child.childcbclsection4'),
     name='child_b_follow_up')
 
 child_c_crf_3000 = FormsCollection(
