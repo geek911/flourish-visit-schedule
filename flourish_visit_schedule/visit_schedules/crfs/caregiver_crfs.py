@@ -46,8 +46,7 @@ a_crf_2000 = FormsCollection(
         required=False),
     Crf(show_order=11, model='flourish_caregiver.caregiverclinicalmeasurements',
         required=False),
-    Crf(show_order=12, model='flourish_caregiver.caregiverphqdeprscreening',
-        required=False),
+    Crf(show_order=12, model='flourish_caregiver.caregiverphqdeprscreening'),
     Crf(show_order=13, model='flourish_caregiver.caregiverphqreferral',
         required=False),
     Crf(show_order=14, model='flourish_caregiver.caregiverphqreferralfu',
@@ -162,8 +161,7 @@ a_crf_3000 = FormsCollection(
     Crf(show_order=4, model='flourish_caregiver.hivviralloadandcd4',
         required=False),
     Crf(show_order=5, model='flourish_caregiver.caregiverclinicalmeasurements'),
-    Crf(show_order=6, model='flourish_caregiver.caregiverphqdeprscreening',
-        required=False),
+    Crf(show_order=6, model='flourish_caregiver.caregiverphqdeprscreening'),
     Crf(show_order=7, model='flourish_caregiver.caregivergadanxietyscreening'),
     Crf(show_order=8, model='flourish_caregiver.caregiveredinburghdeprscreening',
         required=False),
@@ -198,8 +196,7 @@ b_crf_3000 = FormsCollection(
         required=False),
     Crf(show_order=6, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
-    Crf(show_order=7, model='flourish_caregiver.caregiverphqdeprscreening',
-        required=False),
+    Crf(show_order=7, model='flourish_caregiver.caregiverphqdeprscreening'),
     Crf(show_order=8, model='flourish_caregiver.caregivergadanxietyscreening'),
     Crf(show_order=9, model='flourish_caregiver.caregiverphqreferral',
         required=False),
@@ -218,6 +215,8 @@ b_crf_3000 = FormsCollection(
     Crf(show_order=18, model='flourish_caregiver.covid19'),
     Crf(show_order=19, model='flourish_caregiver.relationshipfatherinvolvement'),
     Crf(show_order=20, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=21, model='flourish_caregiver.hivviralloadandcd4',
+        required=False),
     name='b_follow_up')
 
 c_crf_3000 = FormsCollection(
@@ -250,6 +249,8 @@ c_crf_3000 = FormsCollection(
     Crf(show_order=16, model='flourish_caregiver.covid19'),
     Crf(show_order=18, model='flourish_caregiver.relationshipfatherinvolvement'),
     Crf(show_order=19, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=20, model='flourish_caregiver.hivviralloadandcd4',
+        required=False),
     name='c_follow_up')
 
 tb_2_months = FormsCollection(
