@@ -20,8 +20,7 @@ visit2100A = Visit(
     allow_unscheduled=True,
     facility_name='5-day clinic')
 
-
-tb_adol_schedule= Schedule(
+tb_adol_schedule = Schedule(
     name='tb_adol_schedule',
     verbose_name='TB Adolecent Schedule',
     onschedule_model='flourish_child.onschedulechildtbadolschedule',
@@ -32,9 +31,4 @@ tb_adol_schedule= Schedule(
 
 )
 
-
 tb_adol_schedule.add_visit(visit2100A)
-
-
-
-
