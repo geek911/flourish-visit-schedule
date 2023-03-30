@@ -1,4 +1,4 @@
-from edc_visit_schedule import FormsCollection, Crf
+from edc_visit_schedule import Crf, FormsCollection
 
 crfs_prn = FormsCollection(
     Crf(show_order=1, model='flourish_child.childcliniciannotes',
@@ -214,6 +214,16 @@ tb_adol_enrollment = FormsCollection(
     Crf(show_order=11, model='flourish_child.childcliniciannotes'),
     name='tb_adol_enrollement'
 )
+
+tb_adol_2_months = FormsCollection(
+    Crf(show_order=1, model='flourish_child.tbadolengagement'),
+    Crf(show_order=2, model='flourish_child.tbadolreferraloutcomes'),
+    Crf(show_order=3, model='flourish_child.tbadolinterview', required=False),
+    Crf(show_order=4, model='flourish_child.tbadolinterviewtranscription',
+        required=False),
+    Crf(show_order=5, model='flourish_child.tbadolinterviewtranslation', required=False),
+    Crf(show_order=6, model='flourish_child.childcliniciannotes'),
+    name='tb_adol_2_months')
 
 tb_adol_enrollment_unscheduled = FormsCollection(
     Crf(show_order=1, model='flourish_child.tblabresultsadol'),
