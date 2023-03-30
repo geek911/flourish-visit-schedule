@@ -161,7 +161,8 @@ child_b_crf_3000 = FormsCollection(
     Crf(show_order=13, model='flourish_child.childcovid19'),
     Crf(show_order=14, model='flourish_child.childprevioushospitalization'),
     Crf(show_order=15, model='flourish_child.childpenncnb'),
-    Crf(show_order=16, model='flourish_child.brief2selfreported'),
+    Crf(show_order=16, model='flourish_child.brief2selfreported',
+        required=False),
     Crf(show_order=17, model='flourish_child.brief2parent'),
     Crf(show_order=18, model='flourish_child.childcbclsection1'),
     Crf(show_order=19, model='flourish_child.childcbclsection2'),
@@ -198,6 +199,8 @@ child_c_crf_3000 = FormsCollection(
     Crf(show_order=18, model='flourish_child.childcovid19'),
     Crf(show_order=19, model='flourish_child.childprevioushospitalization'),
     Crf(show_order=20, model='flourish_child.childpenncnb'),
+    Crf(show_order=21, model='flourish_child.brief2selfreported',
+        required=False),
     name='child_c_follow_up')
 
 tb_adol_enrollment = FormsCollection(
