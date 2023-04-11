@@ -26,7 +26,7 @@ visit2200A = Visit(
     rbase=relativedelta(months=2),
     rlower=relativedelta(days=30),
     rupper=relativedelta(days=30),
-    requisitions=tb_adol_requisitions,
+    requisitions=None,
     crfs=tb_adol_2_months,
     crfs_unscheduled=tb_adol_enrollment_unscheduled,
     allow_unscheduled=True,
