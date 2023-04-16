@@ -70,6 +70,7 @@ a_crf_2000 = FormsCollection(
     Crf(show_order=25, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=26, model='flourish_caregiver.covid19'),
     Crf(show_order=27, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=28, model='flourish_caregiver.maternalarvadherence', required=False),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
@@ -103,6 +104,7 @@ bc_crf_2000 = FormsCollection(
     Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=17, model='flourish_caregiver.covid19'),
     Crf(show_order=18, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=19, model='flourish_caregiver.maternalarvadherence', required=False),
     name='cohort_bc_enrollment')
 
 crf_2000d = FormsCollection(
