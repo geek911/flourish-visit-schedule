@@ -151,7 +151,7 @@ crf_2001 = FormsCollection(
         required=False),
     Crf(show_order=15, model='flourish_caregiver.maternalarvpostadherence'),
     Crf(show_order=16, model='flourish_caregiver.interviewfocusgroupinterest',
-    required=False),
+        required=False),
     name='quarterly_calls')
 
 a_crf_3000 = FormsCollection(
