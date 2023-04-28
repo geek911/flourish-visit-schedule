@@ -56,3 +56,33 @@ tb_two3_months_schedule = Schedule(
     appointment_model='edc_appointment.appointment')
 
 tb_two3_months_schedule.add_visit(visit=visit2100)
+
+tb_six1_months_schedule = Schedule(
+    name='tb_six1_months_schedule1',
+    verbose_name='TB 6 Months Schedule',
+    onschedule_model='flourish_caregiver.onschedulecohortatb6months',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.tbinformedconsent',
+    appointment_model='edc_appointment.appointment')
+
+tb_six1_months_schedule.add_visit(visit=visit2200)
+
+tb_six2_months_schedule = Schedule(
+    name='tb_six2_months_schedule1',
+    verbose_name='TB 6 Months Schedule',
+    onschedule_model='flourish_caregiver.onschedulecohortatb6months',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.tbinformedconsent',
+    appointment_model='edc_appointment.appointment')
+
+tb_six2_months_schedule.add_visit(visit=visit2200)
+
+tb_six3_months_schedule = Schedule(
+    name='tb_six3_months_schedule1',
+    verbose_name='TB 6 Months Schedule',
+    onschedule_model='flourish_caregiver.onschedulecohortatb6months',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.tbinformedconsent',
+    appointment_model='edc_appointment.appointment')
+
+tb_six3_months_schedule.add_visit(visit=visit2200)

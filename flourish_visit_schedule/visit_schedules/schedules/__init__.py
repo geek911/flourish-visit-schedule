@@ -34,6 +34,7 @@ from .caregiver import c_sec_quart3_schedule_1
 from .caregiver import caregiver_pool1_schedule_1, caregiver_pool2_schedule_1
 from .caregiver import caregiver_pool3_schedule_1
 from .caregiver import tb_two1_months_schedule, tb_two2_months_schedule, tb_two3_months_schedule
+from .caregiver import tb_six1_months_schedule, tb_six2_months_schedule, tb_six3_months_schedule
 from .caregiver import tb_2_months_schedule, tb_6_months_schedule
 from .child import child_a_birth_schedule_1, child_a_enrollment_schedule_1
 from .child import child_a_fu_quarterly_schedule_1, child_b_fu_quarterly_schedule_1
