@@ -4,9 +4,6 @@ from edc_visit_schedule import Schedule
 from ..caregiver_visits.cohort_a_visits import visit2100, visit2200
 
 
-
-
-
 a_tb1_2_months_schedule1 = Schedule(
     name='a_tb1_2_months_schedule1',
     verbose_name='TB 2 Months Schedule',
