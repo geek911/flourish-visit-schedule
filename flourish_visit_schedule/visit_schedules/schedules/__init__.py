@@ -33,7 +33,8 @@ from .caregiver import c_sec_quart1_schedule_1, c_sec_quart2_schedule_1
 from .caregiver import c_sec_quart3_schedule_1
 from .caregiver import caregiver_pool1_schedule_1, caregiver_pool2_schedule_1
 from .caregiver import caregiver_pool3_schedule_1
-from .caregiver import tb_2_months_schedule, tb_6_months_schedule
+from .caregiver import a_tb1_2_months_schedule1, a_tb2_2_months_schedule1, a_tb3_2_months_schedule1
+from .caregiver import a_tb1_6_months_schedule1, a_tb2_6_months_schedule1, a_tb3_6_months_schedule1
 from .child import child_a_birth_schedule_1, child_a_enrollment_schedule_1
 from .child import child_a_fu_quarterly_schedule_1, child_b_fu_quarterly_schedule_1
 from .child import child_a_fu_schedule_1, child_a_quarterly_schedule_1, \
