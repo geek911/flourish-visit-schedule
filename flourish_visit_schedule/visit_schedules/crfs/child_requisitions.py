@@ -104,5 +104,5 @@ c_fu_requisitions = FormsCollection(
 tb_adol_requisitions = FormsCollection(
     Requisition(
         show_order=1,
-        panel=lithium_heparin_panel, required=True, additional=False),
+        panel=lithium_heparin_panel, required=False, additional=False),
     )
