@@ -157,6 +157,7 @@ crf_2001 = FormsCollection(
     Crf(show_order=16, model='flourish_caregiver.maternalarvpostadherence'),
     Crf(show_order=17, model='flourish_caregiver.interviewfocusgroupinterest',
         required=False),
+    Crf(show_order=18, model='flourish_caregiver.posthivrapidtestandconseling',),
     name='quarterly_calls')
 
 a_crf_3000 = FormsCollection(
@@ -191,6 +192,7 @@ a_crf_3000 = FormsCollection(
     Crf(show_order=18, model='flourish_caregiver.maternalinterimidccversion2',),
     Crf(show_order=19, model='flourish_caregiver.relationshipfatherinvolvement'),
     Crf(show_order=20, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=21, model='flourish_caregiver.posthivrapidtestandconseling',),
     name='a_follow_up')
 
 b_crf_3000 = FormsCollection(
@@ -225,6 +227,8 @@ b_crf_3000 = FormsCollection(
     Crf(show_order=20, model='flourish_caregiver.maternalarvpostadherence'),
     Crf(show_order=21, model='flourish_caregiver.hivviralloadandcd4',
         required=False),
+    Crf(show_order=22, model='flourish_caregiver.posthivrapidtestandconseling',),
+
     name='b_follow_up')
 
 c_crf_3000 = FormsCollection(
@@ -258,6 +262,9 @@ c_crf_3000 = FormsCollection(
     Crf(show_order=19, model='flourish_caregiver.maternalarvpostadherence'),
     Crf(show_order=20, model='flourish_caregiver.hivviralloadandcd4',
         required=False),
+
+    Crf(show_order=21, model='flourish_caregiver.posthivrapidtestandconseling',),
+
     name='c_follow_up')
 
 tb_2_months = FormsCollection(
