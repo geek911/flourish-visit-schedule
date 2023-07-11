@@ -67,7 +67,7 @@ child_c_visit_schedule_v1.add_schedule(child_c_fu_quarterly_schedule_1)
 tb_adol_visit_schedule_v1 = VisitSchedule(
     name='tb_adol_schedule',
     verbose_name='TB Adolecent Schedule',
-    offstudy_model='flourish_prn.childoffstudy',
+    offstudy_model='flourish_prn.tbadoloffstudy',
     death_report_model='flourish_prn.childdeathreport',
     locator_model='',
     previous_visit_schedule=None)
