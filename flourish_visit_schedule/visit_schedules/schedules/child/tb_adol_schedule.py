@@ -24,7 +24,7 @@ visit2200A = Visit(
     code='2200A',
     title='TB Adolescent 2 Months Follow Up Visit',
     timepoint=1,
-    rbase=relativedelta(months=2),
+    rbase=relativedelta(days=60),
     rlower=relativedelta(days=30),
     rupper=relativedelta(days=60),
     requisitions=None,
