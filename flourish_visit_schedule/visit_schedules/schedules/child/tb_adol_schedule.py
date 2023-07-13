@@ -1,4 +1,3 @@
-
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
