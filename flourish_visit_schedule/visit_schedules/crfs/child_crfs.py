@@ -100,7 +100,8 @@ child_a_crf_2001 = FormsCollection(
     Crf(show_order=20, model='flourish_child.childfoodsecurityquestionnaire'),
     Crf(show_order=21, model='flourish_child.childpregtesting'),
     Crf(show_order=22, model='flourish_child.infanthivtesting', required=False),
-
+    Crf(show_order=23, model='flourish_child.infantarvprophylaxis',
+        required=False),
     name='child_quarterly_calls')
 
 child_b_crf_2001 = FormsCollection(
