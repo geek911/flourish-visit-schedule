@@ -5,6 +5,7 @@ from dateutil.relativedelta import relativedelta
 from ....crfs import a_crf_2000, crf_2000d, crf_2001, a_crf_3000, tb_2_months, tb_6_months
 from ....crfs import caregiver_crfs_prn, preg_requisitions, requisitions_prn
 from ....crfs import caregiver_crfs_unscheduled, caregiver_ref_crf_prn, crfs_tb6month
+from ....crfs import post_referral_unscheduled
 
 
 class Visit(BaseVisit):
@@ -29,6 +30,7 @@ visit1000 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(weeks=7),
     requisitions=preg_requisitions,
+    crfs_unscheduled=post_referral_unscheduled,
     requisitions_prn=requisitions_prn,
     crfs=a_crf_2000,
     crfs_prn=caregiver_ref_crf_prn,

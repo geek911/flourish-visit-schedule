@@ -20,6 +20,15 @@ crfs_unscheduled = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.cliniciannotes'),
     name='unscheduled')
 
+post_referral_unscheduled = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.caregiverphqpostreferral',
+        required=False),
+    Crf(show_order=2, model='flourish_caregiver.caregivergadpostreferral',
+        required=False),
+    Crf(show_order=3, model='flourish_caregiver.caregiveredinburghpostreferral',
+        required=False),
+    name='pr_unscheduled')
+
 crfs_tb6month = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.tbinterviewtranscription'),
     Crf(show_order=2, model='flourish_caregiver.tbinterviewtranslation'),
@@ -119,13 +128,18 @@ crf_2000d = FormsCollection(
     Crf(show_order=6, model='flourish_caregiver.maternalinterimidcc',
         required=False),
     Crf(show_order=7, model='flourish_caregiver.maternalinterimidccversion2'),
-
     Crf(show_order=8, model='flourish_caregiver.tbroutinehealthscreen', required=False),
     Crf(show_order=9, model='flourish_caregiver.tbroutinehealthscreenv2'),
     Crf(show_order=10, model='flourish_caregiver.covid19'),
     Crf(show_order=11, model='flourish_caregiver.medicalhistory'),
     Crf(show_order=12, model='flourish_caregiver.tbstudyeligibility', required=False),
     Crf(show_order=13, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=14, model='flourish_caregiver.caregiverphqpostreferral',
+        required=False),
+    Crf(show_order=15, model='flourish_caregiver.caregivergadpostreferral',
+        required=False),
+    Crf(show_order=16, model='flourish_caregiver.caregiveredinburghpostreferral',
+        required=False),
     name='birth')
 
 crf_2001 = FormsCollection(
