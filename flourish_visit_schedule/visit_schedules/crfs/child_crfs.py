@@ -114,7 +114,6 @@ child_b_crf_2001 = FormsCollection(
     Crf(show_order=7, model='flourish_child.childmedicalhistory'),
     Crf(show_order=8, model='flourish_child.childprevioushospitalization'),
     Crf(show_order=9, model='flourish_child.childpregtesting'),
-    Crf(show_order=10, model='flourish_child.infanthivtesting', required=False),
     name='child_quarterly_calls')
 
 child_c_crf_2001 = FormsCollection(
@@ -132,7 +131,6 @@ child_c_crf_2001 = FormsCollection(
     Crf(show_order=10, model='flourish_child.childpregtesting'),
     Crf(show_order=11, model='flourish_child.childphqpostreferral', required=False),
     Crf(show_order=12, model='flourish_child.childgadpostreferral', required=False),
-    Crf(show_order=13, model='flourish_child.infanthivtesting', required=False),
     name='child_quarterly_calls')
 
 child_a_crf_3000 = FormsCollection(
@@ -171,7 +169,6 @@ child_b_crf_3000 = FormsCollection(
     Crf(show_order=18, model='flourish_child.childcbclsection2', required=False),
     Crf(show_order=19, model='flourish_child.childcbclsection3', required=False),
     Crf(show_order=20, model='flourish_child.childcbclsection4', required=False),
-    Crf(show_order=21, model='flourish_child.infanthivtesting'),
     name='child_b_follow_up')
 
 child_c_crf_3000 = FormsCollection(
@@ -209,7 +206,6 @@ child_c_crf_3000 = FormsCollection(
     Crf(show_order=24, model='flourish_child.childcbclsection2'),
     Crf(show_order=25, model='flourish_child.childcbclsection3'),
     Crf(show_order=26, model='flourish_child.childcbclsection4'),
-    Crf(show_order=27, model='flourish_child.infanthivtesting'),
     name='child_c_follow_up')
 
 tb_adol_enrollment = FormsCollection(
