@@ -6,6 +6,7 @@ from .enrollment_schedules import a_enrollment1_schedule_1, a_enrollment2_schedu
 from .enrollment_schedules import a_enrollment3_schedule_1
 from .follow_up_schedules import a_fu1_schedule_1, a_fu2_schedule_1
 from .follow_up_schedules import a_fu3_schedule_1
+from .follow_up_schedules import a_sq_fu1_schedule_1, a_sq_fu2_schedule_1, a_sq_fu3_schedule_1
 from .fu_quarterly_schedules import a_fu_quarterly1_schedule_1, a_fu_quarterly2_schedule_1
 from .fu_quarterly_schedules import a_fu_quarterly3_schedule_1
 from .quarterly_schedules import a_quarterly1_schedule_1, a_quarterly2_schedule_1

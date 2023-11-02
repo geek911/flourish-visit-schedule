@@ -39,3 +39,43 @@ c_fu3_schedule_1 = Schedule(
     )
 
 c_fu3_schedule_1.add_visit(visit=visit3000)
+
+# C Sequential Enrolment Follow-up Schedules
+visit3000.code = '3000C'
+visit3000.title = 'Cohort C SQ Follow Up Visit'
+
+c_sq_fu1_schedule_1 = Schedule(
+    name='c_sq_fu1_schedule1',
+    sequence='5',
+    verbose_name='Cohort C(First Child(ren)) Follow Up Sequential',
+    onschedule_model='flourish_caregiver.onschedulecohortcfuseq',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+    )
+
+c_sq_fu1_schedule_1.add_visit(visit=visit3000)
+
+c_sq_fu2_schedule_1 = Schedule(
+    name='c_sq_fu2_schedule1',
+    sequence='5',
+    verbose_name='Cohort C(Second Child(ren)) Follow Up Sequential',
+    onschedule_model='flourish_caregiver.onschedulecohortcfuseq',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+    )
+
+c_sq_fu2_schedule_1.add_visit(visit=visit3000)
+
+c_sq_fu3_schedule_1 = Schedule(
+    name='c_sq_fu3_schedule1',
+    sequence='5',
+    verbose_name='Cohort C(Third Child(ren)) Follow Up Sequential',
+    onschedule_model='flourish_caregiver.onschedulecohortcfuseq',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+    )
+
+c_sq_fu3_schedule_1.add_visit(visit=visit3000)
