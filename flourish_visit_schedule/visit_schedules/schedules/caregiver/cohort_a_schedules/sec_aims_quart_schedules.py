@@ -1,7 +1,7 @@
 from edc_visit_schedule import Schedule
 from .quarterly_schedules import a_quarterly1_schedule_1
 
-# secondary Aims Schedules
+# Secondary Aims Schedules
 a_sec_quart1_schedule_1 = Schedule(
     name='a_sec_quart1_schedule1',
     sequence='2',

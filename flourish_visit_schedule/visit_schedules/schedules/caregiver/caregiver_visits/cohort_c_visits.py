@@ -58,9 +58,35 @@ visit3000 = Visit(
     crfs_prn=caregiver_ref_crf_prn,
     facility_name='5-day clinic')
 
+visit3000sq = Visit(
+    code='3000C',
+    title='Cohort C SQ Follow Up Visit',
+    timepoint=14,
+    rbase=relativedelta(days=0),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=30),
+    requisitions=None,
+    requisitions_prn=requisitions_prn,
+    crfs=c_crf_3000,
+    crfs_prn=caregiver_ref_crf_prn,
+    facility_name='5-day clinic')
+
 visit3001 = Visit(
     code='3001M',
     title='Cohort C Follow Up Quarterly Visit 1',
+    timepoint=2,
+    rbase=relativedelta(days=90),
+    rlower=relativedelta(days=45),
+    rupper=relativedelta(days=44),
+    requisitions=None,
+    requisitions_prn=requisitions_prn,
+    crfs=crf_2001,
+    crfs_prn=caregiver_crfs_prn,
+    facility_name='5-day clinic')
+
+visit3001sq = Visit(
+    code='3001S',
+    title='Cohort C Sec Follow Up Quarterly Visit 1',
     timepoint=2,
     rbase=relativedelta(days=90),
     rlower=relativedelta(days=45),

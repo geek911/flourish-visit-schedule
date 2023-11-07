@@ -1,7 +1,6 @@
-
 from edc_visit_schedule import Schedule
 
-from ..caregiver_visits.cohort_a_visits import visit3000
+from ..caregiver_visits.cohort_a_visits import visit3000, visit3000sq
 
 # Follow-up Schedules
 a_fu1_schedule_1 = Schedule(
@@ -41,9 +40,6 @@ a_fu3_schedule_1 = Schedule(
 a_fu3_schedule_1.add_visit(visit=visit3000)
 
 # Sequential Enrolment Follow-up Schedules
-visit3000.code = '3000A'
-visit3000.title = 'Cohort A SQ Follow Up Visit'
-
 a_sq_fu1_schedule_1 = Schedule(
     name='a_sq_fu1_schedule1',
     sequence='5',
@@ -54,7 +50,7 @@ a_sq_fu1_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_sq_fu1_schedule_1.add_visit(visit=visit3000)
+a_sq_fu1_schedule_1.add_visit(visit=visit3000sq)
 
 a_sq_fu2_schedule_1 = Schedule(
     name='a_sq_fu2_schedule1',
@@ -66,7 +62,7 @@ a_sq_fu2_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_sq_fu2_schedule_1.add_visit(visit=visit3000)
+a_sq_fu2_schedule_1.add_visit(visit=visit3000sq)
 
 a_sq_fu3_schedule_1 = Schedule(
     name='a_sq_fu3_schedule1',
@@ -78,4 +74,4 @@ a_sq_fu3_schedule_1 = Schedule(
     appointment_model='edc_appointment.appointment'
     )
 
-a_sq_fu3_schedule_1.add_visit(visit=visit3000)
+a_sq_fu3_schedule_1.add_visit(visit=visit3000sq)
