@@ -42,6 +42,7 @@ from .child import child_a_birth_schedule_1, child_a_enrollment_schedule_1
 from .child import child_a_fu_quarterly_schedule_1, child_b_fu_quarterly_schedule_1
 from .child import child_a_fu_schedule_1, child_a_quarterly_schedule_1, \
     child_a_sec_schedule_1
+from .child import child_a_sq_fu_schedule_1, child_b_sq_fu_schedule_1, child_c_sq_fu_schedule_1
 from .child import child_a_sec_qt_schedule_1
 from .child import child_b_enrollment_schedule_1, child_b_quarterly_schedule_1
 from .child import child_b_fu_schedule_1, child_c_fu_schedule_1, child_pool_schedule_1

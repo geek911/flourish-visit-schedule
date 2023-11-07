@@ -94,6 +94,21 @@ visit3000 = Visit(
 
 child_a_fu_schedule_1.add_visit(visit=visit3000)
 
+# Sequential Enrolment Follow-up Schedule
+child_a_sq_fu_schedule_1 = Schedule(
+    name='child_a_sq_fu_schedule1',
+    sequence='4',
+    verbose_name='Cohort A Child Follow Up Sequential',
+    onschedule_model='flourish_child.onschedulechildcohortafuseq',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+)
+
+visit3000.code = '3000A'
+visit3000.title = 'Cohort A SQ Child Follow Up Visit'
+child_a_sq_fu_schedule_1.add_visit(visit=visit3000)
+
 # Quarterly Schedule
 child_a_quarterly_schedule_1 = Schedule(
     name='child_a_quart_schedule1',

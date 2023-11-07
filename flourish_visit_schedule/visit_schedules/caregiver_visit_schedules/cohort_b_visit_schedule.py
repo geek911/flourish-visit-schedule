@@ -2,6 +2,7 @@ from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
 from ..schedules import b_enrollment1_schedule_1, b_enrollment2_schedule_1
 from ..schedules import b_enrollment3_schedule_1, b_fu1_schedule_1, b_fu2_schedule_1
+from ..schedules import b_sq_fu1_schedule_1, b_sq_fu2_schedule_1, b_sq_fu3_schedule_1
 from ..schedules import b_fu_quarterly1_schedule_1, b_fu_quarterly2_schedule_1
 from ..schedules import b_fu_quarterly3_schedule_1, b_sec_quart1_schedule_1
 from ..schedules import b_quarterly1_schedule_1, b_quarterly2_schedule_1
@@ -22,6 +23,7 @@ cohort_b1_visit_schedule_v1.add_schedule(b_quarterly1_schedule_1)
 cohort_b1_visit_schedule_v1.add_schedule(b_sec1_schedule_1)
 cohort_b1_visit_schedule_v1.add_schedule(b_sec_quart1_schedule_1)
 cohort_b1_visit_schedule_v1.add_schedule(b_fu1_schedule_1)
+cohort_b1_visit_schedule_v1.add_schedule(b_sq_fu1_schedule_1)
 cohort_b1_visit_schedule_v1.add_schedule(b_fu_quarterly1_schedule_1)
 
 cohort_b2_visit_schedule_v1 = VisitSchedule(
@@ -37,6 +39,7 @@ cohort_b2_visit_schedule_v1.add_schedule(b_quarterly2_schedule_1)
 cohort_b2_visit_schedule_v1.add_schedule(b_sec2_schedule_1)
 cohort_b2_visit_schedule_v1.add_schedule(b_sec_quart2_schedule_1)
 cohort_b2_visit_schedule_v1.add_schedule(b_fu2_schedule_1)
+cohort_b2_visit_schedule_v1.add_schedule(b_sq_fu2_schedule_1)
 cohort_b2_visit_schedule_v1.add_schedule(b_fu_quarterly2_schedule_1)
 
 cohort_b3_visit_schedule_v1 = VisitSchedule(
@@ -52,6 +55,7 @@ cohort_b3_visit_schedule_v1.add_schedule(b_quarterly3_schedule_1)
 cohort_b3_visit_schedule_v1.add_schedule(b_sec3_schedule_1)
 cohort_b3_visit_schedule_v1.add_schedule(b_sec_quart3_schedule_1)
 cohort_b3_visit_schedule_v1.add_schedule(b_fu3_schedule_1)
+cohort_b3_visit_schedule_v1.add_schedule(b_sq_fu3_schedule_1)
 cohort_b3_visit_schedule_v1.add_schedule(b_fu_quarterly3_schedule_1)
 
 # Registering Visit Schedules
