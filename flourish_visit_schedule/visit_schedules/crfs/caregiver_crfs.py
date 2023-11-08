@@ -77,8 +77,8 @@ a_crf_2000 = FormsCollection(
     Crf(show_order=24, model='flourish_caregiver.obstericalhistory',
         required=False),
     Crf(show_order=25, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=27, model='flourish_caregiver.relationshipfatherinvolvement'),
-    Crf(show_order=28, model='flourish_caregiver.maternalarvadherence', required=False),
+    Crf(show_order=26, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=27, model='flourish_caregiver.maternalarvadherence', required=False),
     name='cohort_a_enrollment')
 
 bc_crf_2000 = FormsCollection(
@@ -110,8 +110,8 @@ bc_crf_2000 = FormsCollection(
     Crf(show_order=15, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
     Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=18, model='flourish_caregiver.relationshipfatherinvolvement'),
-    Crf(show_order=19, model='flourish_caregiver.maternalarvadherence', required=False),
+    Crf(show_order=17, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=18, model='flourish_caregiver.maternalarvadherence', required=False),
     name='cohort_bc_enrollment')
 
 crf_2000d = FormsCollection(
@@ -128,14 +128,14 @@ crf_2000d = FormsCollection(
     Crf(show_order=7, model='flourish_caregiver.maternalinterimidccversion2'),
     Crf(show_order=8, model='flourish_caregiver.tbroutinehealthscreen', required=False),
     Crf(show_order=9, model='flourish_caregiver.tbroutinehealthscreenv2'),
-    Crf(show_order=11, model='flourish_caregiver.medicalhistory'),
-    Crf(show_order=12, model='flourish_caregiver.tbstudyeligibility', required=False),
-    Crf(show_order=13, model='flourish_caregiver.maternalarvpostadherence'),
-    Crf(show_order=14, model='flourish_caregiver.caregiverphqpostreferral',
+    Crf(show_order=10, model='flourish_caregiver.medicalhistory'),
+    Crf(show_order=11, model='flourish_caregiver.tbstudyeligibility', required=False),
+    Crf(show_order=12, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=13, model='flourish_caregiver.caregiverphqpostreferral',
         required=False),
-    Crf(show_order=15, model='flourish_caregiver.caregivergadpostreferral',
+    Crf(show_order=14, model='flourish_caregiver.caregivergadpostreferral',
         required=False),
-    Crf(show_order=16, model='flourish_caregiver.caregiveredinburghpostreferral',
+    Crf(show_order=15, model='flourish_caregiver.caregiveredinburghpostreferral',
         required=False),
     name='birth')
 
@@ -150,24 +150,24 @@ crf_2001 = FormsCollection(
         required=False),
     Crf(show_order=6, model='flourish_caregiver.hivdisclosurestatusc',
         required=False),
-    Crf(show_order=8, model='flourish_caregiver.maternalinterimidcc',
+    Crf(show_order=7, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=9, model='flourish_caregiver.maternalinterimidccversion2'),
-    Crf(show_order=10, model='flourish_caregiver.tbstudyeligibility', required=False),
-    Crf(show_order=11, model='flourish_caregiver.breastfeedingquestionnaire',
+    Crf(show_order=8, model='flourish_caregiver.maternalinterimidccversion2'),
+    Crf(show_order=9, model='flourish_caregiver.tbstudyeligibility', required=False),
+    Crf(show_order=10, model='flourish_caregiver.breastfeedingquestionnaire',
         required=False),
-    Crf(show_order=12, model='flourish_caregiver.relationshipfatherinvolvement',
+    Crf(show_order=11, model='flourish_caregiver.relationshipfatherinvolvement',
         required=False),
-    Crf(show_order=13, model='flourish_caregiver.caregiverphqpostreferral',
+    Crf(show_order=12, model='flourish_caregiver.caregiverphqpostreferral',
         required=False),
-    Crf(show_order=14, model='flourish_caregiver.caregivergadpostreferral',
+    Crf(show_order=13, model='flourish_caregiver.caregivergadpostreferral',
         required=False),
-    Crf(show_order=15, model='flourish_caregiver.caregiveredinburghpostreferral',
+    Crf(show_order=14, model='flourish_caregiver.caregiveredinburghpostreferral',
         required=False),
-    Crf(show_order=16, model='flourish_caregiver.maternalarvpostadherence'),
-    Crf(show_order=17, model='flourish_caregiver.interviewfocusgroupinterest',
+    Crf(show_order=15, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=16, model='flourish_caregiver.interviewfocusgroupinterest',
         required=False),
-    Crf(show_order=18, model='flourish_caregiver.interviewfocusgroupinterestv2',
+    Crf(show_order=17, model='flourish_caregiver.interviewfocusgroupinterestv2',
         required=False),
     name='quarterly_calls')
 
@@ -197,11 +197,11 @@ a_crf_3000 = FormsCollection(
     Crf(show_order=14, model='flourish_caregiver.caregiveredinburghreferralfu',
         required=False),
     Crf(show_order=15, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=17, model='flourish_caregiver.maternalinterimidcc',
+    Crf(show_order=16, model='flourish_caregiver.maternalinterimidcc',
         required=False),
-    Crf(show_order=18, model='flourish_caregiver.maternalinterimidccversion2',),
-    Crf(show_order=19, model='flourish_caregiver.relationshipfatherinvolvement'),
-    Crf(show_order=20, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=17, model='flourish_caregiver.maternalinterimidccversion2',),
+    Crf(show_order=18, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=19, model='flourish_caregiver.maternalarvpostadherence'),
     name='a_follow_up')
 
 b_crf_3000 = FormsCollection(
@@ -233,9 +233,9 @@ b_crf_3000 = FormsCollection(
         required=False),
     Crf(show_order=16, model='flourish_caregiver.caregivergadanxietyscreening'),
     Crf(show_order=17, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=19, model='flourish_caregiver.relationshipfatherinvolvement'),
-    Crf(show_order=20, model='flourish_caregiver.maternalarvpostadherence'),
-    Crf(show_order=21, model='flourish_caregiver.hivviralloadandcd4',
+    Crf(show_order=18, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=19, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=20, model='flourish_caregiver.hivviralloadandcd4',
         required=False),
     name='b_follow_up')
 
@@ -267,9 +267,9 @@ c_crf_3000 = FormsCollection(
     Crf(show_order=15, model='flourish_caregiver.caregiveredinburghreferralfu',
         required=False),
     Crf(show_order=16, model='flourish_caregiver.cliniciannotes'),
-    Crf(show_order=18, model='flourish_caregiver.relationshipfatherinvolvement'),
-    Crf(show_order=19, model='flourish_caregiver.maternalarvpostadherence'),
-    Crf(show_order=20, model='flourish_caregiver.hivviralloadandcd4',
+    Crf(show_order=17, model='flourish_caregiver.relationshipfatherinvolvement'),
+    Crf(show_order=18, model='flourish_caregiver.maternalarvpostadherence'),
+    Crf(show_order=19, model='flourish_caregiver.hivviralloadandcd4',
         required=False),
     name='c_follow_up')
 
