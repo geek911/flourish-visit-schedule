@@ -94,6 +94,30 @@ visit3000 = Visit(
 
 child_a_fu_schedule_1.add_visit(visit=visit3000)
 
+# Sequential Enrolment Follow-up Schedule
+child_a_sq_fu_schedule_1 = Schedule(
+    name='child_a_sq_fu_schedule1',
+    sequence='4',
+    verbose_name='Cohort A Child Follow Up Sequential',
+    onschedule_model='flourish_child.onschedulechildcohortafuseq',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+)
+
+visit3000sq = Visit(
+    code='3000A',
+    title='Cohort A SQ Child Follow Up Visit',
+    timepoint=13,
+    rbase=relativedelta(days=0),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=30),
+    requisitions=ab_fu_requisitions,
+    crfs=child_a_crf_3000,
+    facility_name='5-day clinic')
+
+child_a_sq_fu_schedule_1.add_visit(visit=visit3000sq)
+
 # Quarterly Schedule
 child_a_quarterly_schedule_1 = Schedule(
     name='child_a_quart_schedule1',
@@ -131,7 +155,7 @@ schedule_helper.create_quarterly_visits()
 child_a_fu_quarterly_schedule_1 = Schedule(
     name='child_a_fu_qt_schedule1',
     sequence='4',
-    verbose_name='Cohort A Child Quarterly Schedule',
+    verbose_name='Cohort A Child FU Quarterly Schedule',
     onschedule_model='flourish_child.onschedulechildcohortafuquart',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
@@ -158,6 +182,41 @@ schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_a_crf_2001,
                                  crfs_prn=child_crfs_prn,
                                  schedule=child_a_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
+
+# -------------> Secondary AIMS <------------------
+# Secondary Sequential Follow Up Quarterly Schedule
+child_a_sec_fu_qt_schedule_1 = Schedule(
+    name='child_asec_f_qt_schedule1',
+    sequence='4',
+    verbose_name='Cohort A Sec Child FU Quarterly Sequential',
+    onschedule_model='flourish_child.onschedulechildcohortasecseq',
+    offschedule_model='flourish_child.childoffschedule',
+    consent_model='flourish_child.childdummysubjectconsent',
+    appointment_model='flourish_child.appointment'
+)
+
+visit3001sq = Visit(
+    code='3001S',
+    title='Cohort A Sec Child FU Quarterly Visit 1',
+    timepoint=4,
+    rbase=relativedelta(days=90),
+    rlower=relativedelta(days=45),
+    rupper=relativedelta(days=44),
+    requisitions=None,
+    crfs=child_a_crf_2001,
+    crfs_prn=child_crfs_prn,
+    facility_name='5-day clinic')
+child_a_sec_fu_qt_schedule_1.add_visit(visit=visit3001sq)
+
+# Generate Quarterly Visits
+schedule_helper = ScheduleHelper(visit=visit3001sq, crfs=child_a_crf_2001,
+                                 crfs_unscheduled=child_crfs_unscheduled,
+                                 requisitions_prn=None,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_a_sec_fu_qt_schedule_1,
+                                 postfix='S')
+schedule_helper.create_quarterly_visits()
+
 
 # Secondary Aims Schedule
 child_a_sec_schedule_1 = Schedule(
