@@ -11,6 +11,7 @@ from .child_crfs import child_a_crf_2001, child_b_crf_2001, child_birth_crf_2000
 from .child_crfs import child_a_crf_3000, child_b_crf_3000, child_c_crf_2001, \
     child_c_crf_3000
 from .child_crfs import crfs_prn as child_crfs_prn
+from .child_crfs import crfs_prn_referral
 from .child_crfs import crfs_unscheduled as child_crfs_unscheduled
 from .child_crfs import tb_adol_2_months
 from .child_crfs import tb_adol_enrollment

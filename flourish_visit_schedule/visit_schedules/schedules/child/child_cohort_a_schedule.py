@@ -3,7 +3,7 @@ from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ...crfs import ab_fu_requisitions
 from ...crfs import child_a_crf_2000, child_birth_crf_2000D, child_a_crf_2001, child_a_crf_3000
-from ...crfs import child_crfs_prn, child_crfs_unscheduled
+from ...crfs import child_crfs_prn, child_crfs_unscheduled, crfs_prn_referral
 from ...crfs import child_requisitions, infant_requisitions_prn
 from ..schedule_helper import ScheduleHelper
 
@@ -42,6 +42,7 @@ visit2000 = Visit(
     rupper=relativedelta(months=3),
     requisitions=None,
     crfs=child_a_crf_2000,
+    crfs_prn=crfs_prn_referral,
     facility_name='5-day clinic')
 
 child_a_enrollment_schedule_1.add_visit(visit=visit2000)
@@ -90,6 +91,7 @@ visit3000 = Visit(
     rupper=relativedelta(days=30),
     requisitions=ab_fu_requisitions,
     crfs=child_a_crf_3000,
+    crfs_prn=crfs_prn_referral,
     facility_name='5-day clinic')
 
 child_a_fu_schedule_1.add_visit(visit=visit3000)
