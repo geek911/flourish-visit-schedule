@@ -18,6 +18,7 @@ class ScheduleHelper:
         self.crfs_unscheduled = crfs_unscheduled
         self.requisitions_prn = requisitions_prn
         self.requisitions_unscheduled = requisitions_unscheduled
+        self.postfix_var = kwargs.get('postfix', None)
 
     def create_quarterly_visits(self):
 
@@ -32,6 +33,8 @@ class ScheduleHelper:
 
             if 'M' in self.visit.code:
                 visit_code = visit_code + 'M'
+            if self.postfix_var:
+                visit_code = visit_code + self.postfix_var
 
             visit_dict = {'code': visit_code,
                           'title': self.visit_title[:-1] + str(count + 1),
