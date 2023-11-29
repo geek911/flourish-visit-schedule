@@ -80,7 +80,6 @@ a_crf_2000 = FormsCollection(
     Crf(show_order=25, model='flourish_caregiver.cliniciannotes'),
     Crf(show_order=26, model='flourish_caregiver.covid19', required=False),
     Crf(show_order=27, model='flourish_caregiver.relationshipfatherinvolvement'),
-    Crf(show_order=29, model='flourish_caregiver.caregiversafistigma'),
     Crf(show_order=28, model='flourish_caregiver.caregivertbscreening'),
     Crf(show_order=29, model='flourish_caregiver.maternalarvadherence', required=False),
     Crf(show_order=30, model='flourish_caregiver.tbreferralcaregiver'),
