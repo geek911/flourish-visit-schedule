@@ -106,3 +106,9 @@ tb_adol_requisitions = FormsCollection(
         show_order=1,
         panel=lithium_heparin_panel, required=False, additional=False),
     )
+
+brain_ultrasound_requisitions = FormsCollection(
+    Requisition(
+        show_order=1,
+        panel=rectal_swab_panel, required=True, additional=False),
+    )

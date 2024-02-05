@@ -1,2 +1,3 @@
+from .child_visit_schedule import child_brain_ultrasound_v
 from .child_visit_schedule import child_a_visit_schedule_v1, child_b_visit_schedule_v1
 from .child_visit_schedule import child_c_visit_schedule_v1
