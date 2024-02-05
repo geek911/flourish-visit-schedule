@@ -26,5 +26,5 @@ preg_requisitions = FormsCollection(
         panel=viral_load_panel, required=True, additional=False),
 
     Requisition(show_order=20,
-                panel=breast_milk_pellet_panel, required=True, additional=False),
+                panel=breast_milk_pellet_panel, required=False, additional=False),
 )
