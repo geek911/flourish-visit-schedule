@@ -1,4 +1,5 @@
-from .brain_ultrasound_schedule import caregiver_brain_ultrasound_schedule
+from .brain_ultrasound_schedule import caregiver_bu_schedule_1, caregiver_bu_schedule_2, \
+    caregiver_bu_schedule_3
 from .cohort_a_schedules import a_antenatal1_schedule_1, a_antenatal2_schedule_1
 from .cohort_a_schedules import a_antenatal3_schedule_1, a_sec1_schedule_1
 from .cohort_a_schedules import a_birth1_schedule_1, a_birth2_schedule_1, \

@@ -44,7 +44,8 @@ from .caregiver import c_sec_fu_quart1_schedule_1, c_sec_fu_quart2_schedule_1, \
 from .caregiver import c_sec_quart1_schedule_1, c_sec_quart2_schedule_1
 from .caregiver import c_sec_quart3_schedule_1
 from .caregiver import c_sq_fu1_schedule_1, c_sq_fu2_schedule_1, c_sq_fu3_schedule_1
-from .caregiver import caregiver_brain_ultrasound_schedule
+from .caregiver import caregiver_bu_schedule_1, caregiver_bu_schedule_2, \
+    caregiver_bu_schedule_3
 from .caregiver import caregiver_pool1_schedule_1, caregiver_pool2_schedule_1
 from .caregiver import caregiver_pool3_schedule_1
 from .child import child_a_birth_schedule_1, child_a_enrollment_schedule_1

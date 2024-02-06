@@ -4,10 +4,28 @@ from edc_visit_schedule import Schedule, Visit
 from flourish_visit_schedule.visit_schedules.crfs.caregiver_requisitions import \
     brain_ultrasound_requisitions
 
-caregiver_brain_ultrasound_schedule = Schedule(
-    name='caregiver_bu_schedule',
+caregiver_bu_schedule_1 = Schedule(
+    name='caregiver_bu_schedule_1',
     sequence='4',
-    verbose_name='Caregiver Brain Ultrasound Schedule',
+    verbose_name='Caregiver Brain Ultrasound(First Child(ren)) Schedule',
+    onschedule_model='flourish_caregiver.onschedulecaregiverbrainultrasound',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+)
+caregiver_bu_schedule_2 = Schedule(
+    name='caregiver_bu_schedule_2',
+    sequence='4',
+    verbose_name='Caregiver Brain Ultrasound(Second Child(ren)) Schedule',
+    onschedule_model='flourish_caregiver.onschedulecaregiverbrainultrasound',
+    offschedule_model='flourish_caregiver.caregiveroffschedule',
+    consent_model='flourish_caregiver.subjectconsent',
+    appointment_model='edc_appointment.appointment'
+)
+caregiver_bu_schedule_3 = Schedule(
+    name='caregiver_bu_schedule_3',
+    sequence='4',
+    verbose_name='Caregiver Brain Ultrasound(Third Child(ren)) Schedule',
     onschedule_model='flourish_caregiver.onschedulecaregiverbrainultrasound',
     offschedule_model='flourish_caregiver.caregiveroffschedule',
     consent_model='flourish_caregiver.subjectconsent',
@@ -28,4 +46,6 @@ visit2002s = Visit(
     allow_unscheduled=True,
     facility_name='5-day clinic')
 
-caregiver_brain_ultrasound_schedule.add_visit(visit=visit2002s)
+caregiver_bu_schedule_1.add_visit(visit=visit2002s)
+caregiver_bu_schedule_2.add_visit(visit=visit2002s)
+caregiver_bu_schedule_3.add_visit(visit=visit2002s)
