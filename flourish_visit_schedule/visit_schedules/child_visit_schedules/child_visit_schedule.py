@@ -35,6 +35,7 @@ child_a_visit_schedule_v1.add_schedule(child_a_sec_fu_qt_schedule_1)
 child_a_visit_schedule_v1.add_schedule(child_a_fu_schedule_1)
 child_a_visit_schedule_v1.add_schedule(child_a_sq_fu_schedule_1)
 child_a_visit_schedule_v1.add_schedule(child_a_fu_quarterly_schedule_1)
+child_a_visit_schedule_v1.add_schedule(child_brain_ultrasound_schedule)
 
 child_b_visit_schedule_v1 = VisitSchedule(
     name='child_b_visit_schedule_v1',
@@ -82,19 +83,8 @@ tb_adol_visit_schedule_v1 = VisitSchedule(
 tb_adol_visit_schedule_v1.add_schedule(tb_adol_schedule)
 tb_adol_visit_schedule_v1.add_schedule(tb_adol_followup_schedule)
 
-child_brain_ultrasound_v = VisitSchedule(
-    name='child_brain_ultrasound_v',
-    verbose_name='Brain Ultrasound Schedule',
-    offstudy_model='flourish_prn.childoffstudy',
-    death_report_model='flourish_prn.childdeathreport',
-    locator_model='',
-    previous_visit_schedule=None)
-
-child_brain_ultrasound_v.add_schedule(child_brain_ultrasound_schedule)
-
 # Registering Visit Schedules
 site_visit_schedules.register(child_a_visit_schedule_v1)
 site_visit_schedules.register(child_b_visit_schedule_v1)
 site_visit_schedules.register(child_c_visit_schedule_v1)
 site_visit_schedules.register(tb_adol_visit_schedule_v1)
-site_visit_schedules.register(child_brain_ultrasound_v)
