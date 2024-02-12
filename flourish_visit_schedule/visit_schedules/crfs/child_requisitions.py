@@ -116,5 +116,5 @@ brain_ultrasound_requisitions = FormsCollection(
         panel=rectal_swab_panel, required=True, additional=False),
     Requisition(
         show_order=2,
-        panel=stool_sample_panel, required=False, additional=False),
+        panel=stool_sample_panel, required=True, additional=False),
 )
