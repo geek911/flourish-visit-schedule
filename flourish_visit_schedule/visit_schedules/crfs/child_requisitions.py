@@ -114,14 +114,7 @@ brain_ultrasound_requisitions = FormsCollection(
     Requisition(
         show_order=1,
         panel=rectal_swab_panel, required=True, additional=False),
-
     Requisition(
-        show_order=30,
-        panel=child_pl_store_panel, required=True, additional=False),
+        show_order=2,
+        panel=stool_sample_panel, required=False, additional=False),
 )
-
-brain_ultrasound_requisitions = FormsCollection(
-    Requisition(
-        show_order=1,
-        panel=rectal_swab_panel, required=True, additional=False),
-    )
