@@ -23,10 +23,20 @@ preg_requisitions = FormsCollection(
     Requisition(
         show_order=10,
         panel=viral_load_panel, required=True, additional=False),
-    )
+)
+
+maternal_delivery_requisition = FormsCollection(
+    Requisition(
+        show_order=1,
+        panel=viral_load_panel, required=True, additional=False),
+    Requisition(
+        show_order=2,
+        panel=breast_milk_panel, required=True, additional=False),
+)
+
 
 brain_ultrasound_requisitions = FormsCollection(
     Requisition(
         show_order=1,
         panel=breast_milk_panel, required=True, additional=False),
-    )
+)
