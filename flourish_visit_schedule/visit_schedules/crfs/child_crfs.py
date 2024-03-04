@@ -183,7 +183,7 @@ child_a_crf_3000 = FormsCollection(
     Crf(show_order=14, model='flourish_child.infanthivtesting18months', required=False),
     Crf(show_order=15, model='flourish_child.infanthivtestingafterbreastfeeding',
         required=False),
-    Crf(show_order=16, model='flourish_child.infanthivtestingage6to8months',
+    Crf(show_order=16, model='flourish_child.infanthivtestingage6to8weeks',
         required=False),
     Crf(show_order=17, model='flourish_child.infanthivtesting9months', required=False),
     Crf(show_order=18, model='flourish_child.childtbscreening', required=False),
