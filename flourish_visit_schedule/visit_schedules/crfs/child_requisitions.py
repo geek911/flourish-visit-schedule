@@ -1,8 +1,11 @@
 from edc_visit_schedule import FormsCollection, Requisition
-from flourish_labs import chemistry_panel, lead_panel, fbc_panel
-from flourish_labs import dna_pcr_panel, stool_sample_panel, serum_panel
-from flourish_labs import fasting_glucose_panel, fasting_insulin_panel, lithium_heparin_panel
-from flourish_labs import infant_pl_cytokines_panel, rectal_swab_panel, child_pl_store_panel
+
+from flourish_labs import chemistry_panel, fbc_panel, lead_panel
+from flourish_labs import child_pl_store_panel, infant_pl_cytokines_panel, \
+    rectal_swab_panel
+from flourish_labs import dna_pcr_panel, serum_panel, stool_sample_panel
+from flourish_labs import fasting_glucose_panel, fasting_insulin_panel, \
+    lithium_heparin_panel
 
 requisitions_prn = FormsCollection(
     Requisition(
@@ -75,7 +78,7 @@ ab_fu_requisitions = FormsCollection(
         show_order=30,
         panel=child_pl_store_panel, required=True, additional=False),
 
-    )
+)
 
 c_fu_requisitions = FormsCollection(
     Requisition(
@@ -99,10 +102,19 @@ c_fu_requisitions = FormsCollection(
     Requisition(
         show_order=70,
         panel=serum_panel, required=True, additional=False),
-    )
+)
 
 tb_adol_requisitions = FormsCollection(
     Requisition(
         show_order=1,
         panel=lithium_heparin_panel, required=False, additional=False),
-    )
+)
+
+brain_ultrasound_requisitions = FormsCollection(
+    Requisition(
+        show_order=1,
+        panel=rectal_swab_panel, required=True, additional=False),
+    Requisition(
+        show_order=2,
+        panel=stool_sample_panel, required=True, additional=False),
+)
