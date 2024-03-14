@@ -1,9 +1,7 @@
 from edc_visit_schedule import Crf, FormsCollection
 
 crfs_prn = FormsCollection(
-    Crf(show_order=1, model='flourish_child.childcliniciannotes',
-        required=False, additional=False),
-    Crf(show_order=2, model='flourish_child.childsocialworkreferral',
+    Crf(show_order=1, model='flourish_child.childsocialworkreferral',
         required=False, additional=False),
     name='child_crf_prn')
 
