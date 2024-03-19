@@ -91,6 +91,7 @@ visit3000sq = Visit(
     rupper=relativedelta(days=30),
     requisitions=c_fu_requisitions,
     crfs=child_c_crf_3000,
+    crfs_prn=crfs_prn_referral,
     facility_name='5-day clinic')
 
 child_c_sq_fu_schedule_1.add_visit(visit=visit3000sq)
