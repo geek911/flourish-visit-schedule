@@ -39,6 +39,6 @@ maternal_delivery_requisition = FormsCollection(
 brain_ultrasound_requisitions = FormsCollection(
     Requisition(
         show_order=1,
-        panel=breast_milk_panel, required=True, additional=False),
+        panel=breast_milk_panel, required=False, additional=False),
 
 )
