@@ -1,6 +1,8 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
+from flourish_visit_schedule.visit_schedules.crfs.caregiver_crfs import \
+    brain_ultrasound_visit
 from flourish_visit_schedule.visit_schedules.crfs.caregiver_requisitions import \
     brain_ultrasound_requisitions
 
@@ -41,8 +43,8 @@ visit2002s = Visit(
     rupper=relativedelta(days=31),
     requisitions=brain_ultrasound_requisitions,
     requisitions_unscheduled=brain_ultrasound_requisitions,
-    crfs=None,
-    crfs_prn=None,
+    crfs=brain_ultrasound_visit,
+    crfs_prn=brain_ultrasound_visit,
     allow_unscheduled=True,
     facility_name='5-day clinic')
 
