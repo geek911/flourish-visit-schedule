@@ -3,7 +3,7 @@ from edc_visit_schedule import Visit as BaseVisit
 from dateutil.relativedelta import relativedelta
 
 from ....crfs import a_crf_2000, crf_2000d, crf_2001, a_crf_3000, tb_2_months, tb_6_months
-from ....crfs import caregiver_crfs_prn, preg_requisitions, requisitions_prn
+from ....crfs import caregiver_crfs_prn, preg_requisitions, requisitions_prn, maternal_delivery_requisition
 from ....crfs import caregiver_crfs_unscheduled, caregiver_ref_crf_prn, crfs_tb6month
 from ....crfs import post_referral_unscheduled
 
@@ -43,7 +43,7 @@ visit2000D = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=3),
-    requisitions=preg_requisitions,
+    requisitions=maternal_delivery_requisition,
     requisitions_prn=requisitions_prn,
     crfs=crf_2000d,
     crfs_prn=caregiver_ref_crf_prn,
