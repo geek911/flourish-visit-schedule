@@ -190,7 +190,7 @@ crf_2001 = FormsCollection(
     Crf(show_order=20, model='flourish_caregiver.tbreferralcaregiver', required=False),
     Crf(show_order=21, model='flourish_caregiver.caregivertbreferraloutcome',
         required=False),
-    Crf(show_order=22, model='flourish_caregiver.parentadolrelationshipscale', required=True),
+    Crf(show_order=22, model='flourish_caregiver.parentadolrelationshipscale', required=False),
     name='quarterly_calls')
 
 a_crf_3000 = FormsCollection(
